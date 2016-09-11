@@ -1,0 +1,2 @@
+# renny.ren
+my blog
