@@ -1,0 +1,10 @@
+<% @article.comments.each do |c| %>
+	<p>
+		<strong>Commenter:</strong>
+		<%= c.commenter %>	
+	</p>	
+	<p>
+		<strong>Body:</strong>
+		<%= c.body %>
+	</p>	
+<% end %>
