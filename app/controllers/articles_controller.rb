@@ -31,9 +31,9 @@ class ArticlesController < ApplicationController
     end
   end
 
-	def index
-	  @articles = Article.all
-	end
+　def index
+　　@articles = Article.all
+　end
 
  	def destroy
  		@article = Article.find(params[:id])
