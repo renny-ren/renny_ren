@@ -1,8 +1,12 @@
 <%= link_to "new article", new_article_path %>
 
-<h1></h1>
+<h1>显示文章</h1>
  
 <table>
+  <tr>
+    <th>标题</th>
+    <th>内容</th>
+  </tr>
  
   <% @articles.each do |article| %>
     <tr>
@@ -17,4 +21,3 @@
 
 <h1>Hello, Rails!</h1>
 <%= link_to "My Blog", controller => 'articles' %>
-
