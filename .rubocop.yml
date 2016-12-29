@@ -1,0 +1,30 @@
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/BlockComments:
+  Enabled: false
+Style/AsciiComments:
+  Enabled: false
+
+AllCops:
+  Include:
+    - '**/config.ru'
+  Exclude:
+    - 'bin/*'
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'script/**/*'
+    - 'Rakefile'
+    - 'lib/utils/*'
+    - 'vendor/bundle/**/*'
+Documentation:
+  Enabled: false
+Metrics/LineLength:
+  Max: 120
+ClassLength:
+  Max: 10000
+Style/SpaceInsideParens:
+  Enabled: false
+Style/SpaceInsideHashLiteralBraces:
+  Enabled: false
+Style/ClassAndModuleChildren:
+  Enabled: false
