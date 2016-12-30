@@ -1,20 +1,15 @@
 <%= link_to "new article", new_article_path %>
-
-<h1></h1>
  
-<table>
- 
+<%= image_tag('avatar_t.jpg') %>
+Renny Ren
   <% @articles.each do |article| %>
-    <tr>
-      <td><%= article.title %></td>
-      <td><%= article.content %></td>
-      <td><%= link_to 'show', article_path(article) %></td>
-      <td><%= link_to 'edit', edit_article_path(article) %></td>
-      <td><%= link_to 'destroy', article_path(article), method: :delete, data: { confirm: "are you sure?"} %></td>
-    </tr>
-  <% end %>
-</table>
+    
+      <p><%= link_to article.title, article_path(article) %></p>
+      <p><h2><%= article.content %></h2></p>
+      <%= link_to 'edit', edit_article_path(article) %>
+      <%= link_to 'destroy', article_path(article), method: :delete, data: { confirm: "are you sure?"} %>
 
-<h1>Hello, Rails!</h1>
+  <% end %>
+
 <%= link_to "My Blog", controller => 'articles' %>
 
