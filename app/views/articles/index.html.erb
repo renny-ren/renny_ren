@@ -1,7 +1,7 @@
 <%= link_to "new article", new_article_path %>
  
-<%= image_tag('avatar_t.jpg') %>
-Renny Ren
+<p><%= image_tag('avatar.jpg') %></p>
+<p>Renny Ren</p>
   <% @articles.each do |article| %>
     
       <p><%= link_to article.title, article_path(article) %></p>
