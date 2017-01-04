@@ -3,4 +3,6 @@ Rails.application.routes.draw do
   resources :articles do
     resources :comments
   end
+
+  resources :about, only: [:index]
 end

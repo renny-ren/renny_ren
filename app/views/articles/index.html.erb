@@ -1,7 +1,8 @@
-<%= link_to "new article", new_article_path %>
- 
-<p><%= image_tag('avatar.jpg') %></p>
-<p>Renny Ren</p>
+<%= image_tag('avatar.jpg') %>
+Renny Ren
+<%= link_to 'Home', controller => 'articles' %>
+<%= link_to 'Archive', controller => 'articles'%>
+<%= link_to 'About', about_index_path %>
   <% @articles.each do |article| %>
     
       <p><%= link_to article.title, article_path(article) %></p>
@@ -11,5 +12,4 @@
 
   <% end %>
 
-<%= link_to "My Blog", controller => 'articles' %>
-
+<%= link_to "new article", new_article_path %>
