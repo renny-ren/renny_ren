@@ -1,24 +1,15 @@
-<%= link_to "new article", new_article_path %>
-
-<h1>显示文章</h1>
- 
-<table>
-  <tr>
-    <th>标题</th>
-    <th>内容</th>
-  </tr>
- 
+<%= image_tag('avatar.jpg') %>
+<%= link_to 'Renny Ren', controller => 'articles'  %>
+<%= link_to 'Home', controller => 'articles' %>
+<%= link_to 'Archive', controller => 'articles'%>
+<%= link_to 'About', about_index_path %>
   <% @articles.each do |article| %>
-    <tr>
-      <td><%= article.title %></td>
-      <td><%= article.content %></td>
-      <td><%= link_to 'show', article_path(article) %></td>
-      <td><%= link_to 'edit', edit_article_path(article) %></td>
-      <td><%= link_to 'destroy', article_path(article), method: :delete, data: { confirm: "are you sure?"} %></td>
-    </tr>
+    
+      <p><%= link_to article.title, article_path(article) %></p>
+      <p><h2><%= article.content %></h2></p>
+      <%= link_to 'edit', edit_article_path(article) %>
+      <%= link_to 'destroy', article_path(article), method: :delete, data: { confirm: "are you sure?"} %>
+
   <% end %>
-</table>
-
-<h1>Hello, Rails!</h1>
-<%= link_to "My Blog", controller => 'articles' %>
-
+<%= link_to "new article", new_article_path %>
+testts
