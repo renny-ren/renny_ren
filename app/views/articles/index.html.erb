@@ -1,9 +1,13 @@
-<div class="nav">
+<div class="banner">
   <div id="avatar"><%= image_tag('avatar.png') %></div>
-  <%= link_to 'Renny Ren', controller => 'articles' %>
-  <%= link_to 'Home', controller => 'articles' %>
-  <%= link_to 'Archive', controller => 'articles'%>
-  <%= link_to 'About', about_index_path %>
+  <div class="nav">
+    <div id="name"><%= link_to 'Renny Ren', controller => 'articles' %></div>
+    <div id="link">
+      <%= link_to 'Home', controller => 'articles' %>
+      <%= link_to 'Archive', controller => 'articles'%>
+      <%= link_to 'About', about_index_path %>
+    </div>
+  </div>
 </div>
 
 <div class="body">

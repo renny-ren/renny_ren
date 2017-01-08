@@ -13,18 +13,15 @@
  *= require_tree .
  *= require_self
  */
- body{
+body{
   margin: 0; 
   padding: 0;
   background-color: aliceblue;
 }
 
-.nav{
-  font-family: "Lucida Sans", "Lucida Grande", Verdana, Arial, sans-serif;
-  font-size: 1.7em;
-  text-align: center;
+.banner{
+  height: 5em;
   background-color: black;
-  height: 3em;
 }
 
 #avatar{
@@ -33,3 +30,31 @@
   position: absolute;
 }
 
+#name{
+  padding-top: 1.5em;
+  padding-left: 8.5em;
+  font-size: 1.7em;
+  position: absolute;
+}
+
+#link{
+  padding-top: 1.5em;
+  font-family: "Lucida Sans", "Lucida Grande", Verdana, Arial, sans-serif;
+  font-size: 1.7em;
+  text-align: center;
+  word-spacing: 1em;
+}
+
+.banner a{
+  color: white;
+  text-decoration: none;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.banner a:hover{
+  color: red;
+}
