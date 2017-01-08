@@ -13,9 +13,16 @@
  *= require_tree .
  *= require_self
  */
+ body{
+  margin: 0; 
+  padding: 0;
+  background-color: aliceblue;
+}
+
 .nav{
-  font: bold small 微软雅黑;
+  font-family: "Lucida Sans", "Lucida Grande", Verdana, Arial, sans-serif;
   font-size: 1.7em;
   text-align: center;
   background-color: #e0f8f8;
 }
+
