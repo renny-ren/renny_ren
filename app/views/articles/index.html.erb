@@ -1,8 +1,13 @@
-<%= image_tag('avatar.jpg') %>
-<%= link_to 'Renny Ren', controller => 'articles' %>
-<%= link_to 'Home', controller => 'articles' %>
-<%= link_to 'Archive', controller => 'articles'%>
-<%= link_to 'About', about_index_path %>
+
+<div class="nav">
+  <%= image_tag('avatar.jpg') %>
+  <%= link_to 'Renny Ren', controller => 'articles' %>
+  <%= link_to 'Home', controller => 'articles' %>
+  <%= link_to 'Archive', controller => 'articles'%>
+  <%= link_to 'About', about_index_path %>
+</div>
+
+<div class="body">
   <% @articles.each do |article| %>
     
       <p><%= link_to article.title, article_path(article) %></p>
@@ -11,4 +16,6 @@
       <%= link_to 'destroy', article_path(article), method: :delete, data: { confirm: "are you sure?"} %>
 
   <% end %>
+</div>
+
 <%= link_to "new article", new_article_path %>

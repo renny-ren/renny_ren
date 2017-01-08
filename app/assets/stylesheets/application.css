@@ -13,3 +13,9 @@
  *= require_tree .
  *= require_self
  */
+.nav{
+  font: bold small 微软雅黑;
+  font-size: 1.7em;
+  text-align: center;
+  background-color: #e0f8f8;
+}
