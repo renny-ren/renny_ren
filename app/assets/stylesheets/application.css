@@ -23,6 +23,13 @@
   font-family: "Lucida Sans", "Lucida Grande", Verdana, Arial, sans-serif;
   font-size: 1.7em;
   text-align: center;
-  background-color: #e0f8f8;
+  background-color: black;
+  height: 3em;
+}
+
+#avatar{
+  text-align: left;
+  margin-left: 10em;
+  position: absolute;
 }
 
