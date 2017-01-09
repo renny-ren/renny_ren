@@ -41,8 +41,9 @@ body{
   padding-top: 1.5em;
   font-family: "Lucida Sans", "Lucida Grande", Verdana, Arial, sans-serif;
   font-size: 1.7em;
-  text-align: center;
+  padding-left: 22em;
   word-spacing: 1em;
+  position: absolute;
 }
 
 .banner a{
