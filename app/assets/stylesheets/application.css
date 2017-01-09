@@ -59,3 +59,20 @@ body{
 .banner a:hover{
   color: red;
 }
+
+.title{
+  padding-top: 2em;
+  font-family: 黑体;
+  font-size: 2.3em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.body a{
+  text-decoration: none;
+  color: black;
+}
+
+.content{
+  text-align: center;
+}
