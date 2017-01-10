@@ -24,6 +24,8 @@ class ArticlesController < ApplicationController
 
   def update
     @article = Article.find(params[:id])
+    article_params[:content].replace @article.markdown_tran(article_params[:content])
+    p "=========#{article_params[:content]}========="
     if @article.update(article_params)
       redirect_to @article
     else
