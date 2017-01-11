@@ -34,16 +34,14 @@ body{
   padding-top: 1.5em;
   padding-left: 8.5em;
   font-size: 1.7em;
-  position: absolute;
 }
 
 #link{
-  padding-top: 1.5em;
+  margin-top: -1.2em;
   font-family: "Lucida Sans", "Lucida Grande", Verdana, Arial, sans-serif;
   font-size: 1.7em;
   padding-left: 22em;
   word-spacing: 1em;
-  position: absolute;
 }
 
 .banner a{
