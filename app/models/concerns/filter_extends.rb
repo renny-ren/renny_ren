@@ -3,7 +3,7 @@ module FilterExtends
   class_methods do
     def to_html(text)
       markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML)
-      markdown.render(text)
+      Nokogiri::HTML(markdown.render(text)).text
     end
   end
 end
