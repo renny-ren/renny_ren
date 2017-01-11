@@ -24,7 +24,7 @@ class ArticlesController < ApplicationController
 
   def update
     @article = Article.find(params[:id])
-    article_params[:content].replace Filter.to_html(article_params[:content])
+    article_params[:content].replace Article.to_html(article_params[:content])
     if @article.update(article_params)
       redirect_to @article
     else
