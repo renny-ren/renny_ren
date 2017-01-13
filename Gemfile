@@ -1,6 +1,7 @@
 source 'https://ruby.taobao.org'
 
 gem 'redcarpet'
+gem 'nokogiri'
 gem 'html-pipeline'
 gem 'github-markdown'
 
