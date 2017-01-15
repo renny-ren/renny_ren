@@ -1,9 +1,6 @@
 source 'https://ruby.taobao.org'
 
 gem 'redcarpet'
-gem 'nokogiri'
-gem 'html-pipeline'
-gem 'github-markdown'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
