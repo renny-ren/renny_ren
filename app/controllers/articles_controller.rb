@@ -6,12 +6,9 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    @article = Article.new(article_params)
-    if @article.save
-      redirect_to @article
-    else
-      render 'new'
-    end
+    content = Article.to_html(article_params[:content_md])
+    Article.create!(title: article_params[:title], content: content, content_md: article_params[:content_md])
+    redirect_to articles_path
   end
 
   def show
@@ -45,6 +42,6 @@ class ArticlesController < ApplicationController
   private
 
   def article_params
-    params.require(:article).permit(:title, :content)
+    params.require(:article).permit(:title, :content_md)
   end
 end
