@@ -9,6 +9,18 @@
   </head>
 
   <body>
+    <div class="banner">
+      <div id="avatar"><%= image_tag('avatar.png') %></div>
+      <div class="nav">
+        <div id="name"><%= link_to 'Allen', controller => 'articles' %></div>
+        <div id="link">
+          <%= link_to 'Home', controller => 'articles' %>
+          <%= link_to 'Archive', archives_path %>
+          <%= link_to 'About', about_index_path %>
+        </div>
+      </div>
+    </div>
+    
     <%= yield %>
   </body>
 </html>

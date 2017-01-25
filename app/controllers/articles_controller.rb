@@ -7,7 +7,7 @@ class ArticlesController < ApplicationController
 
   def create
     content = Article.to_html(article_params[:content_md])
-    Article.create!(title: article_params[:title], content: content, content_md: article_params[:content_md])
+    Article.create!(title: article_params[:title], content: content, content_md: article_params[:content_md], date: Article.year_month)
     redirect_to articles_path
   end
 
@@ -33,7 +33,7 @@ class ArticlesController < ApplicationController
     # filter = HTML::Pipeline::SyntaxHighlightFilter.new("<p><code>ruby asdlkfj</code></p>")
     # @b = Pygments.styles
     # @b = Pygments.css('.highlight')
-    @articles = Article.all
+    # @articles = Article.all
   end
 
   def destroy
