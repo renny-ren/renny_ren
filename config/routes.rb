@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   end
 
   resources :about, only: [:index]
+  resources :archives, only: [:index]
 end
