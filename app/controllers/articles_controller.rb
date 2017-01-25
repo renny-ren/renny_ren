@@ -30,6 +30,9 @@ class ArticlesController < ApplicationController
   end
 
   def index
+    # filter = HTML::Pipeline::SyntaxHighlightFilter.new("<p><code>ruby asdlkfj</code></p>")
+    # @b = Pygments.styles
+    # @b = Pygments.css('.highlight')
     @articles = Article.all
   end
 
