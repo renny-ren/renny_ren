@@ -31,16 +31,10 @@ body{
   position: absolute;
 }
 
-#name{
-  padding-top: 1.5em;
-  padding-left: 8.5em;
-  font-size: 1.7em;
-}
-
 #link{
-  margin-top: -1.2em;
   font-family: "Lucida Sans", "Lucida Grande", Verdana, Arial, sans-serif;
   font-size: 1.7em;
+  padding-top: 1.6em;
   padding-left: 25em;
   word-spacing: 1em;
 }
