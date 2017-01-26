@@ -1,7 +1,7 @@
 <div class="body">
   <% last_date = "0" %>
   <% @articles.each do |article| %>
-    <div class="category"><%= article.date if article.date != last_date %></div>
+    <div class="y_m"><%= article.date if article.date != last_date %></div>
     <% last_date = article.date %>
     <div class="title"><%= link_to article.title, article_path(article) %></div>
     <div class="date"><%= article.created_at.to_date %></div>
