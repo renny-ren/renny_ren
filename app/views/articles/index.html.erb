@@ -1,15 +1,10 @@
-<div id="name">
-Renny Ren
+<div id="name">Renny Ren</div>
+
+<div class="typedjs">
+  <p id="motto"></p>
 </div>
 
-
-<div id="motto"></div>
-
 <script src="typed.js"></script>
-<script>
-    $(function(){
-        $("#motto").typed({ strings: ["不忘初心　方得始终"] });
-    });
-</script>
+<script>$(function(){ $("#motto").typed({ strings: ['不忘初心　方得始终'] }); });</script>
 
 <%= link_to "new article", new_article_path %>
