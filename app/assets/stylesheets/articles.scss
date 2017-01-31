@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+// ------show------
 #title{
   padding-top: 20px;
   padding-bottom: 15px;
@@ -24,3 +25,19 @@
   margin-right: 20em;
   font-family: "Lucida Sans", "Lucida Grande", Verdana, Arial, sans-serif;
 }
+// ------show------
+
+
+// ------index------
+#name{
+  font-family: "Lucida Sans", "Lucida Grande", Verdana, Arial, sans-serif;
+  text-align: center;
+  font-size: 2em;
+  padding-top: 5em;
+}
+
+#motto{
+  text-align: center;
+}
+
+// ------index------
