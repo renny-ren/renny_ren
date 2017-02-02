@@ -1,10 +1,13 @@
 <div id="name">Renny Ren</div>
 
-<div class="typedjs">
-  <p id="motto"></p>
-</div>
+<div class="typedjs"><p id="motto"></p></div>
 
 <script src="typed.js"></script>
 <script>$(function(){ $("#motto").typed({ strings: ['不忘初心　方得始终'] }); });</script>
 
-<%= link_to "new article", new_article_path %>
+<div class="contact">
+  <%= link_to image_tag('github.png'), "https://github.com/rennyallen" %>
+  <%= link_to image_tag('email.png'), "mailto:rennyallen@hotmail.com" %>
+  <%= link_to image_tag('twitter.png'), "https://twitter.com/Rennyallen20" %>
+  <%= link_to image_tag('facebook.png'), "https://facebook.com/rennyallen" %>
+</div>
