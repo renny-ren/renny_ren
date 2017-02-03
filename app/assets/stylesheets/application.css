@@ -58,6 +58,14 @@ body{
   color: black;
 }
 
+
+.contact{
+  word-spacing: 0.6em;
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  opacity: 0.5;
+}
 /* .content{
   text-align: center;
 } */
