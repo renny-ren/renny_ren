@@ -1,14 +1,16 @@
-<div class="body">
-  <% last_date = "0" %>
-  <% @articles.each do |article| %>
-    <div class="y_m"><%= article.date if article.date != last_date %></div>
-    <% last_date = article.date %>
-    <div class="title"><%= link_to article.title, article_path(article) %></div>
-    <div class="date"><%= article.created_at.to_date %></div>
-    <% if session[:admin] %>
-      <%= link_to 'edit', edit_article_path(article) %>
-      <%= link_to 'destroy', article_path(article), method: :delete, data: { confirm: "are you sure?"} %>
+<div class="container">
+  <div class="content">
+    <% last_date = "0" %>
+    <% @articles.each do |article| %>
+      <div class="y_m"><%= article.date if article.date != last_date %></div>
+      <% last_date = article.date %>
+      <div class="title"><%= link_to article.title, article_path(article) %></div>
+      <div class="date"><%= article.created_at.to_date %></div>
+      <% if session[:admin] %>
+        <%= link_to 'edit', edit_article_path(article) %>
+        <%= link_to 'destroy', article_path(article), method: :delete, data: { confirm: "are you sure?"} %>
+      <% end %>
     <% end %>
-  <% end %>
-  <%= link_to "new article", new_article_path %>
+    <%= link_to "new article", new_article_path %>
+  </div>
 </div>
