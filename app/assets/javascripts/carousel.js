@@ -8,7 +8,7 @@ $(document).ready(function(){
             animation: 'slide3D',     /* slide | scroll | fade | zoomInSlide | zoomInScroll */
             animationCurve: 'ease',
             animationDuration: 700,
-            animationInterval: 1000,       //slideClass: 'jR3DCarouselCustomSlide',
+            animationInterval: 2800,       //slideClass: 'jR3DCarouselCustomSlide',
             autoplay: true,
             onSlideShow: show,    /* callback when Slide show event occurs */
             navigation: 'circles',  /* circles | squares */
