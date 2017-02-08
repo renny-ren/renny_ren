@@ -2,8 +2,8 @@ $(document).ready(function(){
   var slides = [{src: 'basketball.jpg'}, {src: 'basketball2.jpg'}, {src: 'dormitory.jpg'}, {src: 'dormitory2.jpg'}, {src: 'rayallen.jpg'}]
   var jR3DCarousel;
   var carouselProps =  {
-            width: 800,         /* largest allowed width */
-            height: 500,        /* largest allowed height */
+            width: 500,         /* largest allowed width */
+            height: 350,        /* largest allowed height */
             slideLayout : 'fill',     /* "contain" (fit according to aspect ratio), "fill" (stretches object to fill) and "cover" (overflows box but maintains ratio) */
             animation: 'slide3D',     /* slide | scroll | fade | zoomInSlide | zoomInScroll */
             animationCurve: 'ease',

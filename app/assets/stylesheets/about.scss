@@ -2,12 +2,31 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#content{
-  margin-left: 800px;
+.about_content{
+  padding-top: 3.6em;
+  margin-left: 23em;
+  min-height: 1400px;
 }
 
 h2{
   margin-right: 46em;
   border-bottom: groove 1px blue;
   padding-top: 1em;
+}
+
+.frame{
+  padding-top: 1.5em;
+  position: absolute;
+  left: 6%;
+  z-index: -1;
+}
+
+#wanted{
+  position: absolute;
+  z-index: -2;
+  right: 10%;
+}
+
+.jR3DCarouselGallery{
+  position: absolute;
 }
