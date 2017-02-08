@@ -23,7 +23,8 @@ body{
 
 .banner{
   height: 5em;
-  background-color: black;
+  background-color: #0D1B1E;
+  /* background-color: black; */
 }
 
 #avatar{
