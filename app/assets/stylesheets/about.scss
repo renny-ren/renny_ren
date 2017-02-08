@@ -2,6 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+// .about_container{
+//   background-color: peru;
+//   position: relative;
+//   z-index: -3;
+// }
+
 .about_content{
   padding-top: 3.6em;
   margin-left: 23em;
@@ -21,12 +27,14 @@ h2{
   z-index: -1;
 }
 
-#wanted{
+.wanted{
   position: absolute;
-  z-index: -2;
-  right: 10%;
+  right: 15%;
+  z-index: -1;
 }
 
 .jR3DCarouselGallery{
   position: absolute;
+  margin-top: 1.4em;
+  margin-left: 40.5em;
 }
