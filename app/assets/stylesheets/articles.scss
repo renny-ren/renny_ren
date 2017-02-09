@@ -4,7 +4,7 @@
 
 // ------show------
 #title{
-  padding-top: 20px;
+  padding-top: 40px;
   padding-bottom: 15px;
   margin-left: 10em;
   margin-right: 10em;
@@ -15,15 +15,41 @@
 }
 
 #date{
-  padding-top: 10px;
-  margin-left: 75em;
+  margin-top: -25px;
+  padding-left: 100em;
 }
 
 #content{
-  margin-top: 1.2em;
-  margin-left: 20em;
-  margin-right: 20em;
+  margin:3em 20em 0 20em;
+  padding: 50px;
+  box-shadow: 10px 8px 5px #888888;
+  border-top: outset 4px white;
+  border-left: outset 4px white;
+  border-radius: 2em;
+  font-size: 18px;
   font-family: "Lucida Sans", "Lucida Grande", Verdana, Arial, sans-serif;
+  h2 {
+    border-bottom: groove 1px blue;
+    padding-bottom: 15px;
+  }
+}
+
+#content a{
+  text-decoration: none;
+  color: blue;
+}
+
+code{
+  display: inline-block;
+  font-size: 16px !important;
+  background-color: #f5f5f5 !important;
+  border: 0px;
+  color: #444 !important;
+  padding: 1px 4px !important;
+  margin: 2px;
+  border-radius: 3px;
+  word-break: break-all;
+  line-height: 20px;
 }
 // ------show------
 
@@ -33,12 +59,12 @@
   font-family: "Lucida Sans", "Lucida Grande", Verdana, Arial, sans-serif;
   text-align: center;
   font-size: 2em;
-  padding-top: 5em;
+  padding-top: 7em;
 }
 
 #motto{
   display:inline;
-  font-size: 18px;
+  font-size: 20px;
   font-family: "楷体", "宋体", "文泉驿等宽微米黑";
 }
 // ------index------

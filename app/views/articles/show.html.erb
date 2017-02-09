@@ -2,10 +2,8 @@
 <div id="date">created_at:&nbsp&nbsp<%= @article.created_at.to_date %></div>
 <div id="content"><%== @article.content %></div>
 
-
 <h2>Comments:</h2>
 <%= render @article.comments %>
-
 
 <h2>Add a comment:</h2>
 <%= render "comments/form" %>

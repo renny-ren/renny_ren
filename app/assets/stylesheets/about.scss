@@ -12,18 +12,18 @@
   padding-top: 3.6em;
   margin-left: 23em;
   min-height: 1400px;
-}
-
-h2{
-  margin-right: 46em;
-  border-bottom: groove 1px blue;
-  padding-top: 1em;
+  h2{
+    margin-right: 46em;
+    border-bottom: groove 1px blue;
+    padding-top: 1em;
+    box-shadow: 10px 5px 5px #888888;
+  }
 }
 
 .frame{
   padding-top: 1.5em;
   position: absolute;
-  left: 6%;
+  left: 10%;
   z-index: -1;
 }
 
@@ -36,5 +36,5 @@ h2{
 .jR3DCarouselGallery{
   position: absolute;
   margin-top: 1.3em;
-  margin-left: 40.5em;
+  margin-left: 52em;
 }
