@@ -2,39 +2,41 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-// .about_container{
-//   background-color: peru;
-//   position: relative;
-//   z-index: -3;
-// }
-
 .about_content{
   padding-top: 3.6em;
-  margin-left: 23em;
+  margin-left: 25em;
   min-height: 1400px;
   h2{
     margin-right: 46em;
     border-bottom: groove 1px blue;
     padding-top: 1em;
-    box-shadow: 10px 5px 5px #888888;
+    // box-shadow: 10px 5px 5px #888888;
   }
+  position: relative;
+  z-index: 2;     //此处设置堆叠是为了覆盖导航栏的阴影
 }
 
-.frame{
-  padding-top: 1.5em;
+.about_background{
+  z-index: 1;
   position: absolute;
-  left: 10%;
-  z-index: -1;
 }
+
+// .frame{
+//   padding-top: 1.5em;
+//   position: absolute;
+//   left: 10%;
+//   z-index: 2;
+// }
 
 .wanted{
   position: absolute;
-  right: 15%;
-  z-index: -1;
+  right: 2%;
+  z-index: 2;
 }
 
 .jR3DCarouselGallery{
   position: absolute;
-  margin-top: 1.3em;
-  margin-left: 52em;
+  margin-top: -8em;
+  margin-left: 67em;
+  z-index: 2
 }

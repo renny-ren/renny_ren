@@ -2,10 +2,10 @@ $(document).ready(function(){
   var slides = [{src: 'basketball.jpg'}, {src: 'basketball2.jpg'}, {src: 'dormitory.jpg'}, {src: 'dormitory2.jpg'}, {src: 'rayallen.jpg'}]
   var jR3DCarousel;
   var carouselProps =  {
-            width: 500,         /* largest allowed width */
+            width: 502,         /* largest allowed width */
             height: 350,        /* largest allowed height */
             slideLayout : 'fill',     /* "contain" (fit according to aspect ratio), "fill" (stretches object to fill) and "cover" (overflows box but maintains ratio) */
-            animation: 'slide3D',     /* slide | scroll | fade | zoomInSlide | zoomInScroll */
+            animation: 'slide',     /* slide | scroll | fade | zoomInSlide | zoomInScroll */
             animationCurve: 'ease',
             animationDuration: 700,
             animationInterval: 2800,       //slideClass: 'jR3DCarouselCustomSlide',

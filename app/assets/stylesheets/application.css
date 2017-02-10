@@ -60,5 +60,7 @@ body{
 
 .contact{
   word-spacing: 0.6em;
-  text-align: center;
+  left: 45%;
+  position: absolute;
+  z-index: 2;
 }
