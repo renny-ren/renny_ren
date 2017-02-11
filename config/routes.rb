@@ -4,6 +4,8 @@ Rails.application.routes.draw do
     resources :comments
   end
 
-  resources :about, only: [:index]
-  resources :archives, only: [:index]
+  resources :about, only: :index
+  resources :archives, only: :index
+  resources :sessions, only: [:index, :create]
+  resource :sessions, only: :destroy
 end

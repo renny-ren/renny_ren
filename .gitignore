@@ -31,6 +31,7 @@ config/environments/*.local.yml
 config/services.yml
 config/services.local.yml
 log/development.log
+sessions_controller.rb
 
 
 !public/404.html

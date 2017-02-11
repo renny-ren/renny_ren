@@ -8,5 +8,16 @@
 <h2>Add a comment:</h2>
 <%= render "comments/form" %>
 
-<%= link_to "edit", edit_article_path(@article) %>
-<%= link_to "back", articles_path %>
+<!--高速版-->
+<div id="SOHUCS" ></div>
+<script charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/changyan.js" ></script>
+<script type="text/javascript">
+window.changyan.api.config({
+appid: 'cysQgfJP7',
+conf: 'prod_7daeafcc389f498056bb24ca7d92c2f7'
+});
+</script>
+
+
+<%= link_to "编辑", edit_article_path(@article) if session[:admin] %>
+<%= link_to "返回", articles_path %>

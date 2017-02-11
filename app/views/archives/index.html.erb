@@ -11,6 +11,8 @@
         <%= link_to 'destroy', article_path(article), method: :delete, data: { confirm: "are you sure?"} %>
       <% end %>
     <% end %>
-    <%= link_to "new article", new_article_path %>
+    <%= link_to "新建文章", new_article_path if session[:admin] %>
+    <%= link_to ".", sessions_path, class: "backstage" %>
   </div>
 </div>
+
