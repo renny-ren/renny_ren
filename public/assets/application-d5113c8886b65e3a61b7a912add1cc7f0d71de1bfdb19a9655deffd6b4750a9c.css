@@ -1,0 +1,252 @@
+/* line 5, /home/allen/allen/renny_ren/app/assets/stylesheets/about.scss */
+.about_content {
+  padding-top: 3.6em;
+  margin-left: 25em;
+  min-height: 1400px;
+  position: relative;
+}
+/* line 9, /home/allen/allen/renny_ren/app/assets/stylesheets/about.scss */
+.about_content h2 {
+  margin-right: 46em;
+  border-bottom: groove 1px blue;
+  padding-top: 1em;
+}
+
+/* line 25, /home/allen/allen/renny_ren/app/assets/stylesheets/about.scss */
+.wanted {
+  position: absolute;
+  right: 2%;
+}
+
+/* line 30, /home/allen/allen/renny_ren/app/assets/stylesheets/about.scss */
+.jR3DCarouselGallery {
+  position: absolute;
+  margin-top: -8em;
+  margin-left: 67em;
+}
+@charset "UTF-8";
+/* line 5, /home/allen/allen/renny_ren/app/assets/stylesheets/archives.scss */
+.title {
+  padding: 15px 0;
+  margin-left: 25em;
+  margin-right: 27.5em;
+  font-family: 黑体;
+  font-size: 1.5em;
+  border-bottom: groove 1px blue;
+}
+
+/* line 14, /home/allen/allen/renny_ren/app/assets/stylesheets/archives.scss */
+.title a:hover {
+  color: blue;
+}
+
+/* line 18, /home/allen/allen/renny_ren/app/assets/stylesheets/archives.scss */
+.y_m {
+  padding-top: 1em;
+  padding-left: 12em;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+/* line 25, /home/allen/allen/renny_ren/app/assets/stylesheets/archives.scss */
+.date {
+  margin-top: -20px;
+  margin-left: 82em;
+}
+
+/* line 30, /home/allen/allen/renny_ren/app/assets/stylesheets/archives.scss */
+.content a {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 35, /home/allen/allen/renny_ren/app/assets/stylesheets/archives.scss */
+.backstage {
+  opacity: 0.2;
+  margin-right: 10px;
+}
+@charset "UTF-8";
+/* line 6, /home/allen/allen/renny_ren/app/assets/stylesheets/articles.scss */
+#title {
+  padding-top: 40px;
+  padding-bottom: 15px;
+  margin-left: 10em;
+  margin-right: 10em;
+  text-align: center;
+  font-family: 黑体;
+  font-size: 1.5em;
+  border-bottom: groove 1px blue;
+}
+
+/* line 17, /home/allen/allen/renny_ren/app/assets/stylesheets/articles.scss */
+#date {
+  margin-top: -25px;
+  padding-left: 100em;
+}
+
+/* line 22, /home/allen/allen/renny_ren/app/assets/stylesheets/articles.scss */
+#content {
+  margin: 3em 20em 0 20em;
+  padding: 50px;
+  box-shadow: 10px 8px 5px #888888;
+  border-top: outset 4px white;
+  border-left: outset 4px white;
+  border-radius: 2em;
+  font-size: 18px;
+  font-family: "Lucida Sans", "Lucida Grande", Verdana, Arial, sans-serif;
+}
+/* line 31, /home/allen/allen/renny_ren/app/assets/stylesheets/articles.scss */
+#content h2 {
+  border-bottom: groove 1px blue;
+  padding-bottom: 15px;
+}
+
+/* line 37, /home/allen/allen/renny_ren/app/assets/stylesheets/articles.scss */
+#content a {
+  text-decoration: none;
+  color: blue;
+}
+
+/* line 42, /home/allen/allen/renny_ren/app/assets/stylesheets/articles.scss */
+code {
+  display: inline-block;
+  font-size: 16px !important;
+  background-color: #f5f5f5 !important;
+  border: 0px;
+  color: #444 !important;
+  padding: 1px 4px !important;
+  margin: 2px;
+  border-radius: 3px;
+  word-break: break-all;
+  line-height: 20px;
+}
+
+/* line 58, /home/allen/allen/renny_ren/app/assets/stylesheets/articles.scss */
+#name {
+  font-family: "Lucida Sans", "Lucida Grande", Verdana, Arial, sans-serif;
+  text-align: center;
+  font-size: 2em;
+  padding-top: 7em;
+}
+
+/* line 65, /home/allen/allen/renny_ren/app/assets/stylesheets/articles.scss */
+#motto {
+  display: inline;
+  font-size: 20px;
+  font-family: "楷体", "宋体", "文泉驿等宽微米黑";
+}
+
+/* line 74, /home/allen/allen/renny_ren/app/assets/stylesheets/articles.scss */
+.typedjs {
+  padding: 2em;
+  text-align: center;
+}
+
+/* line 79, /home/allen/allen/renny_ren/app/assets/stylesheets/articles.scss */
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+
+body{
+  margin: 0; 
+  padding: 0;
+  background-color: aliceblue;
+}
+
+.container{
+  min-height: 900px;
+}
+
+.banner{
+  height: 5em;
+  background-color: #0D1B1E;
+  box-shadow: 10px 5px 5px #888888;
+}
+
+.banner a{
+  color: white;
+  text-decoration: none;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.banner a:hover{
+  color: red;
+}
+
+#avatar{
+  text-align: left;
+  margin-left: 10em;
+  position: absolute;
+}
+
+#link{
+  font-family: "Lucida Sans", "Lucida Grande", Verdana, Arial, sans-serif;
+  font-size: 1.7em;
+  padding-top: 1.6em;
+  text-align: center;
+  word-spacing: 1.2em;
+}
+
+.contact{
+  word-spacing: 0.6em;
+  left: 45%;
+  position: absolute;
+  z-index: 2;
+}
