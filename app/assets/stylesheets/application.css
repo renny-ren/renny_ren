@@ -57,6 +57,6 @@ body{
 .contact{
   word-spacing: 0.6em;
   text-align: center;
-  border-top: ridge 1px grey;
+  /*border-top: ridge 1px grey;*/
   padding-top: 12px;
 }
