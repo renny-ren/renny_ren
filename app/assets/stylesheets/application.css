@@ -20,10 +20,6 @@ body{
   background-color: aliceblue;
 }
 
-.container{
-  min-height: 900px;
-}
-
 .banner{
   height: 5em;
   background-color: #0D1B1E;
@@ -60,7 +56,7 @@ body{
 
 .contact{
   word-spacing: 0.6em;
-  left: 45%;
-  position: absolute;
-  z-index: 2;
+  text-align: center;
+  border-top: ridge 1px grey;
+  padding-top: 12px;
 }
