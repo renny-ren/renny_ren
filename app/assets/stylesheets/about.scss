@@ -8,23 +8,26 @@
   min-height: 1800px;
   position: relative;
   h2{
-    /*margin-right: 46em;*/
-    border-bottom: groove 1px blue;
+    margin-right: 85%;
+    border-bottom: groove 1px chocolate;
     padding-top: 1em;
     /*box-shadow: 10px 5px 5px #888888;*/
   }
 }
 
 .photo{
-  margin-left: 45%;
-  margin-top: -40%;
-}
-
-.wanted{
-  position: absolute;
+  margin-top: 5%;
+  margin-left: -20%;
+  width: 100%;
 }
 
 .jR3DCarouselGallery{
+  position: absolute;
   padding-top: 8.2em;
   margin-left: 3em;
+}
+
+.piano_video{
+  margin-left: 56%;
+  margin-top: -18%;
 }
