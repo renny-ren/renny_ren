@@ -3,9 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .title{
-  padding: 15px 0;
-  margin-left: 25em;
-  margin-right: 27.5em;
+  margin: 15px 100px 15px 4.3em;
+  padding-bottom: 5px;
   font-family: 黑体;
   font-size: 1.5em;
   border-bottom: groove 1px blue;
@@ -17,17 +16,26 @@
 
 .y_m{
   padding-top: 1em;
-  padding-left: 12em;
   font-weight: bold;
   font-size: 30px;
 }
 
 .date{
-  margin-top: -20px;
-  margin-left: 82em;
+  text-align: right;
+  margin-right: 20px;
+  margin-top: -34px;
 }
 
-.content a{
+.archives_content a{
   text-decoration: none;
   color: black;
+}
+
+.archives_content{
+  min-height: 800px;
+  padding: 5%;
+  margin: 0 15%;
+  position: relative;
+  border: solid 1px white;
+  box-shadow: 1px 8px 5px #888888;
 }
