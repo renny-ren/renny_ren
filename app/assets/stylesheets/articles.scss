@@ -3,11 +3,16 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 // ------show------
+.article_container{
+  min-height: 800px;
+  padding: 5%;
+  margin: 0 15%;
+}
+
 #title{
-  padding-top: 40px;
+  padding-top: 30px;
   padding-bottom: 15px;
-  margin-left: 10em;
-  margin-right: 10em;
+  margin: 0 5em;
   text-align: center;
   font-family: 黑体;
   font-size: 1.5em;
@@ -15,24 +20,23 @@
 }
 
 #date{
-  margin-top: -25px;
-  padding-left: 100em;
+  padding-top: 10px;
+  text-align: right;
 }
 
 #content{
-  width: 1200px;
-  margin:3em 20em 0 20em;
-  padding: 50px;
+  padding: 10px 35px;
+  margin: 30px 0;
   box-shadow: 10px 8px 5px #888888;
   border-top: outset 4px white;
   border-left: outset 4px white;
   border-radius: 2em;
   font-size: 18px;
   font-family: "Lucida Sans", "Lucida Grande", Verdana, Arial, sans-serif;
-  h2 {
+  /*h2 {
     border-bottom: groove 1px blue;
     padding-bottom: 15px;
-  }
+  }*/
 }
 
 #content a{

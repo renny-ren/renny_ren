@@ -1,25 +1,25 @@
-<head><base target="_blank" /></head>
+<div class="article_container">
+	<div id="title"><%= @article.title %></div>
+	<div id="date">created_at:&nbsp&nbsp<%= @article.created_at.to_date %></div>
+	<div id="content"><%== @article.content %></div>
 
-<div id="title"><%= @article.title %></div>
-<div id="date">created_at:&nbsp&nbsp<%= @article.created_at.to_date %></div>
-<div id="content"><%== @article.content %></div>
+	<!-- <h2>Comments:</h2>
+	<%= render @article.comments %>
 
-<!-- <h2>Comments:</h2>
-<%= render @article.comments %>
+	<h2>Add a comment:</h2>
+	<%= render "comments/form" %>
+	 -->
 
-<h2>Add a comment:</h2>
-<%= render "comments/form" %>
- -->
-<!--高速版-->
-<div id="SOHUCS" ></div>
-<script charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/changyan.js" ></script>
-<script type="text/javascript">
-window.changyan.api.config({
-appid: 'cysQgfJP7',
-conf: 'prod_7daeafcc389f498056bb24ca7d92c2f7'
-});
-</script>
+	<!--高速版-->
+	<div id="SOHUCS"></div>
+	<script charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/changyan.js" ></script>
+	<script type="text/javascript">
+	window.changyan.api.config({
+	appid: 'cysQgfJP7',
+	conf: 'prod_7daeafcc389f498056bb24ca7d92c2f7'
+	});
+	</script>
 
-
-<%= link_to "编辑", edit_article_path(@article) if session[:admin] %>
-<%= link_to "返回", articles_path %>
+	<%= link_to "编辑", edit_article_path(@article) if session[:admin] %>
+	<%= link_to "返回", archives_path %>
+</div>
