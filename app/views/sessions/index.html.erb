@@ -1,5 +1,7 @@
-<%= form_tag sessions_path do %>
-  <%= password_field_tag :password %>
-  <%= button_to "activate", action: "create" %>
-<% end %>
-  <%= button_to "inactivate", sessions_path, method: :delete %>
+<div class="container">
+	<%= form_tag sessions_path do %>
+	  <%= password_field_tag :password %>
+	  <%= button_to "activate", action: "create" %>
+	<% end %>
+	<%= button_to "inactivate", sessions_path, method: :delete %>
+</div>

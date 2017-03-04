@@ -21,7 +21,7 @@ body{
 }
 
 .banner{
-  height: 5em;
+  height: 3em;
   width: 100%;
   position: fixed;
   z-index: 2;
@@ -51,8 +51,8 @@ body{
 
 #link{
   font-family: "Lucida Sans", "Lucida Grande", Verdana, Arial, sans-serif;
-  font-size: 1.7em;
-  padding-top: 1.6em;
+  font-size: 1.5em;
+  padding-top: 0.7em;
   text-align: center;
   word-spacing: 1.2em;
 }
