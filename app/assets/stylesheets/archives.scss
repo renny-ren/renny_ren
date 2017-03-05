@@ -39,3 +39,16 @@
   border: solid 1px white;
   box-shadow: 1px 8px 5px #888888;
 }
+
+.flameSVG{
+  width: 300px;
+  height: 400px;
+  margin-left: 75%;
+  margin-top: -15%;
+  
+  position: absolute;
+}
+
+.flameContainer{
+  cursor: pointer;
+}
