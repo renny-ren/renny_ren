@@ -1,8 +1,6 @@
-<div class="archives_content">
-  <% last_date = "0" %>
+<div class="tags_content">
+  
   <% @articles.each do |article| %>
-    <div class="y_m"><%= article.date if article.date != last_date %></div>
-    <% last_date = article.date %>
     <div class="title"><%= link_to article.title, article_path(article), method: :get %></div>
     <div class="date"><%= article.created_at.to_date %></div>
     <% if session[:admin] %>
@@ -10,7 +8,6 @@
       <%= link_to 'destroy', article_path(article), method: :delete, data: { confirm: "are you sure?"} %>
     <% end %>
   <% end %>
-  <%= link_to "新建文章", new_article_path if session[:admin] %>
 </div>
 
 <%= render partial: "shared/huochai"%>

@@ -1,0 +1,13 @@
+<div class="tags_content">
+  <%= form_tag(tags_path, action: "create") do %>
+    <%= label_tag :tag_nmae, "Tag:" %>
+    <%= text_field_tag :tag_name %>
+    <%= submit_tag "Create" %>
+  <% end %>
+
+<% @tags.each do |tag| %>
+  <%= link_to tag.tag_name, tag_path(tag) %>
+<% end %>
+</div>
+
+<%= render partial: "shared/huochai"%>

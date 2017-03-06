@@ -1,25 +1,44 @@
-<%= form_for @article do |f| %>
-  <% if @article.errors.any? %>
-    <div id="error_explanation">
-      <ul>
-      <% @article.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+<div class="article_container">
+  <%= form_for @article do |f| %>
+    <% if @article.errors.any? %>
+      <div id="error_explanation">
+        <ul>
+        <% @article.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
 
-  <p>
-    <%= f.label :title %><br>
-    <%= f.text_field :title, size: "100" %>
-  </p>
- 
-  <p>
-    <%= f.label :content_md %><br>
-    <%= f.text_area :content_md, size: "150", style: 'height: 1000px;' %>
-  </p>
- 
-  <p>
-    <%= f.submit "提交" %>
-  </p>
-<% end %>
+    <div id="tags">
+      <% @tags.each do |tag| %>
+        <span class="tag" onclick="modify_tag(this);"><%= tag.tag_name %></span>
+      <% end %>
+    </div>
+
+    <%= f.text_field :tag , style: 'display:none;'%>
+
+    <div id="title">
+      <%= f.text_field :title, size: "50", placeholder: "title", autocomplete: "off", style: 'height: 40px; border: 0; background:none; font-family: 黑体; font-size: 1.5em;' %>
+    </div>
+   
+   <div id="content"><%= f.text_area :content_md, size: "100", placeholder: "content_md", style: 'height: 1000px; background: none;' %></div>
+   
+   <%= f.submit "提交", style: 'height: 30px; width: 50px; margin-left: 50%;' %>
+  <% end %>
+</div>
+
+<script type="text/javascript">
+ function modify_tag(obj){
+  var new_tag = obj.innerHTML;
+  var selected_tags = document.getElementById('article_tag').value
+  if(document.getElementById('article_tag').value.indexOf(new_tag) > 0){
+    document.getElementById('article_tag').value = document.getElementById('article_tag').value.replace('^^' + new_tag, '');
+    obj.className = "tag";
+  }
+  else{
+    document.getElementById('article_tag').value += "^^" + obj.innerHTML;
+    obj.className = "selected_tag"; 
+  }  
+ }
+</script>

@@ -1,14 +1,8 @@
 <div class="article_container">
 	<div id="title"><%= @article.title %></div>
 	<div id="date">created_at:&nbsp&nbsp<%= @article.created_at.to_date %></div>
+	<div id="tags"><%= @article.tag %></div>
 	<div id="content"><%== @article.content %></div>
-
-	<!-- <h2>Comments:</h2>
-	<%= render @article.comments %>
-
-	<h2>Add a comment:</h2>
-	<%= render "comments/form" %>
-	 -->
 
 	<!--高速版-->
 	<div id="SOHUCS"></div>

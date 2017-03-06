@@ -3,11 +3,15 @@ class ArticlesController < ApplicationController
 
   def new
     @article = Article.new
+    @tags = Tag.all
   end
 
   def create
+    p params[:tag]
+
     content = Article.to_html(article_params[:content_md])
-    Article.create!(title: article_params[:title], content: content, content_md: article_params[:content_md], date: Article.year_month)
+    Article.create!(title: article_params[:title], content: content, content_md: article_params[:content_md], 
+                    date: Article.year_month, tag: article_params[:tag])
     redirect_to articles_path
   end
 
@@ -45,6 +49,6 @@ class ArticlesController < ApplicationController
   private
 
   def article_params
-    params.require(:article).permit(:title, :content_md)
+    params.require(:article).permit(:title, :content_md, :tag)
   end
 end
