@@ -7,8 +7,6 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    p params[:tag]
-
     content = Article.to_html(article_params[:content_md])
     Article.create!(title: article_params[:title], content: content, content_md: article_params[:content_md], 
                     date: Article.year_month, tag: article_params[:tag])
