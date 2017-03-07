@@ -1,15 +1,5 @@
 <div class="article_container">
   <%= form_for @article do |f| %>
-    <% if @article.errors.any? %>
-      <div id="error_explanation">
-        <ul>
-        <% @article.errors.full_messages.each do |msg| %>
-          <li><%= msg %></li>
-        <% end %>
-        </ul>
-      </div>
-    <% end %>
-
     <% @tags.each do |tag| %>
       <span class="tag" onclick="modify_tag(this);"><%= tag.tag_name %></span>
     <% end %>
