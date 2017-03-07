@@ -23,6 +23,7 @@ class ArticlesController < ApplicationController
   def show
     @article = Article.find(params[:id])
     @tag_arr = format_array(@article.tag)
+    get_date
   end
 
   def edit
@@ -50,6 +51,11 @@ class ArticlesController < ApplicationController
 
   def article_params
     params.require(:article).permit(:title, :content_md, :tag)
+  end
+
+  def get_date
+    @created_date = @article.created_at.to_date
+    @updated_date = @article.updated_at.to_date
   end
 
   def format_array(string)
