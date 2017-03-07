@@ -1,5 +1,4 @@
 <div class="tags_content">
-  
   <% @articles.each do |article| %>
     <div class="title"><%= link_to article.title, article_path(article), method: :get %></div>
     <div class="date"><%= article.created_at.to_date %></div>

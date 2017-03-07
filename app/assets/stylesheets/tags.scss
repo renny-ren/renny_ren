@@ -2,6 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+a{
+  text-decoration: none; 
+  color: black;
+}
+a:hover{
+  color: blue;
+}
+  
 .tags_content{
   min-height: 800px;
   padding: 5%;
@@ -9,4 +17,26 @@
   position: relative;
   border: solid 1px white;
   box-shadow: 1px 8px 5px #888888;
+}
+
+.show_tag{      /* 展示的tag*/
+  border: solid 2px lightblue;
+  box-shadow: 1px 2px 5px lightblue;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 8px;
+}
+
+.tag{          /* 编辑时待选的tag*/
+  border: dashed 1px grey;
+  padding: 5px;
+  margin: 8px;
+  cursor: pointer;
+}
+
+.selected_tag{   /* 已选择的tag*/
+  border: solid 2px orange;
+  padding: 5px;
+  margin: 8px;
+  cursor: pointer;
 }

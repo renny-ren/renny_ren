@@ -1,13 +1,18 @@
 <div class="tags_content">
-  <%= form_tag(tags_path, action: "create") do %>
-    <%= label_tag :tag_nmae, "Tag:" %>
-    <%= text_field_tag :tag_name %>
-    <%= submit_tag "Create" %>
+  <% if session[:admin] %>
+    <%= form_tag(tags_path, action: "create") do %>
+      <%= label_tag :tag_nmae, "Tag:" %>
+      <%= text_field_tag :tag_name %>
+      <%= submit_tag "Create" %>
+    <% end %>
   <% end %>
 
-<% @tags.each do |tag| %>
-  <%= link_to tag.tag_name, tag_path(tag) %>
-<% end %>
+  <div style="margin-top: 20px; margin-bottom: 50px;">
+    <% @tags.each do |tag| %>
+      <span class="show_tag"><%= link_to tag.tag_name, tag_path(tag) %></span>
+      <%= link_to "Delete", tag_path(tag), method: :delete, data: { confirm: "sure to delete?" } if session[:admin] %>
+    <% end %>
+  </div>
 </div>
 
 <%= render partial: "shared/huochai"%>

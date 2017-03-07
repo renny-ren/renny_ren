@@ -1,6 +1,13 @@
 class ArticlesController < ApplicationController
   http_basic_authenticate_with name: 'allen', password: '123', except: [:index, :show]
 
+  def index
+    # filter = HTML::Pipeline::SyntaxHighlightFilter.new("<p><code>ruby asdlkfj</code></p>")
+    # @b = Pygments.styles
+    # @b = Pygments.css('.highlight')
+    # @articles = Article.all
+  end
+
   def new
     @article = Article.new
     @tags = Tag.all
@@ -15,6 +22,7 @@ class ArticlesController < ApplicationController
 
   def show
     @article = Article.find(params[:id])
+    @tag_arr = format_array(@article.tag)
   end
 
   def edit
@@ -29,14 +37,7 @@ class ArticlesController < ApplicationController
     else
       render 'edit'
     end
-  end
-
-  def index
-    # filter = HTML::Pipeline::SyntaxHighlightFilter.new("<p><code>ruby asdlkfj</code></p>")
-    # @b = Pygments.styles
-    # @b = Pygments.css('.highlight')
-    # @articles = Article.all
-  end
+  end  
 
   def destroy
     @article = Article.find(params[:id])
@@ -48,5 +49,11 @@ class ArticlesController < ApplicationController
 
   def article_params
     params.require(:article).permit(:title, :content_md, :tag)
+  end
+
+  def format_array(string)
+    arr = string.split("^^")
+    arr.shift
+    arr
   end
 end
