@@ -1,7 +1,8 @@
-<script>$(function(){ $("#motto").typed({ strings: ['不忘初心　方得始终','这哥们天天研究怎么长胖，多年过去后，这哥们越来越瘦。'] }); });
-</script>
+<input id="motto_one" value="<%= t :motto_one %>" type="hidden"/>
+<input id="motto_two" value="<%= t :motto_two %>" type="hidden"/>
+<script>$(function(){ $("#motto").typed({ strings: [document.getElementById('motto_one').value, document.getElementById('motto_two').value] }); }); </script>
 
 <div class="container">
-  <div id="name">Renny Ren</div>
+  <div id="name"><%= t(:renny_ren) %></div>
   <div class="typedjs"><p id="motto"></p></div>
 </div>
