@@ -1,23 +1,8 @@
-<%= link_to "new article", new_article_path %>
+<input id="motto_one" value="<%= t :motto_one %>" type="hidden"/>
+<input id="motto_two" value="<%= t :motto_two %>" type="hidden"/>
+<script>$(function(){ $("#motto").typed({ strings: [document.getElementById('motto_one').value, document.getElementById('motto_two').value] }); }); </script>
 
-<h1>显示文章</h1>
- 
-<table>
-  <tr>
-    <th>标题</th>
-    <th>内容</th>
-  </tr>
- 
-  <% @articles.each do |article| %>
-    <tr>
-      <td><%= article.title %></td>
-      <td><%= article.content %></td>
-      <td><%= link_to 'show', article_path(article) %></td>
-      <td><%= link_to 'edit', edit_article_path(article) %></td>
-      <td><%= link_to 'destroy', article_path(article), method: :delete, data: { confirm: "are you sure?"} %></td>
-    </tr>
-  <% end %>
-</table>
-
-<h1>Hello, Rails!</h1>
-<%= link_to "My Blog", controller => 'articles' %>
+<div class="container">
+  <div id="name"><%= t(:renny_ren) %></div>
+  <div class="typedjs"><p id="motto"></p></div>
+</div>

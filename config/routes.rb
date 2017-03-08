@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   scope "(:locale)", locale: /en|ch/ do
-    root 'articles#index'
+    root 'home#index', as: 'home'
     resources :articles do
       resources :comments
     end

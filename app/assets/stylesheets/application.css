@@ -57,6 +57,12 @@ body{
   word-spacing: 1.2em;
 }
 
+#i18n{
+  text-align: right;
+  margin-right: 1%;
+  margin-top: -1.7em;
+}
+
 .contact{
   word-spacing: 0.6em;
   text-align: center;

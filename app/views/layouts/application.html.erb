@@ -13,10 +13,15 @@
       <div id="avatar"><%= link_to image_tag('avatar.png'), articles_path %></div>
       <div class="nav">
         <div id="link">
-          <%= link_to 'Home', articles_path %>
-          <%= link_to 'Archive', archives_path %>
-          <%= link_to 'Tag', tags_path %>
-          <%= link_to 'About', about_index_path, method: :get %>
+          <%= link_to t(:home), home_path %>
+          <%= link_to t(:archive), archives_path %>
+          <%= link_to t(:tag), tags_path %>
+          <%= link_to t(:about), about_index_path, method: :get %>
+        </div>
+        <div id="i18n">
+          <%= form_tag(home_path, method: :get) do %>
+            <%= select_tag 'set_locale', options_for_select(LANGUAGES, I18n.locale), onchange: 'this.form.submit()' %>
+          <% end %>
         </div>
       </div>
     </div>
