@@ -1,0 +1,368 @@
+/* line 5, /Users/junhongren/Allen/renny_ren/app/assets/stylesheets/about.scss */
+.about_content {
+  padding-top: 5em;
+  margin-left: 20%;
+  min-height: 1800px;
+  position: relative;
+}
+/* line 10, /Users/junhongren/Allen/renny_ren/app/assets/stylesheets/about.scss */
+.about_content h2 {
+  width: 10%;
+  border-bottom: groove 1px chocolate;
+  padding-top: 1em;
+}
+
+/* line 17, /Users/junhongren/Allen/renny_ren/app/assets/stylesheets/about.scss */
+.photo {
+  margin-top: 5%;
+  margin-left: -20%;
+  width: 100%;
+}
+
+/* line 23, /Users/junhongren/Allen/renny_ren/app/assets/stylesheets/about.scss */
+.jR3DCarouselGallery {
+  position: absolute;
+  padding-top: 8.2em;
+  margin-left: 3em;
+}
+
+/* line 29, /Users/junhongren/Allen/renny_ren/app/assets/stylesheets/about.scss */
+.piano_video {
+  margin-left: 56%;
+}
+@charset "UTF-8";
+/* line 5, /Users/junhongren/Allen/renny_ren/app/assets/stylesheets/archives.scss */
+.title {
+  margin: 15px 100px 15px 4.3em;
+  padding-bottom: 5px;
+  font-family: 黑体;
+  font-size: 1.5em;
+  border-bottom: groove 1px blue;
+}
+
+/* line 13, /Users/junhongren/Allen/renny_ren/app/assets/stylesheets/archives.scss */
+.title a:hover {
+  color: blue;
+}
+
+/* line 17, /Users/junhongren/Allen/renny_ren/app/assets/stylesheets/archives.scss */
+.y_m {
+  padding-top: 1em;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+/* line 23, /Users/junhongren/Allen/renny_ren/app/assets/stylesheets/archives.scss */
+.date {
+  text-align: right;
+  margin-right: 20px;
+  margin-top: -34px;
+}
+
+/* line 29, /Users/junhongren/Allen/renny_ren/app/assets/stylesheets/archives.scss */
+.archives_content a {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 34, /Users/junhongren/Allen/renny_ren/app/assets/stylesheets/archives.scss */
+.archives_content {
+  min-height: 800px;
+  padding: 5%;
+  margin: 0 15%;
+  position: relative;
+  border: solid 1px white;
+  box-shadow: 1px 8px 5px #888888;
+}
+
+/* line 43, /Users/junhongren/Allen/renny_ren/app/assets/stylesheets/archives.scss */
+.flameSVG {
+  width: 300px;
+  height: 400px;
+  margin-left: 75%;
+  margin-top: -15%;
+  position: absolute;
+}
+
+/* line 52, /Users/junhongren/Allen/renny_ren/app/assets/stylesheets/archives.scss */
+.flameContainer {
+  cursor: pointer;
+}
+@charset "UTF-8";
+@media only screen and (max-device-width: 400px) {
+  /* line 7, /Users/junhongren/Allen/renny_ren/app/assets/stylesheets/articles.scss */
+  .article_container {
+    margin: 0 2% !important;
+  }
+}
+/* line 12, /Users/junhongren/Allen/renny_ren/app/assets/stylesheets/articles.scss */
+.article_container {
+  min-height: 800px;
+  padding: 5%;
+  margin: 0 15%;
+}
+
+/* line 18, /Users/junhongren/Allen/renny_ren/app/assets/stylesheets/articles.scss */
+#title {
+  padding-top: 30px;
+  padding-bottom: 15px;
+  margin: 0 5em;
+  text-align: center;
+  font-family: 黑体;
+  font-size: 1.5em;
+  border-bottom: groove 1px blue;
+}
+
+/* line 28, /Users/junhongren/Allen/renny_ren/app/assets/stylesheets/articles.scss */
+#date {
+  padding-top: 10px;
+  text-align: right;
+}
+
+/* line 33, /Users/junhongren/Allen/renny_ren/app/assets/stylesheets/articles.scss */
+#content {
+  padding: 10px 35px;
+  margin: 30px 0;
+  box-shadow: 10px 8px 5px #888888;
+  border-top: outset 4px white;
+  border-left: outset 4px white;
+  border-radius: 2em;
+  font-size: 1rem;
+  font-family: "Lucida Sans", "Lucida Grande", Verdana, Arial, sans-serif;
+  /*h2 {
+    border-bottom: groove 1px blue;
+    padding-bottom: 15px;
+  }*/
+}
+
+/* line 48, /Users/junhongren/Allen/renny_ren/app/assets/stylesheets/articles.scss */
+#content a {
+  text-decoration: none;
+  color: blue;
+}
+
+/* line 53, /Users/junhongren/Allen/renny_ren/app/assets/stylesheets/articles.scss */
+code {
+  display: inline-block;
+  font-size: 16px !important;
+  background-color: #f5f5f5 !important;
+  border: 0px;
+  color: #444 !important;
+  padding: 1px 4px !important;
+  margin: 2px;
+  border-radius: 3px;
+  word-break: break-all;
+  line-height: 20px;
+}
+
+/* line 66, /Users/junhongren/Allen/renny_ren/app/assets/stylesheets/articles.scss */
+#SOHUCS {
+  position: relative;
+  z-index: 1;
+}
+
+@media only screen and (min-width: 1800px) {
+  /* line 75, /Users/junhongren/Allen/renny_ren/app/assets/stylesheets/articles.scss */
+  #motto {
+    font-size: 28px !important;
+  }
+
+  /* line 79, /Users/junhongren/Allen/renny_ren/app/assets/stylesheets/articles.scss */
+  #name {
+    font-size: 6em !important;
+    padding-top: 3em !important;
+  }
+}
+/* line 85, /Users/junhongren/Allen/renny_ren/app/assets/stylesheets/articles.scss */
+#name {
+  font-family: "Rage Italic LET", "华文行楷", "Brush Script MT", "Highlight LET", "Freestyle Script", "SignPainter", "Chalkboard", "Ruach LET";
+  text-align: center;
+  font-size: 4em;
+  padding-top: 4em;
+}
+
+/* line 92, /Users/junhongren/Allen/renny_ren/app/assets/stylesheets/articles.scss */
+#motto {
+  display: inline;
+  font-size: 20px;
+  font-family: "楷体", "宋体", "文泉驿等宽微米黑";
+}
+
+/* line 98, /Users/junhongren/Allen/renny_ren/app/assets/stylesheets/articles.scss */
+.container {
+  min-height: 700px;
+}
+
+/* line 105, /Users/junhongren/Allen/renny_ren/app/assets/stylesheets/articles.scss */
+.typedjs {
+  padding: 2em;
+  text-align: center;
+}
+
+/* line 110, /Users/junhongren/Allen/renny_ren/app/assets/stylesheets/articles.scss */
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* line 5, /Users/junhongren/Allen/renny_ren/app/assets/stylesheets/sessions.scss */
+.sessions_container {
+  position: relative;
+  padding-top: 200px;
+  text-align: center;
+}
+@charset "UTF-8";
+/* line 5, /Users/junhongren/Allen/renny_ren/app/assets/stylesheets/tags.scss */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 9, /Users/junhongren/Allen/renny_ren/app/assets/stylesheets/tags.scss */
+a:hover {
+  color: orange;
+}
+
+/* line 13, /Users/junhongren/Allen/renny_ren/app/assets/stylesheets/tags.scss */
+.tags_content {
+  min-height: 800px;
+  padding: 5%;
+  margin: 0 15%;
+  position: relative;
+  border: solid 1px white;
+  box-shadow: 1px 8px 5px #888888;
+}
+
+/* line 22, /Users/junhongren/Allen/renny_ren/app/assets/stylesheets/tags.scss */
+.show_tag {
+  /* 展示的tag*/
+  border: solid 2px lightblue;
+  box-shadow: 1px 2px 5px lightblue;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 8px;
+}
+
+/* line 30, /Users/junhongren/Allen/renny_ren/app/assets/stylesheets/tags.scss */
+.tag {
+  /* 编辑时待选的tag*/
+  border: dashed 1px grey;
+  padding: 5px;
+  margin: 8px;
+  cursor: pointer;
+}
+
+/* line 37, /Users/junhongren/Allen/renny_ren/app/assets/stylesheets/tags.scss */
+.selected_tag {
+  /* 已选择的tag*/
+  border: solid 2px orange;
+  padding: 5px;
+  margin: 8px;
+  cursor: pointer;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+
+body{
+  margin: 0; 
+  padding: 0;
+  background-color: aliceblue;
+}
+
+.banner{
+  height: 3em;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  background-color: #0D1B1E;
+  box-shadow: 10px 5px 5px #888888;
+}
+
+.banner a{
+  color: white;
+  text-decoration: none;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.banner a:hover{
+  color: red;
+}
+
+#avatar{
+  text-align: left;
+  margin-left: 10em;
+  position: absolute;
+}
+
+#link{
+  font-family: "黑体", "Lucida Sans", "Lucida Grande", Verdana, Arial, sans-serif;
+  font-size: 1.5em;
+  padding-top: 0.7em;
+  text-align: center;
+  word-spacing: 1.2em;
+}
+
+#i18n{
+  text-align: right;
+  margin-right: 1%;
+  margin-top: -1.7em;
+}
+
+.contact{
+  word-spacing: 0.6em;
+  text-align: center;
+  padding-top: 100px;
+}
