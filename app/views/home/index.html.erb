@@ -1,6 +1,12 @@
 <input id="motto_one" value="<%= t :motto_one %>" type="hidden"/>
 <input id="motto_two" value="<%= t :motto_two %>" type="hidden"/>
-<script>$(function(){ $("#motto").typed({ strings: [document.getElementById('motto_one').value, document.getElementById('motto_two').value] }); }); </script>
+<input id="type_speed" value="<%= t :type_speed %>" type="hidden"/>
+<script>
+$(function(){ $("#motto").typed({ 
+  strings: [document.getElementById('motto_one').value, document.getElementById('motto_two').value], 
+  typeSpeed: parseInt(document.getElementById('type_speed').value)
+}); }); 
+</script>
 
 <div class="container">
   <div id="name"><%= t(:renny_ren) %></div>
