@@ -70,37 +70,6 @@ code{
 // ------show------
 
 
-// ------index------
-@media only screen and (min-width: 1800px){
-  #motto{
-    font-size: 28px !important;
-  }
-
-  #name{
-    font-size: 6em !important;
-    padding-top: 3em !important;
-  }
-}
-
-#name{
-  font-family: "Rage Italic LET", "华文行楷", "Brush Script MT", "Highlight LET", "Freestyle Script", "SignPainter", "Chalkboard", "Ruach LET";
-  text-align: center;
-  font-size: 4em;
-  padding-top: 4em;
-}
-
-#motto{
-  display: inline;
-  font-size: 20px;
-  font-family: "楷体", "宋体", "文泉驿等宽微米黑";
-}
-
-.container{
-  min-height: 700px;
-}
-// ------index------
-
-
 // ------typed.js-----
 .typedjs{
   padding: 2em;
