@@ -20,8 +20,6 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  title: "Allen's Blog"
-
   type_speed: 100
   renny_ren: "Renny Ren"
   motto_one: "Stay Hungry   Stay Foolish"
