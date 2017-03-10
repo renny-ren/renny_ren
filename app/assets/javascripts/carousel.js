@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  var slides = [{src: '/assets/basketball.jpg'}, {src: '/assets/basketball2.jpg'}, {src: '/assets/dormitory.jpg'}, {src: '/assets/dormitory2.jpg'}, {src: '/assets/rayallen.jpg'}]
+  var slides = [{src: '/basketball.jpg'}, {src: '/basketball2.jpg'}, {src: '/dormitory.jpg'}, {src: '/dormitory2.jpg'}, {src: '/rayallen.jpg'}]
   var jR3DCarousel;
   var carouselProps =  {
             width: 502,         /* largest allowed width */
