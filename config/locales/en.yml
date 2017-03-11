@@ -20,10 +20,10 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  type_speed: 100
+  type_speed: 69
   renny_ren: "Renny Ren"
-  motto_one: "Stay Hungry   Stay Foolish"
-  motto_two: "This guy was researching for how to put on weight, many years later, this guy becoming thinner and thinner."
+  motto_one: "Stay Hungry  Stay Foolish"
+  motto_two: "This guy was researching for how to put on weight <br/> many years later <br/> this guy becoming thinner and thinner."
   
   home: "Home"
   archive: "Archive"

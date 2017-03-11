@@ -2,11 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-a{
+.tags_content a{
   text-decoration: none; 
   color: black;
 }
-a:hover{
+.tags_content a:hover{
   color: orange;
 }
 
