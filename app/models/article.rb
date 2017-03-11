@@ -6,7 +6,7 @@ class Article < ApplicationRecord
   has_many :tags, dependent: :destroy
 
   def self.year_month
-    Time.now.strftime('%Y-%m') 
+    Time.now.strftime('%Y-%m')
   end
 
   def self.find_article_by_tag(tag)

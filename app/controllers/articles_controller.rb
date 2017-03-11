@@ -15,7 +15,7 @@ class ArticlesController < ApplicationController
 
   def create
     content = Article.to_html(article_params[:content_md])
-    Article.create!(title: article_params[:title], content: content, content_md: article_params[:content_md], 
+    Article.create!(title: article_params[:title], content: content, content_md: article_params[:content_md],
                     date: Article.year_month, tag: article_params[:tag])
     redirect_to articles_path
   end
@@ -39,7 +39,7 @@ class ArticlesController < ApplicationController
     else
       render 'edit'
     end
-  end  
+  end
 
   def destroy
     @article = Article.find(params[:id])
@@ -59,7 +59,7 @@ class ArticlesController < ApplicationController
   end
 
   def format_array(string)
-    arr = string.split("^^")
+    arr = string.split('^^')
     arr.shift
     arr
   end
