@@ -9,7 +9,7 @@
 
   <div style="margin-top: 20px; margin-bottom: 50px;">
     <% @tags.each do |tag| %>
-      <span class="show_tag"><%= link_to tag.tag_name, tag_path(tag) %></span>
+      <span class="show_tag_index"><%= link_to tag.tag_name, tag_path(tag) %></span>
       <%= link_to "Delete", tag_path(tag), method: :delete, data: { confirm: "sure to delete?" } if session[:admin] %>
     <% end %>
   </div>

@@ -5,13 +5,33 @@
 
 // ------index------
 @media only screen and (min-width: 1800px){
-  #motto{
-    font-size: 28px !important;
-  }
-
   #name{
     font-size: 6em !important;
     padding-top: 3em !important;
+  }
+
+  #motto{
+    font-size: 28px !important;
+  }
+}
+
+@media only screen and (max-device-width: 400px){
+  #name{
+    font-size: 6em !important;
+    padding-top: 4em !important;
+  }
+
+  #motto{
+    font-size: 28px !important;
+    position: relative;
+  }
+
+  .typedjs{
+    margin-top: 1em;
+  }
+
+  .container{
+    min-height: 1180px !important;
   }
 }
 

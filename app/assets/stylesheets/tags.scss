@@ -6,15 +6,14 @@
   text-decoration: none; 
   color: black;
 }
-.tags_content a:hover{
-  color: orange;
-}
+
+.tags_content a:hover{ color: orange; }
+.archives_content a:hover{ color: orange; }
 
 .tags_content{
   min-height: 800px;
-  padding: 5%;
+  padding: 5% 10%;
   margin: 0 15%;
-  position: relative;
   border: solid 1px white;
   box-shadow: 1px 8px 5px #888888;
 }
@@ -39,4 +38,27 @@
   padding: 5px;
   margin: 8px;
   cursor: pointer;
+}
+
+.show_tag_index{      /* 在标签的index页面展示的tag*/
+    border: solid 2px lightblue;
+    box-shadow: 1px 2px 5px lightblue;
+    border-radius: 10px;
+    padding: 6px;
+    margin: 8px;
+    font-size: 1.5em;
+}
+
+@media only screen and (max-device-width: 400px){
+  .tags_content{
+    min-height: 1180px;
+    padding: 10%;
+    margin: 0 5%;
+  }
+
+  .show_tag_index{      /* 展示的tag*/
+    border-radius: 20px;
+    margin: 20px;
+    font-size: 3em;
+  }
 }

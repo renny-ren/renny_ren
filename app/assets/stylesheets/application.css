@@ -44,8 +44,7 @@ body{
 }
 
 #avatar{
-  text-align: left;
-  margin-left: 10em;
+  margin-left: 8em;
   position: absolute;
 }
 
@@ -67,4 +66,43 @@ body{
   word-spacing: 0.6em;
   text-align: center;
   padding-top: 100px;
+}
+
+@media only screen and (max-device-width: 400px){
+  .banner{
+    height: 5em !important;
+  }
+
+  #avatar{
+    margin-left: 2.5em !important;
+    margin-top: 1em;
+  }
+
+  #avatar img{
+    height: 70px;
+    width: 60px;
+  }
+
+  #link{
+    font-size: 3em !important;
+    padding-top: 0.4em !important;
+    word-spacing: 0.5em !important;
+  }
+
+  #i18n{
+    margin-right: 2%;
+    margin-top: -3.2em;
+  }
+
+  #set_locale{
+    height: 40px;
+    width: 3em;
+    font-size: 2em;
+  }
+
+  .contact{ word-spacing: 1em; }
+  .contact img{
+    height: 100px;
+    width: 100px;
+  }
 }

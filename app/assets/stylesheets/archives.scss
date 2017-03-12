@@ -2,16 +2,30 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+.archives_content{
+  min-height: 800px;
+  padding: 5%;
+  margin: 0 15%;
+  border: solid 1px white;
+  box-shadow: 1px 8px 5px #888888;
+}
+
+.archives_content a{
+  text-decoration: none;
+  color: black;
+}
+
 .title{
   margin: 15px 100px 15px 4.3em;
   padding-bottom: 5px;
   font-family: 黑体;
   font-size: 1.5em;
-  border-bottom: groove 1px blue;
+  border-bottom: dashed 1px blue;
 }
 
 .title a:hover{
-  color: blue;
+  color: blue !important;
 }
 
 .y_m{
@@ -26,29 +40,21 @@
   margin-top: -34px;
 }
 
-.archives_content a{
-  text-decoration: none;
-  color: black;
-}
+@media only screen and (max-device-width: 400px){
+  .archives_content{
+    min-height: 1180px;
+    padding: 10% 5% 5% 5%;
+    margin: 0 5%;
+  }
 
-.archives_content{
-  min-height: 800px;
-  padding: 5%;
-  margin: 0 15%;
-  position: relative;
-  border: solid 1px white;
-  box-shadow: 1px 8px 5px #888888;
-}
+  .title{
+    margin: 15px 10px 15px 3.1em;
+    font-size: 2em;
+  }
 
-.flameSVG{
-  width: 300px;
-  height: 400px;
-  margin-left: 75%;
-  margin-top: -15%;
-  
-  position: absolute;
-}
-
-.flameContainer{
-  cursor: pointer;
+  .date{
+    margin-right: 5px;
+    margin-top: -40px;
+    font-size: 1.3em;
+  }
 }

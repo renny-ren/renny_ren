@@ -5,31 +5,14 @@
 .about_content{
   padding-top: 5em;
   margin-left: 20%;
-  min-height: 1800px;
-  position: relative;
+  min-height: 1500px;
   font-family: "Chalkboard", "Comic Sans MS", "MV Boli", "黑体", "楷体", "宋体", "文泉驿等宽微米黑";
-  h2{
-    width: 20%;
-    border-bottom: groove 1px chocolate;
-    padding-top: 1em;
-  }
-}
-
-@media only screen and (min-width: 1800px){
-  .about_content{
-    font-size: 1.2em;
-  }
-
-  .jR3DCarouselGallery{
-  padding-top: 6.8em;
-  margin-left: 2.5em;
-  }
+  h2{ padding-top: 1em; }
 }
 
 .photo{
   margin-top: 5%;
-  margin-left: -20%;
-  width: 100%;
+  margin-left: -10%;
 }
 
 .jR3DCarouselGallery{
@@ -38,4 +21,43 @@
   margin-left: 3em;
 }
 
-.piano_video{  margin-left: 56%; }
+.piano_video{  margin-left: 50%; margin-top: -20%; }
+
+@media only screen and (min-width: 1800px){
+  .about_content{
+    font-size: 1.2em;
+  }
+
+  .jR3DCarouselGallery{
+    padding-top: 6.8em;
+    margin-left: 2.5em;
+  }
+}
+
+@media only screen and (max-device-width: 400px){
+  .bk{ display: none; }
+
+  .about_content{
+    border: solid 1px white;
+    box-shadow: 1px 8px 5px #888888;
+    padding: 10% 5%;
+    margin: 0 5%;
+    font-size: 0.6em;
+  }
+
+  .photo{
+    margin-top: 5%;
+    margin-left: 6%;
+  }
+
+  .jR3DCarouselGallery{
+    position: absolute;
+    padding-top: 13.7em;
+    margin-left: 5em;
+  }
+
+  .piano_video{
+    margin-top: 30em;
+    margin-left: 5em;
+  }
+}
