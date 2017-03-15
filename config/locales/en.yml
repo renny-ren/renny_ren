@@ -29,3 +29,6 @@ en:
   archive: "Archive"
   tag: "Tag"
   about: "About"
+
+  created: "created_at: "
+  updated: " updated_at: "

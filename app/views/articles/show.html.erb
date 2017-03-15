@@ -1,8 +1,8 @@
 <div class="article_container">
 	<div id="title"><%= @article.title %></div>
 	<div id="date">
-		<%= "created_at: #{@created_date}　" %>
-		<%= "updated_at: #{@updated_date}" if @updated_date != @created_date %>		
+		<%= t(:created) + "#{@created_date}" %>
+		<%= t(:updated) + "#{@updated_date}" if @updated_date != @created_date %>		
 	</div>
   <div style="margin-top: -17px;">
 		<% @tag_arr.each do |tag| %>
@@ -10,6 +10,9 @@
 		<% end %>
 	</div>
 	<div id="content"><%== @article.content %></div>
+	<div style="text-align: center;">
+		<input type="button" value="👍赞" style="height: 26px; font-size: 15px; cursor: pointer;" onclick="javascript:alert('这家伙很懒，点赞功能还没开发。');">
+	</div>
 
 	<!--高速版-->
 	<div id="SOHUCS"></div>

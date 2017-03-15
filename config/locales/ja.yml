@@ -8,3 +8,6 @@ ja:
   archive: "文章"
   tag: "ラベル"
   about: "について"
+
+  created: "創建： "
+  updated: " 更新： "

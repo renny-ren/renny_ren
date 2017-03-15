@@ -8,3 +8,6 @@ ch:
   archive: "文章"
   tag: "标签"
   about: "关于"
+
+  created: "创建于： "
+  updated: " 最后更新： "

@@ -8,7 +8,6 @@
 }
 
 .tags_content a:hover{ color: orange; }
-.archives_content a:hover{ color: orange; }
 
 .tags_content{
   min-height: 800px;
@@ -25,6 +24,13 @@
   padding: 5px;
   margin: 8px;
 }
+
+.show_tag a{ 
+  text-decoration: none; 
+  color: black; 
+}
+
+.show_tag a:hover { color: orange; }
 
 .tag{          /* 编辑时待选的tag*/
   border: dashed 1px grey;
