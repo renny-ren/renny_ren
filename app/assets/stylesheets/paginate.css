@@ -2,7 +2,8 @@
   text-align: center;
   /* padding: 0.5em; */
   padding-top: 4em;
-  cursor: default; 
+  cursor: default;
+  font-family: "Chalkboard", "Comic Sans MS", "MV Boli";
 }
 
 .flickr_pagination a, .flickr_pagination span, .flickr_pagination em { padding: 0.2em 0.5em; }
