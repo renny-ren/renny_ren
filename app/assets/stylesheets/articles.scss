@@ -4,9 +4,7 @@
 
 // ------show------
 @media only screen and (max-device-width: 400px){
-  .article_container{
-    margin: 0 2% !important;
-  }
+  .article_container{ margin: 0 2% !important; }
 }
 
 .article_container{
@@ -20,7 +18,7 @@
   padding-bottom: 15px;
   margin: 0 5em;
   text-align: center;
-  font-family: 黑体;
+  font-family: '微软雅黑';
   font-size: 1.5em;
   border-bottom: groove 1px blue;
 }

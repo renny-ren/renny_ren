@@ -68,10 +68,15 @@ body{
   padding-top: 100px;
 }
 
-@media only screen and (max-device-width: 400px){
-  .banner{
-    height: 5em !important;
+@media only screen and (min-width: 1800px){
+  #link{
+    font-size: 1.6em;
+    padding-top: 0.5em;
   }
+}
+
+@media only screen and (max-device-width: 400px){
+  .banner{ height: 5em !important; }
 
   #avatar{
     margin-left: 2.5em !important;
