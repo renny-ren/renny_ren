@@ -2,20 +2,22 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.tags_content a{
+.tags_index a, .tags_show a{
   text-decoration: none; 
   color: black;
 }
 
-.tags_content a:hover{ color: orange; }
+.tags_index a:hover, .tags_show a:hover{ color: orange; }
 
-.tags_content{
+.tags_index, .tags_show{
   min-height: 800px;
-  padding: 5% 10%;
   margin: 0 15%;
   border: solid 1px white;
   box-shadow: 1px 8px 5px #888888;
 }
+
+.tags_index { padding: 5% 10%; }
+.tags_show { padding: 5% 3%; }
 
 .show_tag{      /* 展示的tag*/
   border: solid 2px lightblue;
