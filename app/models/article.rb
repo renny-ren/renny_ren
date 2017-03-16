@@ -10,6 +10,6 @@ class Article < ApplicationRecord
   end
 
   def self.find_article_by_tag(tag)
-    where('tag like ?', '%' + tag.tag_name)
+    where('tag like ?', '%' + tag.tag_name + '%')
   end
 end
