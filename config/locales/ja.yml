@@ -10,7 +10,7 @@ ja:
   about: "について"
 
   created: "創建： "
-  updated: " 更新： "
+  updated: "更新： "
 
   will_paginate:
     next_label: "次へ"

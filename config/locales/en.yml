@@ -31,7 +31,7 @@ en:
   about: "About"
 
   created: "created_at: "
-  updated: " updated_at: "
+  updated: "updated_at: "
 
   will_paginate:
     next_label: "next page"

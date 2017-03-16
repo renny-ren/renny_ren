@@ -10,7 +10,7 @@ ch:
   about: "关于"
 
   created: "创建于： "
-  updated: " 最后更新： "
+  updated: "最后更新： "
 
   will_paginate:
     next_label: "下一页"
