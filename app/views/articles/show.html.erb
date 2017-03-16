@@ -25,5 +25,5 @@
 	</script>
 
 	<%= link_to "编辑", edit_article_path(@article) if session[:admin] %>
-	<%= link_to "返回", archives_path %>
+	<%= button_to "返回", archives_path, method: :get, style: "height: 26px; width: 60px; font-size: 1em; cursor: pointer;" %>
 </div>
