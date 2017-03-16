@@ -10,7 +10,9 @@
       <%= f.text_field :title, size: "50", placeholder: "title", autocomplete: "off", style: 'height: 40px; border: 0; background:none; font-family: 黑体; font-size: 1.5em;' %>
     </div>
    
-   <div id="content"><%= f.text_area :content_md, size: "100", placeholder: "content_md", style: 'height: 1000px; background: none;' %></div>
+   <div id="content">
+     <%= f.text_area :content_md, size: "92", placeholder: "content_md", style: 'height: 1000px; background: none; border: none; font-size: 1rem;' %>
+   </div>
    
    <%= f.submit "提交", style: 'height: 30px; width: 50px; margin-left: 50%;' %>
   <% end %>
