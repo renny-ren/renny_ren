@@ -60,6 +60,12 @@ code{
   border-radius: 3px;
   word-break: break-all;
   line-height: 20px;
+  overflow: auto;
+  max-width: 100%;
+}
+
+pre{
+  white-space: pre-wrap;
 }
 
 #SOHUCS{

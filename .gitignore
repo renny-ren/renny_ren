@@ -33,6 +33,7 @@ config/services.yml
 config/services.local.yml
 log/development.log
 sessions_controller.rb
+articles_controller.rb
 public/assets
 
 !public/404.html

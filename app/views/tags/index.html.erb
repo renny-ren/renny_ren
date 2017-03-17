@@ -2,7 +2,7 @@
   <% if session[:admin] %>
     <%= form_tag(tags_path, action: "create") do %>
       <%= label_tag :tag_nmae, "Tag:" %>
-      <%= text_field_tag :tag_name, autocomplete: "off" %>
+      <%= text_field_tag :tag_name, nil, autocomplete: 'off' %>
       <%= submit_tag "Create" %>
     <% end %>
   <% end %>
