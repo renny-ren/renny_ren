@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-  http_basic_authenticate_with name: 'allen', password: '123', except: [:index, :show]
+  http_basic_authenticate_with name: 'allen', password: 'password', except: [:index, :show]
   before_action :validate_admin, except: [:index, :show]
 
   def index
