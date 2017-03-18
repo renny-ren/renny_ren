@@ -1,5 +1,6 @@
 class ArticlesController < ApplicationController
   http_basic_authenticate_with name: 'allen', password: '123', except: [:index, :show]
+  before_action :validate_admin, except: [:index, :show]
 
   def index
     # filter = HTML::Pipeline::SyntaxHighlightFilter.new("<p><code>ruby asdlkfj</code></p>")
@@ -62,5 +63,13 @@ class ArticlesController < ApplicationController
     arr = string.split('^^')
     arr.shift
     arr
+  end
+
+  def validate_admin
+    if session[:admin]
+      "pass"
+    else
+      render plain: '401 Unauthorized', status: 401
+    end
   end
 end
