@@ -59,15 +59,42 @@
 }
 
 @media only screen and (max-device-width: 400px){
-  .tags_content{
+  .tags_index, .tags_show{
     min-height: 1180px;
-    padding: 10%;
+    padding: 10% 2% 5% 2%;
     margin: 0 5%;
   }
 
   .show_tag_index{      /* 展示的tag*/
     border-radius: 20px;
-    margin: 20px;
+    margin: 50px 10px 20px 10px;
     font-size: 3em;
+  }
+
+  .show_tag{      /* 展示的tag*/
+    margin-top: 40px !important;
+    margin-right: 20px !important;
+    padding: 12px 5px 6px 5px;
+  }
+
+  .mobile_tag{
+    margin-left: 50px !important;
+    font-size: 1.5em !important;
+    width: 82% !important;
+  }
+
+  .mobile_tag_show{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 0.7em !important;
+  }
+
+  .title_in_tag_show{
+    font-size: 3em !important;
+  }
+
+  .date_in_tag_show{
+    font-size: 2em !important;
+    margin-top: -50px !important;
   }
 }

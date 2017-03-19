@@ -4,7 +4,7 @@
 		<%= t(:created) + "#{@created_date}　　" %>
 		<%= t(:updated) + "#{@updated_date}" if @updated_date != @created_date %>		
 	</div>
-  <div style="margin-top: -17px;">
+  <div class="mobile_tag_show", style="margin-top: -17px;">
 		<% @tag_arr.each do |tag| %>
 			<span class="show_tag"><%= link_to tag, tag_path(tag_name: tag) %></span>
 		<% end %>

@@ -4,15 +4,16 @@
     <div class="y_m"><%= article.date if article.date != last_date %></div>
     <% last_date = article.date %>
 
+    <div class="title"><%= link_to article.title, article_path(article), method: :get %></div>
+
     <% tag_arr = article.tag.split('^^') %>
     <% tag_arr.shift %>
-    <div style="margin-left: -35px; margin-top: 18px; width: 170px; position: absolute; font-size: 0.8em;">
+    <div class="mobile_tag" style="margin-left: -35px; margin-top: -50px; width: 170px; position: absolute; font-size: 0.8em;">
       <% tag_arr.each do |tag| %>
-        <span class="show_tag" style="margin: 2px; padding: 0 3px; margin-top: 2px; display: inline-block; float: right;"><%= link_to tag, tag_path(tag) %></span>
+        <span class="show_tag" style="margin: 2px; padding: 0 3px; display: inline-block; float: right;"><%= link_to tag, tag_path(tag) %></span>
       <% end %>
     </div>
 
-    <div class="title"><%= link_to article.title, article_path(article), method: :get %></div>
     <div class="date"><%= article.created_at.to_date %></div>
 
     <% if session[:admin] %>
