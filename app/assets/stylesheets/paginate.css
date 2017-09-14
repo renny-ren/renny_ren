@@ -28,13 +28,7 @@
   border-radius: 100%;
 }
 
-.flickr_pagination .page_info {
-  color: #aaaaaa;
-  padding-top: 0.8em; 
-}
-
 .flickr_pagination .previous_page, .flickr_pagination .next_page { border-width: 2px; }
 
 .flickr_pagination .previous_page { margin-right: 1em; }
-
 .flickr_pagination .next_page { margin-left: 1em; }
