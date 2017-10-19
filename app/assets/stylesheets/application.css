@@ -76,38 +76,39 @@ body{
 }
 
 @media only screen and (max-device-width: 400px){
-  .banner{ height: 5em !important; }
+  .banner{ height: 3.5em !important; }
 
   #avatar{
-    margin-left: 2.5em !important;
-    margin-top: 1em;
+    margin-left: 0.5em !important;
+    margin-top: 0.2em;
   }
 
   #avatar img{
-    height: 70px;
-    width: 60px;
+    height: 50px;
+    width: 40px;
   }
 
   #link{
-    font-size: 3em !important;
-    padding-top: 0.4em !important;
+    margin-left: 0.1em;
+    font-size: 1.5em !important;
+    /* padding-top: 0.4em !important; */
     word-spacing: 0.5em !important;
   }
 
   #i18n{
-    margin-right: 2%;
-    margin-top: -3.2em;
+    /* margin-right: 1%; */
+    margin-top: -2em;
   }
 
   #set_locale{
-    height: 40px;
-    width: 3em;
-    font-size: 2em;
+    height: 30px;
+    width: 40px;
+    font-size: 1em;
   }
 
-  .contact{ word-spacing: 1em; }
+  .contact{ word-spacing: 0.5em; }
   .contact img{
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
   }
 }

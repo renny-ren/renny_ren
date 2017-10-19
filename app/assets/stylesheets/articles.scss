@@ -73,25 +73,25 @@ pre{ white-space: pre-wrap; }
   .article_container{ margin: 0 1% !important; }
 
   #title{
-    padding-top: 4.5em;
+    padding-top: 60px;
     margin: 0 1em;
   }
 
   #date{
-    font-size: 0.7em;
+    font-size: 14px;
     text-align: center;
   }
 
   #content{
-    padding: 10px 0;
+    padding: 0;
     font-size: 100% !important;
-    line-height: 4em !important;
+    line-height: 30px !important;
     border: none;
     box-shadow: none;
   }
 
   code{
-    font-size: 2em !important;
+    /* font-size: 2em !important; */
     border-left: solid 5px #a9a9a9;
     margin: 2px !important;
     line-height: 1.8em;
