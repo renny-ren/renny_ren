@@ -8,7 +8,7 @@
 
     <% tag_arr = article.tag.split('^^') %>
     <% tag_arr.shift %>
-    <div class="mobile_tag" style="margin-left: -35px; width: 170px; position: absolute; font-size: 0.8em;">
+    <div class="mobile_tag" style="margin-top: -40px; margin-left: -35px; width: 170px; position: absolute; font-size: 0.8em;">
       <% tag_arr.each do |tag| %>
         <span class="show_tag" style="margin: 2px; padding: 0 3px; display: inline-block; float: right;"><%= link_to tag, tag_path(tag) %></span>
       <% end %>
