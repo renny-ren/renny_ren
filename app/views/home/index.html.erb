@@ -9,6 +9,13 @@ $(function(){ $("#motto").typed({
 </script>
 
 <div class="container">
+  <div class="message">
+    <% form_for @message do |f| -%>
+      <%= f.text_area :body %>
+      <%= f.text_field :author %>
+      <%= f.submit %>
+    <% end -%>
+  </div>
   <div id="name"><%= t(:renny_ren) %></div>
   <div class="typedjs"><p id="motto"></p></div>
 </div>
