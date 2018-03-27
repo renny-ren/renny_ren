@@ -3,6 +3,7 @@ source 'https://gems.ruby-china.org'
 gem 'redcarpet'  # markdown
 gem 'will_paginate'
 gem 'config'
+gem 'font-awesome-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'

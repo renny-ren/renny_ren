@@ -3,6 +3,10 @@ ch:
   renny_ren: "Renny Ren"
   motto_one: "不忘初心 方得始终"
   motto_two: "这哥们天天研究怎么长胖<br/>多年过去后<br/>这哥们越来越瘦"
+  msg_placeholder: 想说点什么呢...
+  msg_author: 尊姓大名(可选)
+  submit: 提交
+  msg_unfold: 留下我的足迹
 
   home: "主页"
   archive: "文章"

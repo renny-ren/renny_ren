@@ -1,0 +1,32 @@
+.msg-panel {
+  border-radius: 10%;
+  background-color: #fff8dc;
+  padding: 15px;
+  position: absolute;
+  overflow: scroll;
+}
+
+#message_body {
+  resize: none;
+  border: none;
+  padding: 5px;
+  height: 100px
+}
+
+#message_author {
+  border: none;
+  padding: 5px;
+}
+
+.msg-submit, .msg-author {
+  margin-top: 6px;
+}
+
+#msg-collapse {
+  margin-top: 9px;
+  margin-left: 8px;
+}
+
+.fa-angle-down {
+  margin-left: 3px;
+}
