@@ -1,0 +1,6 @@
+<% @messages.each do |t| %>
+<div class="msg-item draggable">
+    <div><%= t.body %></div>
+    <% if t.author.present? %><div>　　——<%= t.author %></div><% end %>
+</div>
+<% end %>

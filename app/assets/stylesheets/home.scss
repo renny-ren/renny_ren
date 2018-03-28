@@ -33,12 +33,21 @@
   text-align: center;
   font-size: 4em;
   padding-top: 4em;
+  position: relative;
+  z-index: 2;
+  pointer-events: none;
 }
 
 #motto {
   display: inline;
   font-size: 20px;
   font-family: "Chalkboard", "Comic Sans MS", "MV Boli", "楷体", "宋体", "文泉驿等宽微米黑";
+}
+
+.typedjs {
+  position: relative;
+  z-index: 2;
+  pointer-events: none;
 }
 
 .container { min-height: 700px; padding-top: 50px; }

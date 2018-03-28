@@ -1,4 +1,6 @@
 $ ->
+  deg = 0
   $('#msg-collapse').click () ->
     $('.msg-panel').slideToggle()
-    $('.fa-angle-down').css('transform' : 'rotate(180deg)')
+    deg = (deg + 180) % 360
+    $('.fa-angle-down').css('transform', 'rotate(' + deg + 'deg)')
