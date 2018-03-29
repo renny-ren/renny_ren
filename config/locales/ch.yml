@@ -20,6 +20,9 @@ ch:
     next_label: "下一页"
     previous_label: "上一页"
 
+  format_time: '%Y 年 %-m月 %d日'
+  more: 更多..
+
   datetime:
     distance_in_words:
       about_x_hours:

@@ -39,3 +39,6 @@ en:
   will_paginate:
     next_label: "next page"
     previous_label: "last page"
+
+  format_time: '%m-%d-%Y '
+  more: more..

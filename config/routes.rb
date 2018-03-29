@@ -8,6 +8,7 @@ Rails.application.routes.draw do
     resources :about, :archives, only: :index
     resources :tags, only: [:index, :create, :show, :destroy], param: :tag_name
     resources :messages
+    resources :sentences
   end
 
   resources :sessions, only: [:index, :create]

@@ -1,0 +1,38 @@
+.sentence-container {
+  padding-top: 100px;
+  text-align: center;
+}
+
+.sentence-panel {
+  float: right;
+  border-radius: 8px;
+  background-color: #fffae6;
+  padding: 15px 20px;
+  overflow: scroll;
+  margin-top: 10px;
+  margin-right: 10px;
+  max-width: 900px;
+  max-height: 200px;
+}
+
+#sentence-content {
+  font-family: "Chalkboard", "Comic Sans MS", "微软雅黑", "MV Boli", "黑体", "楷体", "宋体", "文泉驿等宽微米黑";
+}
+
+#sentence-date {
+  font-size: 12px;
+  color: #747474;
+}
+
+#more {
+  margin-top: 4px;
+  float: right;
+  font-size: 10px;
+  a { text-decoration: none; }
+}
+
+#close {
+  float: right;
+  cursor: pointer;
+  color: grey;
+}

@@ -1,25 +1,25 @@
-.about_content{
+.about_content {
   padding-top: 5em;
   margin-left: 20%;
   min-height: 1500px;
   font-family: "Chalkboard", "Comic Sans MS", "微软雅黑", "MV Boli", "黑体", "楷体", "宋体", "文泉驿等宽微米黑";
-  h2{ padding-top: 1em; }
+  h2 { padding-top: 1em; }
 }
 
-.photo{
+.photo {
   margin-top: 5%;
   margin-left: -10%;
 }
 
-.jR3DCarouselGallery{
+.jR3DCarouselGallery {
   position: absolute;
   padding-top: 8.2em;
   margin-left: 3em;
 }
 
-.piano_video{  margin-left: 50%; margin-top: -20%; }
+.piano_video {  margin-left: 50%; margin-top: -20%; }
 
-#wechat{
+#wechat {
   height: 400px;
   width: 450px;
   display: none;
@@ -29,7 +29,7 @@
   z-index: 1002;
 }
 
-#black_overlay{
+#black_overlay {
   display: none;
   position: fixed;
   background-color: black;
@@ -43,19 +43,28 @@
   filter: alpha(opacity=80); 
 }
 
-@media only screen and (min-width: 1800px){
-  .about_content{ font-size: 1.2em; }
+#collapse {
+  border: solid 1px black;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: bold;
+}
 
-  .jR3DCarouselGallery{
+@media only screen and (min-width: 1800px) {
+  .about_content { font-size: 1.2em; }
+
+  .jR3DCarouselGallery {
     padding-top: 6.8em;
     margin-left: 2.5em;
   }
 }
 
-@media only screen and (max-device-width: 400px){
-  .bk{ display: none; }
+@media only screen and (max-device-width: 400px) {
+  .bk { display: none; }
 
-  .about_content{
+  .about_content {
     border: solid 1px white;
     box-shadow: 1px 8px 5px #888888;
     padding: 10% 5%;
@@ -63,7 +72,7 @@
     font-size: 0.6em;
   }
 
-  .photo{
+  .photo {
     margin-left: 6px;
     img{
       width: 80%;
@@ -71,16 +80,16 @@
     }
   } 
 
-  .jR3DCarouselGallery{
+  .jR3DCarouselGallery {
     /* position: relative; */
     padding-top: 9em;
     margin-left: 1em;
   }
 
-  .piano_video{
+  .piano_video {
     margin-top: 100px;
     margin-left: -10px;
-    embed{
+    embed {
       width: 300px;
       height: 300px;
     }
