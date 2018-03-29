@@ -24,10 +24,10 @@
 
   <body>
     <div class="banner">
-      <div id="avatar"><%= link_to image_tag('avatar.png'), home_path %></div>
+      <div id="avatar"><%= link_to image_tag('avatar.png'), home_path, method: :get %></div>
       <div class="nav">
         <div id="link">
-          <%= link_to t(:home), home_path %>
+          <%= link_to t(:home), home_path, method: :get %>
           <%= link_to t(:archive), archives_path %>
           <%= link_to t(:tag), tags_path %>
           <%= link_to t(:about), about_index_path, method: :get %>

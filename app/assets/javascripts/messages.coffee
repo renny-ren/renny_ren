@@ -1,2 +1,2 @@
 $ ->
-  $('.draggable').draggable({ containment: '.container', cursor: 'move' })
+  $('.draggable').draggable({ containment: '.msg-board', cursor: 'move' })

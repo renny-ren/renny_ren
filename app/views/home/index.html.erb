@@ -16,7 +16,7 @@ $(function(){ $("#motto").typed({
     <%= form_for Message.new, remote: true do |f| %>
       <div class="msg-body"><%= f.text_area :body, size: '25', placeholder: t(:msg_placeholder) %></div>
       <div class="msg-author"><%= f.text_field :author, size: '25', placeholder: t(:msg_author) %></div>
-      <div class="msg-submit"><%= f.submit t(:submit), data: { confirm: '本站留言没有删除功能，确认要提交吗' } %></div>
+      <div><%= f.submit t(:submit), data: { confirm: '本站留言没有删除功能，确认要提交吗' }, class: 'msg-submit' %></div>
     <% end %>
   </div>
   <div class="msg-board"><%= render 'message' %></div>

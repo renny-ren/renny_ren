@@ -9,12 +9,13 @@
 }
 
 .msg-item {
-  border-radius: 10%;
-  padding: 15px;
+  border-radius: 5px;
+  padding: 5px 12px;
   position: relative;
   overflow: scroll;
-  margin-left: 8px;
+  margin: 8px 15px;
   float: left;
+  border: dotted 1px #adadad;
 }
 
 #message_body {
@@ -46,4 +47,30 @@
 
 .fa-angle-down {
   margin-left: 3px;
+}
+
+.msg-submit {
+  color: #0e90d2;
+  cursor: pointer;
+  border: solid 1px #ddd;
+  background-color: #fff;
+  padding: 4px 12px;
+}
+
+.msg-board {
+  position: absolute;
+  width: 450px;
+  margin-top: 10px;
+  border-right: dashed 1px gray;
+  min-height: 750px;
+}
+
+.msg-body-show {
+  font-family: "Chalkboard", "Comic Sans MS", "微软雅黑", "MV Boli", "黑体", "楷体", "宋体", "文泉驿等宽微米黑";
+}
+
+.msg-author-show {
+  float: right;
+  color: #747474;
+  font-size: 14px;
 }
