@@ -19,3 +19,40 @@ ch:
   will_paginate:
     next_label: "下一页"
     previous_label: "上一页"
+
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: 大约 1 小时前
+        other: 大约 %{count} 小时前
+      about_x_months:
+        one: 大约一个月前
+        other: 大约 %{count} 个月前
+      about_x_years:
+        one: 大约一年前
+        other: 大约 %{count} 年前
+      almost_x_years:
+        one: 接近一年前
+        other: 接近 %{count} 年前
+      half_a_minute: 半分钟前
+      less_than_x_minutes:
+        one: 刚刚
+        other: 不到 %{count} 分钟前
+      less_than_x_seconds:
+        one: 刚刚
+        other: 刚刚
+      over_x_years:
+        one: 一年多前
+        other: "%{count} 年多以前"
+      x_days:
+        one: 1 天前
+        other: "%{count} 天前"
+      x_minutes:
+        one: 1 分钟前
+        other: "%{count} 分钟前"
+      x_months:
+        one: 一个月前
+        other: "%{count} 个月前"
+      x_seconds:
+        one: 刚刚
+        other: "%{count} 秒前"

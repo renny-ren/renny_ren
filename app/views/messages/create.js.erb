@@ -2,6 +2,7 @@
   $('.msg-board').html("<%= j render 'home/message' %>");
   $('.flash-notice').text("留言成功").css('background', '#bcffbc');
   $('.msg-panel').hide();
+  $('.fa-angle-down').css('transform', 'initial')
   $('.draggable').draggable({ containment: '.container', cursor: 'move' });
 <% else %>
   $('.flash-notice').text("请输入留言内容").css('background', '#FFE6DF');

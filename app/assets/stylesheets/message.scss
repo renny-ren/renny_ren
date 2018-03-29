@@ -63,6 +63,8 @@
   margin-top: 10px;
   border-right: dashed 1px gray;
   min-height: 750px;
+  max-height: 800px;
+  overflow: scroll;
 }
 
 .msg-body-show {
