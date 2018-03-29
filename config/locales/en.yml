@@ -24,7 +24,10 @@ en:
   renny_ren: "Renny Ren"
   motto_one: "Stay Hungry  Stay Foolish"
   motto_two: "This guy was researching for how to put on weight <br/> many years later <br/> this guy becoming thinner and thinner."
-  
+  msg_placeholder: Leave your footstep here...
+  submit: submit
+  msg_unfold: Leave a message
+
   home: "Home"
   archive: "Archive"
   tag: "Tags"

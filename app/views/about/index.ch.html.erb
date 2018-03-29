@@ -1,29 +1,43 @@
 <%= image_tag 'about_background4.jpg', style: "position: fixed; width: 100%; height: 100%; z-index: -1;", class: "bk" %>
 <div class="about_content">
   <h2>关于我</h2>
-
-  <p>&nbsp&nbsp我叫任峻宏 (Allen)， 四川大学锦城学院大三在读学生， OP迷，凯尔特人球迷。
-  <br/>&nbsp&nbsp我想做一枚潇洒的程序员，目标是成为一名优秀的全栈工程师。</p>
+  <ul>
+    <li>&nbsp&nbsp姓名：任峻宏 (Renny Ren)</li>
+    <li>&nbsp&nbsp学校：四川大学锦城学院 大三</li>
+    <li>&nbsp&nbsp专业：电子商务，移动互联网</li>
+    <li>&nbsp&nbsp理想：做一枚潇洒的程序员，成为一名优秀的全栈工程师 :)</li>
+  </ul>
+    <p>&nbsp&nbsp两年 Ruby 开发经验，能够熟练运用 Rails 进行 Web 开发。熟练使用 Git，崇尚开源。能够快速阅读英文资料，用英语进行日常交流。</p>
 
   <h2>技术栈</h2>
 
-  <p>&nbsp&nbsp语言及框架： Pascal, C, C#, Visual Basic, ASP.NET, Ruby, Rails, Sinatra, HTML, CSS, JavaScript, JQuery...</p>
-  <p>&nbsp&nbsp数据库： mysql, sql server, redis</p>
-  <p>&nbsp&nbsp服务器部署： Nginx, Passenger, Puma, Unicorn, Docker, Jenkins</p>
-  <p>&nbsp&nbsp游戏： RPGMaker, Unity3d</p>
+  <p>&nbsp&nbsp语言及框架： 了解 C#, Java, React, Vue, Angular, 熟悉 Visual Basic, C, objective-C, Ruby, Rails, Sinatra, HTML/CSS/JavaScript, JQuery</p>
+  <p>&nbsp&nbsp数据库： mysql, mongodb, sql server, redis</p>
+  <p>&nbsp&nbsp服务器部署： Nginx, Passenger, Puma, Unicorn, Docker</p>
+  <p>&nbsp&nbsp游戏： 熟练使用 RPG Maker, Unity3d 等进行游戏开发</p>
   <p>&nbsp&nbsp应用软件： Office, Flash, PhotoShop, 3dmax, Video Studio...</p>
 
   <h2>工作经历</h2>
 
   <p>&nbsp&nbsp2016.10 - 2017.03</p>
-  <p>&nbsp&nbsp<%= link_to '成都我来啦网格信息技术有限公司', "http://sposter.net/" %></p>
+  <p>&nbsp&nbsp<%= link_to '成都我来啦网格信息技术有限公司', "http://sposter.net/", target: '_blank' %></p>
 
   <p>&nbsp&nbsp2017.05 - 至今</p>
   <p>&nbsp&nbspFreelancer</p>
 
   <h2>兴趣爱好</h2>
-
-  <p>&nbsp&nbsp篮球， 技术， 破解， 音乐， 钢琴， 书法， 魔方</p>
+  <button id="collapse">展开 ▼</button>
+  <div id="hobby" style="display: none;">
+    <ul>
+      <li>篮球，凯尔特人忠实球迷</li>
+      <li>喜欢钻研技术搞事情，对破解等黑客技术感兴趣</li>
+      <li>外语，对各国语言有好奇心</li>
+      <li>音乐发烧友，喜欢钢琴</li>
+      <li>喜欢书法，但发现自己字越写越丑</li>
+      <li>魔方，一直想学 CFOP 但没坚持</li>
+      <li>喜欢海贼王，唯一看的动漫，带给我热血与感动</li>
+    </ul>
+  </div>
 
   <%= render partial: "pic" %>
 

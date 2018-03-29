@@ -4,42 +4,53 @@
 
 
 // ------index------
-@media only screen and (min-width: 1800px){
-  #name{
+@media only screen and (min-width: 1800px) {
+  #name {
     font-size: 5.2em !important;
     padding-top: 3.5em !important;
   }
 
-  #motto{
+  #motto {
     font-size: 28px !important;
   }
 }
 
-@media only screen and (max-device-width: 400px){
-  #name{
+@media only screen and (max-device-width: 400px) {
+  #name {
     font-size: 3em !important;
     padding-top: 3em !important;
   }
 
-  #motto{ font-size: 20px !important; }
+  #motto { font-size: 20px !important; }
 
-  .typedjs{ margin-top: 1em; }
+  .typedjs { margin-top: 1em; }
 
-  .container{ min-height: 280px !important; }
+  .container { min-height: 280px !important; }
 }
 
-#name{
+#name {
   font-family: "华文行楷", "Rage Italic LET", "Brush Script MT", "Highlight LET", "Freestyle Script", "SignPainter", "Chalkboard", "Ruach LET";
   text-align: center;
   font-size: 4em;
   padding-top: 4em;
+  position: relative;
+  z-index: 2;
+  pointer-events: none;
+  margin-left: 310px;
 }
 
-#motto{
+#motto {
   display: inline;
   font-size: 20px;
   font-family: "Chalkboard", "Comic Sans MS", "MV Boli", "楷体", "宋体", "文泉驿等宽微米黑";
 }
 
-.container{ min-height: 700px; }
+.typedjs {
+  position: relative;
+  z-index: 2;
+  pointer-events: none;
+  margin-left: 310px;
+}
+
+.container { min-height: 700px; padding-top: 50px; }
 // ------index------

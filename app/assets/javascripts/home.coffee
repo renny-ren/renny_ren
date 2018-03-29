@@ -1,3 +1,6 @@
-# Place all the behaviors and hooks related to the matching controller here.
-# All this logic will automatically be available in application.js.
-# You can use CoffeeScript in this file: http://coffeescript.org/
+$ ->
+  deg = 0
+  $('#msg-collapse').click () ->
+    $('.msg-panel').slideToggle()
+    deg = (deg + 180) % 360
+    $('.fa-angle-down').css('transform', 'rotate(' + deg + 'deg)')

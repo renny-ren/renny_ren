@@ -33,8 +33,10 @@ config/settings/*.local.yml
 config/environments/*.local.yml
 config/services.yml
 config/services.local.yml
+config/ssl
 log/development.log
 public/assets
+public/.well-known
 
 !public/404.html
 !public/422.html

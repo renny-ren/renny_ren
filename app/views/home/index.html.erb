@@ -1,3 +1,5 @@
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
+
 <input id="motto_one" value="<%= t :motto_one %>" type="hidden"/>
 <input id="motto_two" value="<%= t :motto_two %>" type="hidden"/>
 <input id="type_speed" value="<%= t :type_speed %>" type="hidden"/>
@@ -9,6 +11,15 @@ $(function(){ $("#motto").typed({
 </script>
 
 <div class="container">
+  <button id="msg-collapse"><%= t(:msg_unfold) %><%= fa_icon 'angle-down' %></button>
+  <div class="msg-panel draggable" style="display: none;">
+    <%= form_for Message.new, remote: true do |f| %>
+      <div class="msg-body"><%= f.text_area :body, size: '25', placeholder: t(:msg_placeholder) %></div>
+      <div class="msg-author"><%= f.text_field :author, size: '25', placeholder: t(:msg_author) %></div>
+      <div><%= f.submit t(:submit), data: { confirm: '本站留言没有删除功能，确认要提交吗' }, class: 'msg-submit' %></div>
+    <% end %>
+  </div>
+  <div class="msg-board"><%= render 'message' %></div>
   <div id="name"><%= t(:renny_ren) %></div>
   <div class="typedjs"><p id="motto"></p></div>
 </div>

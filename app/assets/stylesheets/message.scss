@@ -1,0 +1,76 @@
+.msg-panel {
+  border-radius: 10%;
+  background-color: #fffae6;
+  padding: 15px;
+  position: absolute;
+  overflow: scroll;
+  z-index: 1;
+  margin-top: 5px;
+}
+
+.msg-item {
+  border-radius: 5px;
+  padding: 5px 12px;
+  position: relative;
+  overflow: scroll;
+  margin: 8px 15px;
+  float: left;
+  border: dotted 1px #adadad;
+}
+
+#message_body {
+  resize: none;
+  border: none;
+  padding: 5px;
+  height: 100px;
+}
+
+#message_author {
+  border: none;
+  padding: 5px;
+}
+
+.msg-submit, .msg-author {
+  margin-top: 6px;
+}
+
+#msg-collapse {
+  margin-top: 9px;
+  margin-left: 8px;
+  background-color: #3bb4f2;
+  color: #f0f8ff;
+  border: none;
+  border-radius: 10px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.fa-angle-down {
+  margin-left: 3px;
+}
+
+.msg-submit {
+  color: #0e90d2;
+  cursor: pointer;
+  border: solid 1px #ddd;
+  background-color: #fff;
+  padding: 4px 12px;
+}
+
+.msg-board {
+  position: absolute;
+  width: 450px;
+  margin-top: 10px;
+  border-right: dashed 1px gray;
+  min-height: 750px;
+}
+
+.msg-body-show {
+  font-family: "Chalkboard", "Comic Sans MS", "微软雅黑", "MV Boli", "黑体", "楷体", "宋体", "文泉驿等宽微米黑";
+}
+
+.msg-author-show {
+  float: right;
+  color: #747474;
+  font-size: 14px;
+}
