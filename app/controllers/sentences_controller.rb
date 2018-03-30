@@ -15,7 +15,7 @@ class SentencesController < ApplicationController
   end
 
   def index
-    @sentences = Sentence.all
+    @sentences = Sentence.paginate(page: params[:page]).order('created_at DESC')
   end
 
   def update
@@ -34,6 +34,6 @@ class SentencesController < ApplicationController
   end
 
   def sentence_params
-    params.require(:sentence).permit(:content)
+    params.require(:sentence).permit(:content, :source)
   end
 end

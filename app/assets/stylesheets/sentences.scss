@@ -3,11 +3,19 @@
   text-align: center;
 }
 
+.sentence_content {
+  min-height: 800px;
+  padding: 5% 3%;
+  margin: 0 15%;
+  border: solid 1px white;
+  box-shadow: 1px 8px 5px #888888;
+}
+
 .sentence-panel {
   float: right;
   border-radius: 8px;
   background-color: #fffae6;
-  padding: 15px 20px;
+  padding: 10px 15px;
   overflow: scroll;
   margin-top: 10px;
   margin-right: 10px;
@@ -15,7 +23,13 @@
   max-height: 200px;
 }
 
+.sentence-title {
+  text-align: center;
+  font-size: 20px;
+}
+
 #sentence-content {
+  margin-top: 4px;
   font-family: "Chalkboard", "Comic Sans MS", "微软雅黑", "MV Boli", "黑体", "楷体", "宋体", "文泉驿等宽微米黑";
 }
 
@@ -24,8 +38,20 @@
   color: #747474;
 }
 
+#sentence-source {
+  text-align: right;
+  font-size: 12px;
+  color: #747474;
+}
+
+.sentence-item {
+  margin-top: 10px;
+  padding: 15px 10px;
+  border-bottom: dotted 1px #636366;
+}
+
 #more {
-  margin-top: 4px;
+  margin-top: 2px;
   float: right;
   font-size: 10px;
   a { text-decoration: none; }

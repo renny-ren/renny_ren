@@ -1,6 +1,7 @@
 <div class="sentence-container">
   <%= form_for @sentence do |f| %>
     <div><%= f.text_area :content, size: '60x20' %></div>
+    <div><%= f.text_field :source, placeholder: 'source' %></div>
     <div><%= f.submit %></div>
   <% end %>
 </div>

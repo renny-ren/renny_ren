@@ -1,0 +1,11 @@
+<div class="sentence_content">
+  <div class="sentence-title">说 说</div>
+  <% @sentences.each do |s| %>
+    <div class="sentence-item">
+      <div id="sentence-date"><%= s.created_at.strftime t(:format_time) %></div>
+      <div id="sentence-content">　　<%== s.content %></div>
+      <% unless s.source.nil? %><div id="sentence-source">——<%= s.source %></div><% end %>
+    </div>
+  <% end %>
+  <%= will_paginate @sentences, class: "flickr_pagination" %>
+</div>
