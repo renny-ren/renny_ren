@@ -52,6 +52,25 @@
   font-weight: bold;
 }
 
+#feedback-body {
+  font-size: 14px;
+  font-family: "Chalkboard", "Comic Sans MS", "微软雅黑", "MV Boli", "黑体", "楷体", "宋体", "文泉驿等宽微米黑";
+  padding: 5px;
+}
+#feedback-author {
+  margin-top: 5px;
+  padding: 5px;
+  width: 488px;
+}
+#feedback-submit {
+  color: #0e90d2;
+  cursor: pointer;
+  border: solid 1px #ddd;
+  background-color: #fff;
+  padding: 4px 12px;
+  margin-top: 5px;
+}
+
 @media only screen and (min-width: 1800px) {
   .about_content { font-size: 1.2em; }
 
