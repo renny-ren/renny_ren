@@ -23,13 +23,15 @@ $(function(){ $("#motto").typed({
   <div class="sentence-panel">
     <% if session[:admin] %>
       <%= link_to fa_icon('plus-square'), new_sentence_path %>
-      <%= link_to fa_icon('edit'), edit_sentence_path(@sentence) %>
-      <%= link_to fa_icon('trash'), sentence_path(@sentence), method: :delete, data: { confirm: 'sure to delete?' } %>
+      <%= link_to fa_icon('edit'), edit_sentence_path(@sentence || 1) %>
+      <%= link_to fa_icon('trash'), sentence_path(@sentence || 1), method: :delete, data: { confirm: 'sure to delete?' } %>
     <% end %>
-    <div id="close"><%= fa_icon('times') %></div>
-    <div id="sentence-date"><%= @sentence.created_at.strftime t(:format_time) %></div>
-    <div id="sentence-content"><%== @sentence.content %></div>
-    <div id="more"><%= link_to t(:more), sentences_path %></div>
+    <% unless @sentence.nil? %>
+      <div id="close"><%= fa_icon('times') %></div>
+      <div id="sentence-date"><%= @sentence.created_at.strftime t(:format_time) %></div>
+      <div id="sentence-content"><%== @sentence.content %></div>
+      <div id="more"><%= link_to t(:more), sentences_path %></div>
+    <% end %>
   </div>
 
   <div class="msg-board"><%= render 'message' %></div>
