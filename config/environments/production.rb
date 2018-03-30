@@ -21,7 +21,7 @@ Rails.application.configure do
     address:              'smtp.ym.163.com',
     port:                  465,
     ssl:                    true,
-    # domain:               'jinchengzj.com',
+    # domain:               'renny.ren',
     user_name:          Settings.email.username,
     password:            Settings.email.password,
     authentication:       'plain',

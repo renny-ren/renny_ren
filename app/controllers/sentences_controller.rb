@@ -1,5 +1,6 @@
 class SentencesController < ApplicationController
   before_action :get_sentence, only: [:edit, :update, :destroy]
+  before_action :validate_admin, except: [:index]
 
   def new 
     @sentence = Sentence.new

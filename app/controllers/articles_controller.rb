@@ -52,14 +52,6 @@ class ArticlesController < ApplicationController
     arr
   end
 
-  def validate_admin
-    if session[:admin]
-      "pass"
-    else
-      render plain: '401 Unauthorized', status: 401
-    end
-  end
-
   private
 
   def find_article
