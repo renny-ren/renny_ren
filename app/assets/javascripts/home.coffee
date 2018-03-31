@@ -5,6 +5,7 @@ $ ->
     $('.msg-panel').slideToggle()
     deg = (deg + 180) % 360
     $('.fa-angle-down').css('transform', 'rotate(' + deg + 'deg)')
-  
+
+document.addEventListener 'turbolinks:load',  ->
   $('#close').click () ->
-    $('.sentence-panel').fadeOut();
+    $('.sentence-panel').fadeOut()
