@@ -59,15 +59,11 @@
   <div id="black_overlay" onclick="closeWindow()"></div>
   <%= image_tag 'wechat_add.png', id: "wechat" %>
 
-  <p>&nbsp&nbspEmail: rennyallen@hotmail.com</p>
-
-  <div class="panel panel-info col-md-10">
-    <div class="panel-body">
-      <%= form_for Message.new, url: feedback_path do |f| %>
-        <div><%= f.text_area :body, size: '60x5', placeholder: "输入内容", id: 'feedback-body' %></div>
-        <div><%= f.text_field :author, maxlength: 30, placeholder: '你的姓名及联系方式（可选）', id: 'feedback-author' %></div>
-        <div><%= f.submit '发送邮件', data: { disable_with: '发送中..' }, id: 'feedback-submit' %></div>
-      <% end %>
-    </div>
+  <div>
+    <%= form_for Message.new, url: feedback_path do |f| %>
+      <div><%= f.text_area :body, size: '60x5', placeholder: "输入内容", id: 'feedback-body' %></div>
+      <div><%= f.text_field :author, maxlength: 30, placeholder: '你的姓名及联系方式（可选）', id: 'feedback-author' %></div>
+      <div><%= f.submit '发送邮件', data: { disable_with: '发送中..' }, id: 'feedback-submit' %></div>
+    <% end %>
   </div>
 </div>
