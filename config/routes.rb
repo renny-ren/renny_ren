@@ -9,6 +9,7 @@ Rails.application.routes.draw do
     resources :tags, only: [:index, :create, :show, :destroy], param: :tag_name
     resources :messages
     resources :sentences
+    resources :sites
 
     post 'feedback', to: 'messages#feedback'
   end

@@ -4,10 +4,14 @@
 <input id="motto_two" value="<%= t :motto_two %>" type="hidden"/>
 <input id="type_speed" value="<%= t :type_speed %>" type="hidden"/>
 <script>
-$(function(){ $("#motto").typed({ 
-  strings: [document.getElementById('motto_one').value, document.getElementById('motto_two').value], 
-  typeSpeed: parseInt(document.getElementById('type_speed').value)
-}); }); 
+$(function(){
+  $("#motto").typed({
+    strings: [document.getElementById('motto_one').value, document.getElementById('motto_two').value],
+    typeSpeed: parseInt(document.getElementById('type_speed').value)
+  });
+  $('.draggable').draggable({ containment: '.msg-board', cursor: 'move' });
+});
+
 </script>
 
 <div class="container">

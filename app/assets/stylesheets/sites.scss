@@ -1,0 +1,44 @@
+.sites-container {
+  min-height: 800px;
+  padding: 5% 3%;
+  margin: 0 15%;
+  border: solid 1px white;
+  box-shadow: 1px 8px 5px #888888;
+}
+
+.site-panel {
+  margin-bottom: 20px;
+}
+
+.panel-heading {
+  background: #fafafa;
+  padding: 6px 15px;
+  border-bottom-color: #eee;
+  color: #777;
+  border-radius: 10px 10px 0 0;  
+}
+
+.panel-body {
+  padding: 0 15px;
+  background-color: #fff;
+  line-height: 60px;
+}
+
+.site-item {
+  margin-right: 100px;
+  a { text-decoration: none; }
+}
+
+#site-name {
+  font-family: "Chalkboard", "Comic Sans MS", "微软雅黑", "MV Boli", "黑体", "楷体", "宋体", "文泉驿等宽微米黑";
+  display: inline-block;
+  position: relative;
+  top: -5px;
+}
+
+.site-angle {
+  cursor: pointer;
+  float: right;
+}
+
+.arrow-rotate { transform: rotate(180deg); }

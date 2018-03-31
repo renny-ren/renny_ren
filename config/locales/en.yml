@@ -29,9 +29,10 @@ en:
   msg_unfold: Leave a message
 
   home: "Home"
-  archive: "Archive"
+  archive: "Archives"
   tag: "Tags"
   about: "About"
+  site: Sites
 
   created: "created_at: "
   updated: "updated_at: "
