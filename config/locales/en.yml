@@ -25,6 +25,7 @@ en:
   motto_one: "Stay Hungry  Stay Foolish"
   motto_two: "This guy was researching for how to put on weight <br/> many years later <br/> this guy becoming thinner and thinner."
   msg_placeholder: Leave your footstep here...
+  msg_author: name(optional)
   submit: submit
   msg_unfold: Leave a message
 

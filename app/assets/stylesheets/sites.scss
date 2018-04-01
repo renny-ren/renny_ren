@@ -11,27 +11,30 @@
 }
 
 .panel-heading {
-  background: #fafafa;
+  background-color: #d9edf7;
   padding: 6px 15px;
-  border-bottom-color: #eee;
-  color: #777;
+  border-bottom-color: #bce8f1;
+  color: #31708f;
   border-radius: 10px 10px 0 0;  
+
 }
 
 .panel-body {
   padding: 0 15px;
   background-color: #fff;
   line-height: 60px;
+  border: 1px solid #bce8f1;
 }
 
 .site-item {
-  margin-right: 100px;
-  a { text-decoration: none; }
+  display: inline-block;
+  width: 300px;
+  a { text-decoration: none; };
 }
 
-#site-name {
+.site-name {
   font-family: "Chalkboard", "Comic Sans MS", "微软雅黑", "MV Boli", "黑体", "楷体", "宋体", "文泉驿等宽微米黑";
-  display: inline-block;
+  display: inline;
   position: relative;
   top: -5px;
 }

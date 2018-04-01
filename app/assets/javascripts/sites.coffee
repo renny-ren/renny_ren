@@ -4,7 +4,7 @@ $ ->
     $('.panel-body[data-id='+id+']').slideToggle()
     $(this).toggleClass('arrow-rotate')
 
-  $('.site-item').tooltipster
+  $('.site-name').tooltipster
     theme: 'tooltipster-borderless'
     maxWidth: 230
     interactive: true
