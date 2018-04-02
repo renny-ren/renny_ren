@@ -26,7 +26,7 @@ class MessagesController < ApplicationController
   private
 
   def set_messages
-    @messages = Message.all
+    @messages = Message.order('id DESC')
   end
 
   def message_params

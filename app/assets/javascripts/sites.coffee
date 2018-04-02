@@ -9,3 +9,4 @@ $ ->
     maxWidth: 230
     interactive: true
     animation: 'swing'
+    delay: 1
