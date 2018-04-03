@@ -1,10 +1,7 @@
 class ArticlesController < ApplicationController
-  http_basic_authenticate_with name: Settings.name, password: Settings.password, except: [:index, :show]
-  before_action :validate_admin, except: [:index, :show]
+  http_basic_authenticate_with name: Settings.name, password: Settings.password, except: :show
+  before_action :validate_admin, except: :show
   before_action :find_article, only: [:show, :edit, :update, :destroy]
-
-  def index
-  end
 
   def new
     @article = Article.new

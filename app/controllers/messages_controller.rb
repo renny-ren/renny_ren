@@ -1,8 +1,5 @@
 class MessagesController < ApplicationController
   before_action :set_messages, only: [:create, :destroy]
-  
-  def index
-  end
 
   def create
     @message = Message.new(message_params)
