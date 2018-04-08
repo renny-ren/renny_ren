@@ -76,7 +76,7 @@ body{
 .flash-notice {
   text-align: center;
   display: none;
-  margin-left: 30%;
+  margin-left: 15%;
   margin-top: 9%;
   position: fixed;
   z-index: 99;
