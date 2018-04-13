@@ -14,7 +14,7 @@ $(function(){
 
 </script>
 
-<div class="container">
+<div data-turbolinks="false" class="container">
   <button id="msg-collapse"><%= t(:msg_unfold) %><%= fa_icon 'angle-down' %></button>
   <div class="msg-panel draggable" style="display: none;">
     <%= form_for Message.new, remote: true do |f| %>
