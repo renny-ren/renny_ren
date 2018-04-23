@@ -6,6 +6,7 @@ ja:
   msg_placeholder: 何が言いたいのか...
   msg_author: 名前（オプション）
   submit: 提出
+  confirm_submit:  提出を確認しますか 
   msg_unfold: メッセージ
 
   title: Renny's blog

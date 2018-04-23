@@ -6,6 +6,7 @@ ch:
   msg_placeholder: 想说点什么呢...
   msg_author: 尊姓大名(可选)
   submit: 提交
+  confirm_submit: 本站留言没有删除功能，确认要提交吗
   msg_unfold: 留下我的足迹
 
   title: 任峻宏的博客-止于至善
