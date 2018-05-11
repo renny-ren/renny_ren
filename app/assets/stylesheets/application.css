@@ -58,6 +58,13 @@ body{
   word-spacing: 1.2em;
 }
 
+.audio-container{
+  position: relative;
+  float: right;
+  top: -40px;
+  right: 110px;
+}
+
 #i18n{
   text-align: right;
   margin-right: 1%;
