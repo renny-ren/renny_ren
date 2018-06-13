@@ -33,11 +33,6 @@
           <%= link_to t(:site), sites_path, method: :get %>
           <%= link_to t(:about), about_index_path, method: :get %>
         </div>
-        <div class="audio-container">
-            <audio src="no_goodbye.mp3" controls="controls" style="width: 200px;">
-              Your browser does not support the audio element.
-            </audio>
-        </div>
         <div id="i18n">
           <%= form_tag(home_path, method: :get) do %>
             <%= select_tag 'set_locale', options_for_select(LANGUAGES, I18n.locale), onchange: 'this.form.submit()' %>
