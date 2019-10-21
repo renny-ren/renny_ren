@@ -9,7 +9,9 @@ ch:
   confirm_submit: 本站留言没有删除功能，确认要提交吗
   msg_unfold: 留下我的足迹
 
-  title: 任峻宏的博客-止于至善
+  # title: 任峻宏的博客-止于至善
+  # TEMP: 为了管局审核
+  title: 我的学习记录
   home: "主页"
   archive: "文章"
   tag: "标签"
