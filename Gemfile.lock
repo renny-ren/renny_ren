@@ -1,5 +1,5 @@
 GEM
-  remote: https://rubygems.org/
+  remote: https://gems.ruby-china.com/
   specs:
     actioncable (5.0.7.1)
       actionpack (= 5.0.7.1)
@@ -54,7 +54,7 @@ GEM
       activesupport (>= 3.0)
       deep_merge (~> 1.2.1)
       dry-validation (>= 0.10.4)
-    crass (1.0.4)
+    crass (1.0.5)
     deep_merge (1.2.1)
     dry-configurable (0.7.0)
       concurrent-ruby (~> 1.0)
@@ -102,7 +102,7 @@ GEM
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
-    loofah (2.2.3)
+    loofah (2.3.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
@@ -114,7 +114,7 @@ GEM
     multi_json (1.13.1)
     mysql2 (0.5.2)
     nio4r (2.3.1)
-    nokogiri (1.9.1)
+    nokogiri (1.10.5)
       mini_portile2 (~> 2.4.0)
     puma (3.12.0)
     rack (2.0.6)
