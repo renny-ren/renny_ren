@@ -24,16 +24,16 @@
 
   <body>
     <div class="banner">
-      <div id="avatar"><%= link_to image_tag('avatar.png'), home_path, method: :get %></div>
+      <div class="avatar"><%= link_to image_tag('avatar.png'), home_path, method: :get %></div>
       <div class="nav">
-        <div id="link">
+        <div class="nav-link">
           <%= link_to t(:home), home_path, method: :get %>
           <%= link_to t(:archive), archives_path %>
           <%= link_to t(:tag), tags_path %>
           <%= link_to t(:site), sites_path, method: :get %>
           <%= link_to t(:about), about_index_path, method: :get %>
         </div>
-        <div id="i18n">
+        <div class="i18n">
           <%= form_tag(home_path, method: :get) do %>
             <%= select_tag 'set_locale', options_for_select(LANGUAGES, I18n.locale), onchange: 'this.form.submit()' %>
           <% end %>

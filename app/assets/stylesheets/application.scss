@@ -16,19 +16,42 @@
  *= require tooltipster.bundle
  */
 
-body{
+body {
   margin: 0; 
   padding: 0;
-  background-color: aliceblue;
+  background-color: #f0f8ff;
 }
 
-.banner{
-  height: 3em;
+.banner {
+  height: 50px;
   width: 100%;
   position: fixed;
   z-index: 3;
-  background-color: #0D1B1E;
-  box-shadow: 10px 5px 5px #888888;
+  background-color: #21303e;
+
+  .avatar {
+    margin-left: 180px;
+    margin-top: 8px;
+    float: left;
+  }
+
+  .nav {
+    display: inline-block;
+
+    .nav-link{
+      font-family: "黑体", "Lucida Sans", "Lucida Grande", Verdana, Arial, sans-serif;
+      word-spacing: 20px;
+      font-size: 20px;
+      padding-top: 12px;
+      margin-left: 500px;
+    }
+  }
+
+  .i18n{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
 }
 
 .banner a{
@@ -39,23 +62,10 @@ body{
   -moz-transition: .5s;
   -webkit-transition: .5s;
   transition: .5s;
-}
 
-.banner a:hover{
-  color: red;
-}
-
-#avatar{
-  margin-left: 8em;
-  position: absolute;
-}
-
-#link{
-  font-family: "黑体", "Lucida Sans", "Lucida Grande", Verdana, Arial, sans-serif;
-  font-size: 1.3em;
-  padding-top: 0.6em;
-  text-align: center;
-  word-spacing: 1.2em;
+  &:hover {
+    color: #99b8d4;
+  }
 }
 
 .audio-container{
@@ -63,12 +73,6 @@ body{
   float: right;
   top: -40px;
   right: 110px;
-}
-
-#i18n{
-  text-align: right;
-  margin-right: 1%;
-  margin-top: -1.7em;
 }
 
 .contact{
@@ -103,11 +107,6 @@ body{
   #avatar{
     margin-left: 0.5em !important;
     margin-top: 0.2em;
-  }
-
-  #avatar img{
-    height: 50px;
-    width: 40px;
   }
 
   #link{
