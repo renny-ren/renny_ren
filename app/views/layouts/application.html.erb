@@ -44,13 +44,19 @@
     <div class="flash-notice"></div>
     <%= yield %>
 
-    <footer class="contact">
-        <%= link_to image_tag('github.png'), "https://github.com/rennyallen", title: 'github', target: "_blank" %>
-        <%= link_to image_tag('email.png'), "mailto:rennyallen@hotmail.com", title: 'mail to me' %>
-        <%= link_to image_tag('instagram.png', size: '45x45'), "https://www.instagram.com/rennyallen/", title: "instagram", target: "_blank" %>
-        <%= link_to image_tag('twitter.png'), "https://twitter.com/Rennyallen20", title: 'twitter', target: "_blank" %>
-      <div class="rights" style="padding: 8px; text-align: center;">2019 renny.ren</div>
-      <div class="rights" style="padding: 8px; text-align: center;">蜀ICP备19024450号</div>
+    <footer>
+      <div class="footer-container">
+        <div class="link">
+
+        </div>
+        <div class="media">
+          <%= link_to image_tag('github.png'), "https://github.com/rennyallen", title: 'github', target: "_blank" %>
+          <%= link_to image_tag('email.png'), "mailto:rennyallen@hotmail.com", title: 'mail to me' %>
+          <%= link_to image_tag('instagram.png', size: '45x45'), "https://www.instagram.com/rennyallen/", title: "instagram", target: "_blank" %>
+          <%= link_to image_tag('twitter.png'), "https://twitter.com/Rennyallen20", title: 'twitter', target: "_blank" %>
+        </div>
+        <div class="beian">蜀ICP备19024450号</div>
+      </div>
     </footer>
   </body>
 </html>

@@ -38,7 +38,7 @@ body {
   .nav {
     display: inline-block;
 
-    .nav-link{
+    .nav-link {
       font-family: "黑体", "Lucida Sans", "Lucida Grande", Verdana, Arial, sans-serif;
       word-spacing: 20px;
       font-size: 20px;
@@ -47,14 +47,14 @@ body {
     }
   }
 
-  .i18n{
+  .i18n {
     position: absolute;
     right: 20px;
     top: 20px;
   }
 }
 
-.banner a{
+.banner a {
   color: white;
   text-decoration: none;
   -o-transition: .5s;
@@ -68,18 +68,25 @@ body {
   }
 }
 
-.audio-container{
-  position: relative;
-  float: right;
-  top: -40px;
-  right: 110px;
+footer {
+  border-top: 1px solid rgba(0,0,0,.1);
 }
 
-.contact{
-  word-spacing: 0.6em;
+.footer-container {
   text-align: center;
-  padding-top: 100px;
+  padding-top: 18px;
+
+  .media {
+    display: inline-block;
+    word-spacing: 10px;
+  }
+
+  .beian {
+    display: inline-block;
+  }
 }
+
+
 
 #flash_notice { padding-top: 50px; text-align: center; background: #feffcf; }
 #flash_alert { padding-top: 50px; text-align: center; background: #FFE6DF; }
