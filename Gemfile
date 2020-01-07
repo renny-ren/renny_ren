@@ -5,6 +5,7 @@ gem 'will_paginate'
 gem 'config'
 gem 'font-awesome-rails'
 gem 'slim'
+gem 'semantic-ui-sass'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'

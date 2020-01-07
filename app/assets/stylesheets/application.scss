@@ -16,6 +16,14 @@
  *= require tooltipster.bundle
  */
 
+@import "semantic-ui";
+
+$mobile-breakpoint: 320px !default;
+$tablet-breakpoint: 768px !default;
+$computer-breakpoint: 992px !default;
+$large-monitor-breakpoint: 1200px !default;
+$widescreen-monitor-breakpoint: 1920px !default;
+
 body {
   margin: 0; 
   padding: 0;
@@ -76,6 +84,10 @@ footer {
   text-align: center;
   padding-top: 18px;
 
+  .link {
+    display: inline-block;
+  }
+
   .media {
     display: inline-block;
     word-spacing: 10px;
@@ -85,7 +97,6 @@ footer {
     display: inline-block;
   }
 }
-
 
 
 #flash_notice { padding-top: 50px; text-align: center; background: #feffcf; }

@@ -15,3 +15,4 @@
 //= require turbolinks
 //= require_tree .
 //= require tooltipster.bundle.min
+//= require semantic-ui

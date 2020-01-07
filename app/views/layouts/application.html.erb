@@ -30,7 +30,6 @@
           <%= link_to t(:home), home_path, method: :get %>
           <%= link_to t(:archive), archives_path %>
           <%= link_to t(:tag), tags_path %>
-          <%= link_to t(:site), sites_path, method: :get %>
           <%= link_to t(:about), about_index_path, method: :get %>
         </div>
         <div class="i18n">
@@ -47,7 +46,7 @@
     <footer>
       <div class="footer-container">
         <div class="link">
-
+          <%= link_to t(:site), sites_path %>
         </div>
         <div class="media">
           <%= link_to image_tag('github.png'), "https://github.com/rennyallen", title: 'github', target: "_blank" %>
