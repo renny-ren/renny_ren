@@ -44,19 +44,17 @@
     <div class="flash-notice"></div>
     <%= yield %>
 
-    <footer class="ui vertical footer segment">
-      <div class="ui container">
-        <div class="ui grid">
-          <div class="link">
-            <%= link_to t(:site), sites_path %>
-          </div>
-          <div class="media">
-            <%= link_to fa_icon('github'), "https://github.com/renny-ren", target: '_blank' %>
-            <%= link_to fa_icon('twitter'), "https://twitter.com/rennyren66", target: '_blank' %>
-            <%= link_to fa_icon('instagram'), "https://www.instagram.com/rennyren1", target: '_blank' %>
-          </div>
-          <div class="beian">蜀ICP备19024450号</div>
+    <footer>
+      <div class="ui grid footer-container">
+        <div class="right aligned three wide column media">
+          <%= link_to fa_icon('github'), "https://github.com/renny-ren", target: '_blank' %>
+          <%= link_to fa_icon('twitter'), "https://twitter.com/rennyren66", target: '_blank' %>
+          <%= link_to fa_icon('instagram'), "https://www.instagram.com/rennyren1", target: '_blank' %>
         </div>
+        <div class="ten wide column link">
+          <%= link_to t(:site), sites_path %>
+        </div>
+        <div class="right aligned three wide column beian">蜀ICP备19024450号</div>
       </div>
     </footer>
   </body>

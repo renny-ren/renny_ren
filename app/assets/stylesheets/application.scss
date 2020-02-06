@@ -61,23 +61,22 @@ body {
 
 footer {
   border-top: 1px solid rgba(0,0,0,.1);
+  margin-top: 30px;
+  padding: 10px;
 }
 
 .footer-container {
-  text-align: center;
-  padding-top: 18px;
-
-  .link {
-    display: inline-block;
-  }
-
   .media {
     display: inline-block;
     word-spacing: 10px;
   }
 
+  .link {
+    font-size: 16px;
+  }
+
   .beian {
-    display: inline-block;
+    color: #666;
   }
 }
 
@@ -94,43 +93,3 @@ footer {
   z-index: 99;
   padding: 13px;
 }
-
-/*@media only screen and (min-width: 1800px){
-  #link{
-    font-size: 1.6em;
-    padding-top: 0.5em;
-  }
-}*/
-/*
-@media only screen and (max-device-width: 400px){
-  .banner{ height: 3.5em !important; }
-
-  #avatar{
-    margin-left: 0.5em !important;
-    margin-top: 0.2em;
-  }
-
-  #link{
-    margin-left: 0.1em;
-    font-size: 1.5em !important;
-     padding-top: 0.4em !important; 
-    word-spacing: 0.5em !important;
-  }
-
-  #i18n{
-     margin-right: 1%; 
-    margin-top: -2em;
-  }
-
-  #set_locale{
-    height: 30px;
-    width: 40px;
-    font-size: 1em;
-  }
-
-  .contact{ word-spacing: 0.5em; }
-  .contact img{
-    height: 50px;
-    width: 50px;
-  }
-}*/
