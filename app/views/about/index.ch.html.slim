@@ -1,2 +1,15 @@
-.about_content
-  h2 关于我
+javascript:
+  $(function() {
+    $("#motto").typed({
+      strings: ["#{{ t :motto_one }}", "#{{ t :motto_two }}"],
+      typeSpeed: parseInt("#{ t :type_speed }")
+    });
+    $('.draggable').draggable({ containment: '.msg-board', cursor: 'move' });
+  });
+
+.page-container
+  .bg-image
+    .ui.fluid.container
+      .sixteen.wide.column
+        .typedjs
+          p#motto
