@@ -33,6 +33,8 @@ body {
 .header {
   background-color: #21303e;
   margin: 0 !important;
+  position: fixed;
+  width: 100%;
 
   .avatar {
     padding: 0.5rem !important;
