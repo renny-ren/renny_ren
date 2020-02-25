@@ -4,12 +4,13 @@ javascript:
       strings: ["#{{ t :motto_one }}", "#{{ t :motto_two }}"],
       typeSpeed: parseInt("#{ t :type_speed }")
     });
-    $('.draggable').draggable({ containment: '.msg-board', cursor: 'move' });
   });
 
 .page-container
   .bg-image
-    .ui.fluid.container
+    .ui.padded.container
       .sixteen.wide.column
+        .name
+          = t(:renny_ren)
         .typedjs
           p#motto
