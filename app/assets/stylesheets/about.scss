@@ -1,3 +1,5 @@
+@import "colors";
+
 .about-page {
     .bg-image {
     background-repeat: no-repeat;
@@ -20,12 +22,54 @@
     margin-left: 310px;
   }
 
+  .experience-segment {
+    border-left: 2px dotted black;
+    margin-bottom: 0;
+    margin-left: 25px;
+    padding-bottom: 0;
+    position: relative;
+
+    .item {
+      position: relative;
+      padding-left: 22px;
+      margin-bottom: 30px;
+
+      &:before {
+        background: $bodyBlue;
+        background-size: 100% 100%;
+        border: 2px solid #01315a;
+        border-radius: 10px;
+        content: " ";
+        display: block;
+        float: left;
+        height: 8px;
+        left: 0;
+        margin-left: -5px;
+        margin-top: 10px;
+        position: absolute;
+        top: 0;
+        width: 8px;
+      }
+
+      &:first-of-type:after {
+        background: $bodyBlue;
+        content: " ";
+        display: block;
+        height: 10px;
+        left: -2px;
+        position: absolute;
+        top: 0;
+        width: 2px;
+      }
+    }
+  }
+
   .section {
-    .title {
+    .p-title {
       font-size: 20px;
     }
 
-    .title::after {
+    .p-title::after {
       background: black;
       height: 3px;
       content: ' ';
