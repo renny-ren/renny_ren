@@ -1,22 +1,43 @@
-.bg-image {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: transparent;
-  background-position: 50% 50%;
-  background-image: url(/about-bg.png);
-  /*background-attachment: fixed;*/
-  height: 400px;
-  filter: brightness(80%);
-}
+.about-page {
+    .bg-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    background-position: 50% 50%;
+    background-image: url(/about-bg.png);
+    /*background-attachment: fixed;*/
+    height: 400px;
+    filter: brightness(76%);
+  }
 
-.name {
-  font-family: 'BrushScriptMT';
-  text-align: center;
-  font-size: 60px;
-  padding-top: 60px;
-  position: relative;
-  pointer-events: none;
-  margin-left: 310px;
+  .name {
+    font-family: 'BrushScriptMT';
+    text-align: center;
+    font-size: 60px;
+    padding-top: 60px;
+    position: relative;
+    pointer-events: none;
+    margin-left: 310px;
+  }
+
+  .section {
+    .title {
+      font-size: 20px;
+    }
+
+    .title::after {
+      background: black;
+      height: 3px;
+      content: ' ';
+      width: 60px;
+      display: block;
+      margin: 12px 0;  
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
 }
 
 

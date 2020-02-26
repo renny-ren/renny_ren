@@ -7,10 +7,22 @@ javascript:
   });
 
 .page-container
-  .bg-image
+  .about-page
+    .bg-image
+      .ui.padded.container
+        .sixteen.wide.column
+          .name
+            = t(:renny_ren)
+          .typedjs
+            p#motto
     .ui.padded.container
-      .sixteen.wide.column
-        .name
-          = t(:renny_ren)
-        .typedjs
-          p#motto
+      .section.ui.padded.grid
+        .sixteen.wide.column
+          .title 关于我
+          p 我是 Renny，码农一枚。
+
+      .section.ui.padded.grid
+        .sixteen.wide.column
+          .title 个人经历
+          p 2018.05 - 至今
+          p strikingly
