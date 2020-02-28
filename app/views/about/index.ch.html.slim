@@ -41,3 +41,20 @@ javascript:
                 .title 2016.10 - 2017.03
                 .description 速递易
               .four.wide.column
+
+      .section.ui.padded.grid
+        .sixteen.wide.column
+          .p-title 与我联系
+          .feedback
+            = form_for Message.new, url: feedback_path do |f|
+              .feedback-container.ui.two.column.grid
+                .four.column.row.remove-padding
+                  .column
+                    .feedback-author = f.text_field :author, maxlength: 10, placeholder: '姓名'
+                  .column
+                    .contact_info = f.text_field :contact_info, maxlength: 20, placeholder: '联系方式'
+                .column
+                  .feedback-body = f.text_area :body, size: '60x5', placeholder: "输入内容"
+                .row.remove-padding
+                  .column
+                    .feedback-submit = f.submit '发送邮件', data: { disable_with: '发送中..' }
