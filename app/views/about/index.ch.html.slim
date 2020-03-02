@@ -9,12 +9,18 @@ javascript:
 .page-container
   .about-page
     .bg-image
-      .ui.padded.container
-        .sixteen.wide.column
-          .name
-            = t(:renny_ren)
-          .typedjs
-            p#motto
+      .ui.padded.container.profile-container
+        .ui.items
+          .item.profile-item
+            .image
+              .avatar-img.ui.circular.rotate.reveal.image
+                = image_tag 'avatar-2.jpeg', class: 'visible content'
+                = image_tag 'avatar-3.jpeg', class: 'hidden content'
+            .content
+              .name
+                = t(:renny_ren)
+              .typedjs
+                p#motto
     .ui.padded.container
       .section.ui.padded.grid
         .sixteen.wide.column

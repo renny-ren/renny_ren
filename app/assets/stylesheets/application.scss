@@ -34,9 +34,10 @@ body {
 .header {
   background-color: #21303e;
   margin: 0 !important;
-  position: fixed;
+  position: sticky;
+  top: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 99;
 
   .avatar {
     padding: 0.5rem !important;
@@ -99,5 +100,5 @@ footer {
 }
 
 .page-container {
-  padding-top: 53px;
+
 }
