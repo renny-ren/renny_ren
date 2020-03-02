@@ -1,4 +1,5 @@
 @import "colors";
+@import "media";
 
 .about-page {
   .bg-image {
@@ -7,7 +8,7 @@
     background-image: url(/about-bg.png);
     /*background-attachment: fixed;*/
     height: 400px;
-    padding-top: 20px;
+    padding-top: 40px;
 
     &:before {
       content: "";
@@ -37,21 +38,17 @@
     }
   }
 
-  .profile-container {
-    float: right;
+  .profile-item {
+    margin: 0;
 
-    .profile-item {
-      margin: 0;
+    .name {
+      font-family: 'BrushScriptMT';
+      font-size: 60px;
+      margin-top: 20px;
+    }
 
-      .name {
-        font-family: 'BrushScriptMT';
-        font-size: 60px;
-        margin-top: 20px;
-      }
-
-      .typedjs {
-        margin-top: 30px;
-      }
+    .typedjs {
+      margin-top: 30px;
     }
   }
 
@@ -125,6 +122,18 @@
 
   #message_body {
     resize: none;
+  }
+}
+
+@media only screen and (max-width: $tablet-breakpoint) {
+  .profile-container {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: $computer-breakpoint) {
+  .profile-container {
+    float: right;
   }
 }
 
