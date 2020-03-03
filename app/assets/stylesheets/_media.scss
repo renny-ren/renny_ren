@@ -3,3 +3,9 @@ $tablet-breakpoint: 768px !default;
 $computer-breakpoint: 992px !default;
 $large-monitor-breakpoint: 1200px !default;
 $widescreen-monitor-breakpoint: 1920px !default;
+
+/* Responsive */
+$largest-mobile-screen: ($tablet-breakpoint - 1px);
+$largest-tablet-screen: ($computer-breakpoint - 1px);
+$largest-small-monitor: ($large-monitor-breakpoint - 1px);
+$largest-large-monitor: ($widescreen-monitor-breakpoint - 1px);

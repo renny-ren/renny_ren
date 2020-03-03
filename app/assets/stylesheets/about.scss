@@ -41,14 +41,26 @@
   .profile-item {
     margin: 0;
 
-    .name {
-      font-family: 'BrushScriptMT';
-      font-size: 60px;
-      margin-top: 20px;
-    }
+    .content {
+      z-index: 1;
 
-    .typedjs {
-      margin-top: 30px;
+      .name {
+        font-family: 'BrushScriptMT';
+        font-size: 60px;
+        margin-top: 20px;
+        opacity: 0.9;
+      }
+
+      .typedjs {
+        margin-top: 40px;
+        pointer-events: none;
+
+        #motto {
+          display: inline;
+          font-family: 'XingKai';
+          opacity: 0.8;
+        }
+      }
     }
   }
 
@@ -125,15 +137,25 @@
   }
 }
 
-@media only screen and (max-width: $tablet-breakpoint) {
+@media only screen and (max-width: $largest-tablet-screen) {
   .profile-container {
     text-align: center;
+
+    #motto {
+      font-size: 22px;
+      color: #fff;
+    }
   }
 }
 
 @media only screen and (min-width: $computer-breakpoint) {
   .profile-container {
     float: right;
+  }
+
+  #motto {
+    font-size: 26px;
+    color: #00445d;
   }
 }
 
