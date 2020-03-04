@@ -64,76 +64,88 @@
     }
   }
 
-  .experience-segment {
-    border-left: 2px dotted black;
-    margin-bottom: 0;
-    margin-left: 25px;
-    padding-bottom: 0;
-    position: relative;
+  .about-container {
+    padding-top: 30px;
 
-    .item {
+    .experience-segment {
+      border-left: 2px dotted black;
+      margin-bottom: 0;
+      margin-left: 25px;
+      padding-bottom: 0;
       position: relative;
-      padding-left: 22px;
-      margin-bottom: 30px;
 
-      &:before {
-        background: $bodyBlue;
-        background-size: 100% 100%;
-        border: 2px solid #01315a;
-        border-radius: 10px;
-        content: " ";
-        display: block;
-        float: left;
-        height: 8px;
-        left: 0;
-        margin-left: -5px;
-        margin-top: 10px;
-        position: absolute;
-        top: 0;
-        width: 8px;
+      .item {
+        position: relative;
+        padding-left: 22px;
+        margin-bottom: 30px;
+        margin-left: 0; /* to override ui grid margin-left */
+
+        &:before {
+          background: $bodyBlue;
+          background-size: 100% 100%;
+          border: 2px solid #01315a;
+          border-radius: 10px;
+          content: " ";
+          display: block;
+          float: left;
+          height: 8px;
+          left: 0;
+          margin-left: -5px;
+          margin-top: 10px;
+          position: absolute;
+          top: 0;
+          width: 8px;
+        }
+
+        &:first-of-type:after {
+          background: $bodyBlue;
+          content: " ";
+          display: block;
+          height: 10px;
+          left: -2px;
+          position: absolute;
+          top: 0;
+          width: 2px;
+        }
+
+        .logo {
+          img {
+            width: 120px;
+          }
+        }
+      }
+    }
+
+    .section {
+      .p-title {
+        font-size: 20px;
       }
 
-      &:first-of-type:after {
-        background: $bodyBlue;
-        content: " ";
+      .p-title::after {
+        content: ' ';
+        background-image: linear-gradient(120deg, #00182d, $bodyBlue 95%);
+        border-radius: 2px;
+        height: 4px;
+        width: 80px;
         display: block;
-        height: 10px;
-        left: -2px;
-        position: absolute;
-        top: 0;
-        width: 2px;
+        margin: 12px 0 18px 0;
+      }
+
+      p {
+        font-size: 16px;
       }
     }
-  }
 
-  .section {
-    .p-title {
-      font-size: 20px;
+    #message_author, #message_contact_info, #message_body {
+      border: none;
+      outline: none;
+      padding: 5px;
+      width: 100%;
     }
 
-    .p-title::after {
-      background: black;
-      height: 3px;
-      content: ' ';
-      width: 60px;
-      display: block;
-      margin: 12px 0;  
+    #message_body {
+      resize: none;
     }
-
-    p {
-      font-size: 16px;
-    }
-  }
-
-  #message_author, #message_contact_info, #message_body {
-    border: none;
-    outline: none;
-    padding: 5px;
-    width: 100%;
-  }
-
-  #message_body {
-    resize: none;
   }
 }
 

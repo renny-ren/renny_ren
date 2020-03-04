@@ -21,7 +21,7 @@ javascript:
                 = t(:renny_ren)
               .typedjs
                 p#motto
-    .ui.padded.container
+    .ui.padded.container.about-container
       .section.ui.padded.grid
         .sixteen.wide.column
           .p-title 关于我
@@ -32,22 +32,26 @@ javascript:
           .p-title 个人经历
 
           .experience-segment
-            .item
-              .twelve.wide.column
+            .item.ui.stackable.grid
+              .four.wide.column
                 .title 2018.05 - 至今
                 .description Strikingly
+              .logo.eight.wide.bottom.aligned.column
+                = link_to image_tag('http://uploads.strikinglycdn.com/static/email_assets/logo-2x.png'), 'https://www.strikingly.com', target: '_blank'
+
+            .item.ui.stackable.grid
               .four.wide.column
-            .item
-              .twelve.wide.column
                 .title 2017.05 - 2018.05
                 .description work as freelancer
+              .logo.eight.wide.bottom.aligned.column
+                = link_to image_tag('https://assets.static-upwork.com/assets/Adquiro/3146594/wp/images/upwork_logo.5fa25d34d762.svg'), 'https://en.wikipedia.org/wiki/Freelancer', target: '_blank'
+
+            .item.ui.stackable.grid
               .four.wide.column
-            .item
-              .twelve.wide.column
                 .title 2016.10 - 2017.03
                 .description 速递易
-              .four.wide.column
-
+              .logo.eight.wide.bottom.aligned.column
+                = link_to image_tag('sposter.png'), 'http://sposter.net/', target: '_blank'
       .section.ui.padded.grid
         .sixteen.wide.column
           .p-title 与我联系
