@@ -68,7 +68,8 @@
     padding-top: 30px;
 
     .experience-segment {
-      border-left: 2px dotted black;
+      border-left: 2px solid black;
+      border-image: linear-gradient(to bottom, #00182d, $bodyBlue) 1 100%;
       margin-bottom: 0;
       margin-left: 25px;
       padding-bottom: 0;
@@ -76,7 +77,7 @@
 
       .item {
         position: relative;
-        padding-left: 22px;
+        padding-left: 32px;
         margin-bottom: 30px;
         margin-left: 0; /* to override ui grid margin-left */
 
@@ -91,7 +92,7 @@
           height: 8px;
           left: 0;
           margin-left: -5px;
-          margin-top: 10px;
+          margin-top: 24px;
           position: absolute;
           top: 0;
           width: 8px;
@@ -101,11 +102,11 @@
           background: $bodyBlue;
           content: " ";
           display: block;
-          height: 10px;
-          left: -2px;
+          height: 24px;
+          left: -3px;
           position: absolute;
-          top: 0;
-          width: 2px;
+          top: -0;
+          width: 4px;
         }
 
         .logo {
