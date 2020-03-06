@@ -69,5 +69,5 @@ javascript:
               .fields
                 .eight.wide.field
                   = f.text_area :body, size: '60x5', placeholder: "输入内容"
-              .fields
-                = f.button '发送邮件', type: 'submit', class: 'ui button', data: { disable_with: '发送中..' }
+              .submit-btn
+                = f.button '发送邮件', type: 'submit', class: 'ui primary button', data: { disable_with: '发送中...' }

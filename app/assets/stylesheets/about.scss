@@ -152,19 +152,8 @@
   }
 }
 
-.feedback-container {
-/*  .feedback-submit {
-    input {
-      color: #0e90d2;
-      cursor: pointer;
-      border: solid 1px #ddd;
-      background-color: #fff;
-      padding: 4px 12px;
-    }
-  }*/
-}
 
-@media only screen and (max-width: $largest-tablet-screen) {
+@media only screen and (max-width: $largest-mobile-screen) {
   .profile-container {
     text-align: center;
 
@@ -173,9 +162,15 @@
       color: #fff;
     }
   }
+
+  .feedback-container {
+    .submit-btn {
+      margin-top: 10px;
+    }
+  }
 }
 
-@media only screen and (min-width: $computer-breakpoint) {
+@media only screen and (min-width: $tablet-breakpoint) {
   .profile-container {
     float: right;
   }
