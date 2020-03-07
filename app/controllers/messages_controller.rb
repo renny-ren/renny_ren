@@ -12,11 +12,11 @@ class MessagesController < ApplicationController
   end
 
   def feedback
-     if message_params[:body].blank?
-      redirect_to about_index_path, alert: '请输入邮件内容'
+    if message_params[:body].blank?
+      render plain: 'failed', status: 400
     else
-      Message.send_feedback_email(message_params[:body], message_params[:author])
-      redirect_to about_index_path, flash: { success: "如果没有意外，我已收到你的邮件。感谢！" }
+      Message.send_feedback_email(message_params[:author], message_params[:contact_info], message_params[:body])
+      render plain: 'success', status: 200
     end
   end
 

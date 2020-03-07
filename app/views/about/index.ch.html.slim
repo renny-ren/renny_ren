@@ -60,7 +60,7 @@ javascript:
         .sixteen.wide.column
           .p-title 与我联系
           .ui.form.feedback-container
-            = form_for Message.new, url: feedback_path do |f|
+            = form_for Message.new, url: feedback_path, remote: :true do |f|
               .two.fields
                 .four.wide.field
                   = f.text_field :author, maxlength: 10, placeholder: '姓名', autocomplete: 'off'
@@ -69,5 +69,12 @@ javascript:
               .fields
                 .eight.wide.field
                   = f.text_area :body, size: '60x5', placeholder: "输入内容"
+              .fields
+                .eight.wide.field
+                  .ui.success.message
+                    .header 谢谢你的提交！
+                    p 如果代码没有 bug && 服务运行正常，我已收到你的邮件。
+                  .ui.warning.message
+                    p 请输入内容
               .submit-btn
                 = f.button '发送邮件', type: 'submit', class: 'ui primary button', data: { disable_with: '发送中...' }
