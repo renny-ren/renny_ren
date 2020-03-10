@@ -5,11 +5,16 @@
         .msg-board = render 'message'
       .thirteen.wide.column
         .timeline
-          .item
-            .ui.blue.segment first
-          .item
-            .ui.blue.segment second
-          .item
-            .ui.blue.segment third
-          .item
-            .ui.blue.segment forth
+          .ui.stackable.padded.grid
+            .item.right.floated.six.wide.column
+              .item-circle.odd
+              .ui.blue.segment first
+            .item.left.floated.six.wide.column
+              .item-circle
+              .ui.blue.segment second
+            .item.right.floated.six.wide.column
+              .item-circle.odd
+              .ui.blue.segment third
+            .item.left.floated.six.wide.column
+              .item-circle
+              .ui.blue.segment forth
