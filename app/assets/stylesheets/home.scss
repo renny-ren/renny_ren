@@ -17,32 +17,74 @@
   height: 100%;
 
   .item {
-    position: relative;
-    float: left;
-    clear: both;
-    width: calc(50% - 80px);
+    /*position: relative;*/
+    /*float: left;*/
+    /*clear: both;*/
+    /*width: calc(50% - 80px);*/
+
+    &:before {
+      content: attr(data-date);
+      position: absolute;
+      width: 100%;
+      top: 40px;
+      right: calc(-100% - 20px);
+      color: $cadetBlue;
+      letter-spacing: 1px;
+
+    /*  background: $bodyBlue;
+      background-size: 100% 100%;
+      border: 2px solid #01315a;
+      border-radius: 10px;
+      content: " ";
+      display: block;
+      float: left;
+      height: 8px;
+      left: 0;
+      margin-left: -5px;
+      margin-top: 24px;
+      position: absolute;
+      top: 0;
+      width: 8px;*/
+    };
+
+
+    &:nth-child(even) {
+      /*float: right;*/
+      margin-top: 80px;
+
+      &:before {
+        right: auto;
+        text-align: right;
+        left: calc(-100% - 20px);
+        /*padding-left: 0;*/
+        /*padding-right: 15px;*/
+      }
+    }
 
     .item-circle {
       background: $bodyBlue;
       background-size: 100% 100%;
       border: 2px solid #01315a;
       border-radius: 10px;
-      height: 12px;
-      left: -6px;
-      margin-top: 24px;
+      height: 8px;
+      left: -4px;
       position: absolute;
-      top: 15px;
-      width: 12px;
+      top: 46px;
+      width: 8px;
     }
 
     .item-circle.odd {
-      right: -6px;
+      right: -4px;
       left: inherit;
+    }
+
+/*    .item-circle:nth-of-type(odd) {
+
+    }*/
+
+    .item-date {
+      color: $cadetBlue;
     }
   }
 
-  .item:nth-child(2n) {
-    /*float: right;*/
-    margin-top: 80px;
-  }
 }
