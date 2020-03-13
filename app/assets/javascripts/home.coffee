@@ -6,11 +6,12 @@ $ ->
     deg = (deg + 180) % 360
     $('.fa-angle-down').css('transform', 'rotate(' + deg + 'deg)')
 
-  $('.item-segment')
-    .mouseenter () ->
+  $('body')
+    .on 'mouseenter', '.item-segment', () ->
       $(this).css('transform', 'scale(1.02)')
-    .mouseleave () ->
+    .on 'mouseleave', '.item-segment', () ->
       $(this).css('transform', 'initial')
+
 
 document.addEventListener 'turbolinks:load',  ->
   $('#close').click () ->

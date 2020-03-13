@@ -37,6 +37,7 @@
 
       .item-segment {
         left: 5px;
+        float: left;
 
         &:before {
           left: auto;
@@ -72,6 +73,7 @@
     .item-segment {
       right: 5px;
       cursor: pointer;
+      float: right;
 
       &:before {
         content: '';
@@ -89,7 +91,17 @@
 
     .item-content {
       overflow: hidden;
-      max-height: 150px;
+      max-height: 120px;
+      line-height: 1.6;
+
+      .title {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+      }
+
+      .description {
+        color: gray;
+      }
     }
   }
 }

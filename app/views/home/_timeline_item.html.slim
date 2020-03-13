@@ -2,4 +2,8 @@
   .item-circle
   .item-segment.ui.raised.segment
     .item-content
-      = truncate(sanitize(timeline_item.content), length: 100)
+      - if timeline_item.owner_type == 'Article'
+        .title = timeline_item.title
+        .description = sanitize timeline_item.content
+      - else
+        = truncate(sanitize(timeline_item.content), length: 100)
