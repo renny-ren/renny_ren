@@ -19,7 +19,7 @@ class Article < ApplicationRecord
   def create_timeline_item
     create_timeline_item!(
       title: title,
-      content: content[1..100]
+      content: content[0..100]
     )
   end
 end

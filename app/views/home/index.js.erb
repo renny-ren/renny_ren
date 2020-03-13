@@ -1,0 +1,7 @@
+$('.timeline-items').append('<%= j render partial: 'timeline_item', collection: @timeline_items %>');
+<% if @timeline_items.next_page %>
+  $('.pagination').replaceWith('<%= j will_paginate @timeline_items %>');
+<% else %>
+  $(window).off('scroll');
+  $('.pagination').remove();
+<% end %>

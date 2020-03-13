@@ -2,4 +2,4 @@
   .item-circle
   .item-segment.ui.raised.segment
     .item-content
-      = sanitize timeline_item.content
+      = truncate(sanitize(timeline_item.content), length: 100)

@@ -5,5 +5,8 @@
         .msg-board = render 'message'
       .thirteen.wide.column
         .timeline
-          .ui.stackable.padded.centered.grid
+          .timeline-items.ui.stackable.padded.centered.grid
             = render partial: 'timeline_item', collection: @timeline_items
+
+        .infinite-scrolling
+          = will_paginate @timeline_items, style: 'text-align: center'
