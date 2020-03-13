@@ -28,14 +28,14 @@
     };
 
     &:nth-child(even) {
-      margin-top: 80px;
+      margin-top: 10%;
 
       .item-circle {
         left: -4px;
         right: inherit;
       }
 
-      .item-content {
+      .item-segment {
         left: 5px;
 
         &:before {
@@ -69,8 +69,9 @@
       color: $cadetBlue;
     }
 
-    .item-content {
+    .item-segment {
       right: 5px;
+      cursor: pointer;
 
       &:before {
         content: '';
@@ -84,6 +85,11 @@
         border-color: transparent;
         border-left-color: #ffffff;
       }
+    }
+
+    .item-content {
+      overflow: hidden;
+      max-height: 150px;
     }
   }
 }
