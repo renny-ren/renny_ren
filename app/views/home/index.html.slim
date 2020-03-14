@@ -1,8 +1,15 @@
+script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+
+javascript:
+  $(function(){
+    $('.draggable').draggable({ containment: '.msg-board', cursor: 'move' });
+  });
+
 .page-container
   .ui.fluid.container
     .ui.padded.grid
-      .three.wide.column
-        .msg-board = render 'message'
+      .three.wide.column.msg-board
+        = render partial: 'message', collection: @messages
       .thirteen.wide.column
         .timeline
           .timeline-items.ui.stackable.padded.centered.grid

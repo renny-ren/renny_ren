@@ -3,8 +3,35 @@
 .msg-board {
   border-right: dashed 1px gray;
   min-height: 750px;
-  max-height: 800px;
-  /*overflow: scroll;*/
+
+  .msg-item {
+    max-width: 350px;
+    margin-bottom: 20px;
+    display: flex;
+
+    .item-left {
+      text-align: right;
+      align-self: flex-end;
+      min-width: 65px;
+      width: 65px;
+      padding-right: 5px;
+      color: #323232;
+
+      .msg-author-show {
+        word-break: break-word;
+        opacity: 0.9;
+      }
+
+      .msg-date {
+        font-size: 11px;
+        opacity: 0.6;
+      }
+    }
+
+    .msg-body-show {
+      line-height: 1.6;
+    }
+  }
 }
 
 

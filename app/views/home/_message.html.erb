@@ -1,8 +1,0 @@
-<% @messages.each do |m| %>
-<div class="msg-item draggable">
-    <%= link_to(fa_icon('trash'), message_path(m), method: :delete, data: { confirm: "sure to delete: ---#{m.body}---?"}, remote: :true) if session[:admin] %>
-    <div class="msg-body-show"><%= m.body %></div>
-    <span style="font-size: 12px; color: #747474;"><%= time_ago_in_words m.created_at %></span>
-    <% if m.author.present? %><div class="msg-author-show">—— <%= m.author %></div><% end %>
-</div>
-<% end %>

@@ -7,17 +7,6 @@
   margin-top: 5px;
 }
 
-.msg-item {
-  border-radius: 5px;
-  padding: 5px 12px;
-  position: relative;
-  margin: 8px 15px;
-  float: left;
-  border: dotted 1px #adadad;
-  max-width: 350px;
-  word-break: break-all;
-}
-
 .msg-submit, .msg-author {
   margin-top: 6px;
 }
@@ -43,15 +32,4 @@
   border: solid 1px #ddd;
   background-color: #fff;
   padding: 4px 12px;
-}
-
-.msg-body-show {
-  font-family: "Chalkboard", "Comic Sans MS", "微软雅黑", "MV Boli", "黑体", "楷体", "宋体", "文泉驿等宽微米黑";
-}
-
-.msg-author-show {
-  float: right;
-  color: #747474;
-  font-size: 14px;
-  padding-left: 60px;
 }
