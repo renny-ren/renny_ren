@@ -75,6 +75,10 @@
       cursor: pointer;
       float: right;
 
+      a {
+        color: currentColor;
+      }
+
       &:before {
         content: '';
         position: absolute;
