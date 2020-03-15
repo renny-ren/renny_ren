@@ -1,11 +1,9 @@
 .msg-item.draggable
   .item-left
-    .msg-author-show = message.author.present? ? message.author : '无名'
+    .msg-author-show = message.author.present? ? message.author : '匿名'
     .msg-date
       = time_ago_in_words message.created_at
 
   .ui.basic.blue.left.pointing.label
     = link_to(fa_icon('trash'), message_path(message), method: :delete, data: { confirm: "sure to delete: ---#{message.body}---?"}, remote: :true) if session[:admin]
     .msg-body-show = message.body
-
-  
