@@ -1,0 +1,9 @@
+.ui.vertical.segment.article-item
+  span.title
+    = link_to article.title, article_path(article), method: :get
+  span.date
+    = article.created_at.to_date
+
+  - if session[:admin]
+    = link_to 'edit', edit_article_path(article)
+    = link_to 'destroy', article_path(article), method: :delete, data: { confirm: "are you sure?"}

@@ -1,7 +1,11 @@
 class ArticlesController < ApplicationController
-  http_basic_authenticate_with name: Settings.name, password: Settings.password, except: :show
-  before_action :validate_admin, except: :show
+  http_basic_authenticate_with name: Settings.name, password: Settings.password, except: [:index, :show]
+  before_action :validate_admin, except: [:index, :show]
   before_action :find_article, only: [:show, :edit, :update, :destroy]
+
+  def index
+    @articles = Article.paginate(page: params[:page], per_page: 10).order('created_at DESC')
+  end
 
   def new
     @article = Article.new

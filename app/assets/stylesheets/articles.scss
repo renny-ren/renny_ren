@@ -2,6 +2,44 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@import "colors";
+@import "media";
+
+.articles-page {
+  .articles-container {
+    margin-top: 20px;
+  }
+
+  .article-item {
+    margin-top: 12px !important;
+
+    .title {
+      font-size: 18px;
+      a {
+        color: $lightBlack;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+
+    .date {
+      float: right;
+      color: $cadetBlue;
+      opacity: 0.9;
+    }
+  }
+}
+
+@media only screen and (max-width: $largest-mobile-screen) {
+  .articles-page {
+    .article-item {
+      padding: 18px 0 !important;
+    }
+  }
+}
+
+
 // ------show------
 
 .article_container{

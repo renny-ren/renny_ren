@@ -23,7 +23,7 @@
   border-bottom: dashed 1px blue;
 }*/
 
-.title a:hover, .title_in_tag_show a:hover{ color: #6495ed !important; }
+/*.title a:hover, .title_in_tag_show a:hover{ color: #6495ed !important; }*/
 
 .y_m{
   padding-top: 1em;
@@ -31,13 +31,6 @@
   font-size: 28px;
   color: #5f9ea0;
   font-family: 'Chalkboard', 'Comic Sans MS', 'MV Boli';
-}
-
-.date, .date_in_tag_show{
-  text-align: right;
-  margin-right: 20px;
-  margin-top: -35px;
-  /* font-family: 'Chalkboard', 'Comic Sans MS', 'MV Boli'; */
 }
 
 @media only screen and (max-device-width: 400px){
@@ -53,10 +46,10 @@
     border-bottom: dashed 1.5px blue;
   }*/
 
-  .date, .date_in_tag_show{
-    /* margin-right: 5px;
+/*  .date, .date_in_tag_show{
+     margin-right: 5px;
     margin-top: -51px;
-    font-size: 0.6em; */
+    font-size: 0.6em;
     display: none;
-  }
+  }*/
 }
