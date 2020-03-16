@@ -6,8 +6,8 @@ ja:
   msg_placeholder: 何が言いたいのか...
   msg_author: 名前（オプション）
   submit: 提出
-  confirm_submit:  提出を確認しますか 
-  msg_unfold: メッセージ
+  confirm_submit: "# 送信したメッセージは削除できません。"
+  msg_button: メッセージ
 
   title: Renny's blog
   home: "ホーム"

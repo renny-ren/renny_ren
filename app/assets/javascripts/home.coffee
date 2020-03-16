@@ -6,6 +6,10 @@ $ ->
     deg = (deg + 180) % 360
     $('.fa-angle-down').css('transform', 'rotate(' + deg + 'deg)')
 
+  $('.msg-button').click () ->
+    $('.msg-modal').modal('show')
+
+
   $('body')
     .on 'mouseenter', '.item-segment', () ->
       $(this).css('transform', 'scale(1.02)')

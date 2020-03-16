@@ -27,8 +27,8 @@ en:
   msg_placeholder: Leave your footstep here...
   msg_author: name(optional)
   submit: submit
-  confirm_submit: Are you sure to submit?
-  msg_unfold: Leave a message
+  confirm_submit: "# You cannot delete the message once you've submitted."
+  msg_button: Leave a message
 
   title: Renny's blog
   home: "Home"

@@ -9,7 +9,11 @@ javascript:
   .ui.fluid.container
     .ui.padded.grid
       .three.wide.column.msg-board
-        = render partial: 'message', collection: @messages
+        .ui.mini.twitter.button.msg-button
+          i.icon.chat
+          = t(:msg_button)
+        .msg-items
+          = render partial: 'message', collection: @messages
       .thirteen.wide.column
         .timeline
           .timeline-items.ui.stackable.padded.centered.grid
@@ -17,3 +21,16 @@ javascript:
 
         .infinite-scrolling
           = will_paginate @timeline_items, style: 'text-align: center'
+
+  .ui.basic.modal.msg-modal
+    .ui.icon.header
+    .content
+      p = t(:confirm_submit)
+      .ui.form
+        = form_for Message.new, remote: true do |f|
+          .four.wide.required.field
+            = f.text_area :body, placeholder: t(:msg_placeholder), maxlength: 50
+          .four.wide.field
+            = f.text_field :author, placeholder: t(:msg_author), maxlength: 12
+          .action
+            = f.button t(:submit), class: 'ui primary button submit-btn'
