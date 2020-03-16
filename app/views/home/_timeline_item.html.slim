@@ -2,7 +2,7 @@
 
 .item.six.wide.column data-date="#{item.created_at.strftime('%Y-%m-%d')}"
   .item-circle
-  .item-segment.ui.raised.segment
+  .item-segment class=(item.owner_type == 'Article' ? 'ui stacked segment' : 'ui raised segment')
       - if item.owner_type == 'Article'
         = link_to article_path(item.owner.id)
           .item-content
