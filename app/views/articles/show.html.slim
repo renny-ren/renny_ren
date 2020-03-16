@@ -1,0 +1,17 @@
+.page-container
+  .ui.padded.container.article-container
+    .ui.padded.raised.segment
+      .title
+        = @article.title
+      .date
+        = t(:created) + "#{@created_date}　　"
+
+      .content
+        = sanitize(@article.content)
+
+    div style="text-align: center; cursor: pointer; color: #ffbe48;" onclick="javascript:alert('这家伙很懒，点赞功能还没开发。');"
+      '0 赞 &nbsp
+      i.fa.fa-thumbs-up
+
+    = link_to "编辑", edit_article_path(@article) if session[:admin]
+    = button_to "返回", articles_path, method: :get, class: 'ui basic blue button'

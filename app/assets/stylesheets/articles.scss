@@ -5,6 +5,9 @@
 @import "colors";
 @import "media";
 
+
+/* index page */
+
 .articles-page {
   .articles-container {
     margin-top: 20px;
@@ -40,108 +43,71 @@
 }
 
 
-// ------show------
+/* show page */
 
-.article_container{
-  min-height: 800px;
-  padding: 5%;
-  margin: 0 12%;
-}
+.article-container {
+  margin-top: 20px;
 
-#title{
-  padding-top: 30px;
-  padding-bottom: 15px;
-  margin: 0 5em;
-  text-align: center;
-  font-family: '微软雅黑';
-  font-size: 1.5em;
-  border-bottom: groove 1px blue;
-}
-
-#date{
-  padding-top: 10px;
-  text-align: right;
-}
-
-#content{
-  padding: 10px 35px;
-  margin: 30px 0;
-  box-shadow: 10px 8px 5px #888888;
-  border-top: outset 4px white;
-  border-left: outset 4px white;
-  border-radius: 2em;
-  font-size: 1rem;
-  line-height: 1.8em;
-  font-family: "Source Sans Pro", "PingFang SC", "Microsoft YaHei", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  h1, h2, h3 {
-    border-bottom: solid 1px #dcdcdc;
-    padding: 1em 0 5px 0;
-  }
-}
-
-#content a{
-  text-decoration: none;
-  color: #6495ed;
-}
-#content a:hover{ text-decoration: underline; }
-
-code{
-  display: inline-block;
-  font-size: 16px;
-  background-color: #b0c4de !important;
-  border-left: solid 2px #a9a9a9;
-  color: #444 !important;
-  padding: 1px 4px !important;
-  margin: 2px;
-  border-radius: 3px;
-  word-break: break-all;
-  line-height: 20px;
-  overflow: auto;
-  max-width: 100%;
-}
-
-pre{ white-space: pre-wrap; }
-
-#SOHUCS{
-  position: relative;
-  z-index: 1;
-}
-
-@media only screen and (max-device-width: 400px){
-  .article_container{ margin: 0 1% !important; }
-
-  #title{
-    padding-top: 60px;
-    margin: 0 1em;
-  }
-
-  #date{
-    font-size: 14px;
+  .title {
+    font-size: 20px;
     text-align: center;
+    padding-top: 10px;
+
+    &:after {
+      content: ' ';
+      background-image: linear-gradient(to right, #ffffff, #00182d, #ffffff);
+      border-radius: 2px;
+      height: 2px;
+      display: block;
+      margin: 20px 40px 5px;
+    }
   }
 
-  #content{
-    padding: 0;
-    font-size: 100% !important;
-    line-height: 30px !important;
-    border: none;
-    box-shadow: none;
-    word-wrap: break-word;
+  .date {
+    padding-top: 10px;
+    text-align: right;
   }
 
-  code{
-    /* font-size: 2em !important; */
-    border-left: solid 5px #a9a9a9;
-    margin: 2px !important;
-    line-height: 1.8em;
+  .content {
+    padding: 30px;
+    /*font-family: "Source Sans Pro", "PingFang SC", "Microsoft YaHei", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";*/
+    h1, h2, h3 {
+      border-bottom: solid 1px #dcdcdc;
+      padding: 1em 0 5px 0;
+    }
   }
+
+  .content a {
+    text-decoration: none;
+    color: #6495ed;
+  }
+  .content a:hover { text-decoration: underline; }
+
+  code {
+    display: inline-block;
+    font-size: 16px;
+    background-color: #b0c4de !important;
+    border-left: solid 2px #a9a9a9;
+    color: #444 !important;
+    padding: 1px 4px !important;
+    margin: 2px;
+    border-radius: 3px;
+    word-break: break-all;
+    line-height: 20px;
+    overflow: auto;
+    max-width: 100%;
+  }
+
+  pre { white-space: pre-wrap; }
 }
 
-@media only screen and (min-width: 1800px){
-  #content{ font-size: 1.1rem; }
+@media only screen and (max-width: $largest-mobile-screen) {
+  .article-container {
+    .content {
+      padding: 30px 2px 2px;
+    }
+  }
 }
-
-// ------show------
 
 
 // ------typed.js-----

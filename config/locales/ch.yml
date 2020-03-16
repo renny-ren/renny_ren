@@ -16,7 +16,7 @@ ch:
   about: "关于"
   site: 酷站
 
-  created: "创建于： "
+  created: "发布时间： "
   updated: "最后更新： "
 
   will_paginate:
