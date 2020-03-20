@@ -1,4 +1,5 @@
 @import "colors";
+@import "media";
 
 .msg-board {
   min-height: 750px;
@@ -138,6 +139,40 @@
 
       .description {
         color: gray;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $largest-mobile-screen) {
+  .timeline {
+    padding-left: 35px;
+    background-position-x: 20px;
+
+    .item {
+      &:before {
+        content: attr(data-short-date);
+        right: auto;
+        text-align: right;
+        left: calc(-100% - 15px);
+        writing-mode: vertical-rl;
+      }
+
+      .item-circle {
+        left: -4px;
+        right: inherit;
+      }
+
+      .item-segment {
+        left: 5px;
+        float: left;
+
+        &:before {
+          left: auto;
+          right: 100%;
+          border-color: transparent;
+          border-right-color: #ffffff;
+        }
       }
     }
   }

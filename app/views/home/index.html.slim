@@ -8,13 +8,13 @@ javascript:
 .page-container
   .ui.fluid.container
     .ui.padded.grid
-      .three.wide.column.msg-board
+      .three.wide.column.msg-board.computer.only
         .ui.mini.twitter.button.msg-button
           i.icon.chat
           = t(:msg_button)
         .msg-items
           = render partial: 'message', collection: @messages
-      .thirteen.wide.column
+      .thirteen.wide.computer.sixteen.wide.mobile.column
         .timeline
           .timeline-items.ui.stackable.padded.centered.grid
             = render partial: 'timeline_item', collection: @timeline_items

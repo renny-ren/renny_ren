@@ -1,6 +1,6 @@
 - item = timeline_item
 
-.item.six.wide.column data-date="#{item.created_at.strftime('%Y-%m-%d')}"
+.item.six.wide.column data-date="#{item.created_at.strftime('%Y-%m-%d')}" data-short-date="#{item.created_at.strftime('%m.%d')}"
   .item-circle
   .item-segment class=(item.owner_type == 'Article' ? 'ui stacked segment' : 'ui raised segment')
       - if item.owner_type == 'Article'
