@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  mount Ckeditor::Engine => '/ckeditor'
+
   scope "(:locale)", locale: /en|ch|ja/ do
     root 'home#index', as: 'home'
     resources :articles

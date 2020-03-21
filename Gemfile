@@ -1,5 +1,7 @@
 source 'https://gems.ruby-china.com'
 
+gem 'ckeditor', github: 'galetahub/ckeditor'
+gem 'paperclip'
 gem 'redcarpet'  # markdown
 gem 'will_paginate'
 gem 'config'
