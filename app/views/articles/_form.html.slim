@@ -5,6 +5,6 @@
     .field
       .title = f.text_field :title, placeholder: "title"
     .field
-      = f.cktext_area :content, value: 'Default value', id: 'sometext'
+      = f.cktext_area :content, value: @article.content, id: 'article-content'
     .action
       = f.submit 'submit', class: 'ui primary button'
