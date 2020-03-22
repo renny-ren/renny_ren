@@ -36,6 +36,7 @@ config/services.local.yml
 config/ssl
 log/development.log
 public/assets
+public/ckeditor_assets/
 public/.well-known
 
 !public/404.html

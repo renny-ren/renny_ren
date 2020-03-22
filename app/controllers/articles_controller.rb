@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-  http_basic_authenticate_with name: Settings.name, password: Settings.password, except: [:index, :show]
+  # http_basic_authenticate_with name: Settings.name, password: Settings.password, except: [:index, :show]
   before_action :validate_admin, except: [:index, :show]
   before_action :find_article, only: [:show, :edit, :update, :destroy]
 
@@ -13,14 +13,12 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    content = Article.to_html(article_params[:content_md])
-    Article.create!(title: article_params[:title], content: content, content_md: article_params[:content_md],
-                    date: Article.year_month, tag: article_params[:tag])
+    Article.create!(article_params)
     redirect_to articles_path
   end
 
   def show
-    @tag_arr = format_array(@article.tag)
+    # @tag_arr = format_array(@article.tag)
     get_date
   end
 
@@ -60,6 +58,6 @@ class ArticlesController < ApplicationController
   end
 
   def article_params
-    params.require(:article).permit(:title, :content_md, :tag)
+    params.require(:article).permit(:title, :content)
   end
 end

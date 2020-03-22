@@ -1,5 +1,10 @@
 = javascript_include_tag Ckeditor.cdn_url
 
-= form_for @article do |f|
-  .title = f.text_field :title, size: "50", placeholder: "title", autocomplete: "off"
-  = f.cktext_area :content, value: 'Default value', id: 'sometext'
+.article-form.ui.form
+  = form_for @article do |f|
+    .field
+      .title = f.text_field :title, placeholder: "title"
+    .field
+      = f.cktext_area :content, value: 'Default value', id: 'sometext'
+    .action
+      = f.submit 'submit', class: 'ui primary button'
