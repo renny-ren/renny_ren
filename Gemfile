@@ -1,5 +1,6 @@
 source 'https://gems.ruby-china.com'
 
+gem 'cancancan'
 gem 'ckeditor'
 gem 'paperclip'
 gem 'redcarpet'  # markdown (not in use)

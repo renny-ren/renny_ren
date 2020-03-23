@@ -1,10 +1,10 @@
 class ArticlesController < ApplicationController
+  load_resource
   # http_basic_authenticate_with name: Settings.name, password: Settings.password, except: [:index, :show]
   before_action :validate_admin, except: [:index, :show]
-  before_action :find_article, only: [:show, :edit, :update, :destroy]
 
   def index
-    @articles = Article.paginate(page: params[:page], per_page: 10).order('created_at DESC')
+    @articles = @articles.order('created_at DESC').paginate(page: params[:page], per_page: 10)
   end
 
   def new
@@ -51,10 +51,6 @@ class ArticlesController < ApplicationController
   end
 
   private
-
-  def find_article
-    @article = Article.find(params[:id])
-  end
 
   def article_params
     params.require(:article).permit(:title, :content)

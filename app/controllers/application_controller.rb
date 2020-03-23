@@ -4,6 +4,10 @@ class ApplicationController < ActionController::Base
 
   protected
 
+  def current_ability
+    @current_ability ||= Ability.new(session[:hahaha])
+  end
+
   def default_url_options
     { locale: I18n.locale }
   end
