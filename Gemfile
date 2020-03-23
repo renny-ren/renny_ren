@@ -1,8 +1,8 @@
 source 'https://gems.ruby-china.com'
 
-gem 'ckeditor', github: 'galetahub/ckeditor'
+gem 'ckeditor'
 gem 'paperclip'
-gem 'redcarpet'  # markdown
+gem 'redcarpet'  # markdown (not in use)
 gem 'will_paginate'
 gem 'config'
 gem 'font-awesome-rails'

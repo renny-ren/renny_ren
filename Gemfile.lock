@@ -1,12 +1,5 @@
-GIT
-  remote: git://github.com/galetahub/ckeditor.git
-  revision: f9e48420ccb6dc99f4453397554a6ae60bc2274b
-  specs:
-    ckeditor (5.1.0)
-      orm_adapter (~> 0.5.0)
-
 GEM
-  remote: https://gems.ruby-china.com/
+  remote: https://rubygems.org/
   specs:
     actioncable (5.0.7.1)
       actionpack (= 5.0.7.1)
@@ -49,6 +42,8 @@ GEM
     bindex (0.5.0)
     builder (3.2.4)
     byebug (10.0.2)
+    ckeditor (5.1.0)
+      orm_adapter (~> 0.5.0)
     climate_control (0.2.0)
     coffee-rails (4.2.2)
       coffee-script (>= 2.2.0)
@@ -224,7 +219,7 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
-  ckeditor!
+  ckeditor
   coffee-rails (~> 4.2)
   config
   font-awesome-rails
