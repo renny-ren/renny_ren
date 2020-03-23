@@ -5,7 +5,9 @@ if (typeof(CKEDITOR) !== 'undefined') {
     // config.uiColor = '#AADC6E';
     config.extraPlugins = 'codesnippet';
     // config.codeSnippet_theme = 'pojoaque';
-    config.codeSnippet_theme = 'monokai';
+    // config.codeSnippet_theme = 'monokai';
+
+    config.height = 600;
 
     /* Filebrowser routes */
     // The location of an external file browser, that should be launched when "Browse Server" button is pressed.

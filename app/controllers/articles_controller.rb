@@ -27,7 +27,6 @@ class ArticlesController < ApplicationController
   end
 
   def update
-    # @article.content = Article.to_html(article_params[:content_md])
     if @article.update(article_params)
       redirect_to @article
     else
