@@ -15,12 +15,4 @@ class ApplicationController < ActionController::Base
   def set_locale
     I18n.locale = params[:locale] || I18n.default_locale
   end
-  
-  def validate_admin
-    if session[:admin]
-      "pass"
-    else
-      render plain: '401 Unauthorized', status: 401
-    end
-  end
 end

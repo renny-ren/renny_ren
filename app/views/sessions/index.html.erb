@@ -1,6 +1,6 @@
 <div class="sessions_container">
 	<%= form_tag sessions_path do %>
-	  <%= password_field_tag :password %>
+	  <%= password_field_tag :admin_token %>
 	  <%= button_to "activate", action: "create" %>
 	<% end %>
 	<%= button_to "inactivate", sessions_path, method: :delete %>

@@ -1,7 +1,5 @@
 class ArticlesController < ApplicationController
-  load_resource
-  # http_basic_authenticate_with name: Settings.name, password: Settings.password, except: [:index, :show]
-  before_action :validate_admin, except: [:index, :show]
+  load_and_authorize_resource
 
   def index
     @articles = @articles.order('created_at DESC').paginate(page: params[:page], per_page: 10)
@@ -19,7 +17,6 @@ class ArticlesController < ApplicationController
 
   def show
     # @tag_arr = format_array(@article.tag)
-    get_date
   end
 
   def edit
@@ -36,12 +33,7 @@ class ArticlesController < ApplicationController
 
   def destroy
     @article.destroy
-    redirect_to archives_path
-  end
-
-  def get_date
-    @created_date = @article.created_at.to_date
-    @updated_date = @article.updated_at.to_date
+    redirect_to articles_path
   end
 
   def format_array(string)
