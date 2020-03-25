@@ -2,6 +2,10 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   before_action :set_locale
 
+  helper_method :admin?
+
+  include PermissionControl
+
   protected
 
   def current_ability

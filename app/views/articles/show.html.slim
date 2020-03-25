@@ -15,5 +15,5 @@
       '0 赞 &nbsp
       i.fa.fa-thumbs-up
 
-    = link_to "编辑", edit_article_path(@article) if can? :edit, @article
+    = link_to "编辑", edit_article_path(@article) if admin?
     = button_to "返回", articles_path, method: :get, class: 'ui basic blue button'

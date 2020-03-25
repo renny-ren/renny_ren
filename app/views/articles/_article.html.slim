@@ -4,6 +4,6 @@
   span.date
     = article.created_at.to_date
 
-  - if session[:admin]
+  - if admin?
     = link_to 'edit', edit_article_path(article)
-    = link_to 'destroy', article_path(article), method: :delete, data: { confirm: "are you sure?"}
+    = link_to 'destroy', article_path(article), method: :delete, data: { confirm: 'are you sure?' }

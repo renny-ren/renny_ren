@@ -5,5 +5,5 @@
       = time_ago_in_words message.created_at
 
   .ui.basic.blue.left.pointing.label
-    = link_to(fa_icon('trash'), message_path(message), method: :delete, data: { confirm: "sure to delete: ---#{message.body}---?"}, remote: :true) if session[:admin]
+    = link_to(fa_icon('trash'), message_path(message), method: :delete, data: { confirm: "sure to delete: ---#{message.body}---?"}, remote: :true) if admin?
     .msg-body-show = message.body

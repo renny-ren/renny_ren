@@ -5,4 +5,4 @@
         = render partial: 'article', collection: @articles
 
     = will_paginate @articles, class: "flickr_pagination"
-    = link_to "新建文章", new_article_path if session[:admin]
+    = link_to "新建文章", new_article_path if admin?
