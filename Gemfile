@@ -1,5 +1,6 @@
 source 'https://gems.ruby-china.com'
 
+gem 'acts-as-taggable-on'
 gem 'cancancan'
 gem 'ckeditor'
 gem 'paperclip'

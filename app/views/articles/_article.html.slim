@@ -3,6 +3,10 @@
     = link_to article.title, article_path(article), method: :get
   span.date
     = article.created_at.to_date
+  .tags
+    = article.tags.each do |tag|
+      .ui.tag.label
+        = tag.tag_name
 
   - if admin?
     = link_to 'edit', edit_article_path(article)
