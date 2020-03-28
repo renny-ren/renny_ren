@@ -32,7 +32,11 @@ en:
 
   title: Renny's blog
   home: "Home"
-  articles: "Archives"
+  articles:
+    title: "Archives"
+    filter:
+      filter_posts: 'Filter Posts'
+      search_tags: 'search tags...'
   tag: "Tags"
   about: "About"
   site: Sites

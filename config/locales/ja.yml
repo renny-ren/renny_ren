@@ -11,8 +11,12 @@ ja:
 
   title: Renny's blog
   home: "ホーム"
-  articles: "文章"
-  tag: "ラベル"
+  articles:
+    title: "文章"
+    filter:
+      filter_posts: "文章をフィルターする"
+      search_tags: "タグを検索..."
+  tag: "タグ"
   about: "について"
   site: サイト
 

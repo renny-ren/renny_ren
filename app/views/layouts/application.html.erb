@@ -18,7 +18,7 @@
         <div class="right aligned four wide mobile three wide computer column avatar"><%= link_to image_tag('avatar.png'), home_path %></div>
         <div class="center aligned twelve wide mobile ten wide computer column nav-link">
           <%= link_to t(:home), home_path, method: :get %>
-          <%= link_to t(:articles), articles_path %>
+          <%= link_to t('articles.title'), articles_path %>
           <%= link_to t(:tag), tags_path %>
           <%= link_to t(:about), about_index_path, method: :get %>
         </div>

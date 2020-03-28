@@ -21,11 +21,11 @@ javascript:
     .ui.multiple.dropdown.labeled.icon.button
       input type='hidden' name='filters'
       i.filter.icon
-      span.text filter posts
+      span.text = t('articles.filter.filter_posts')
       .menu
         .ui.icon.search.input
           i.search.icon
-          input type="text" placeholder="search tags..."  
+          input type='text' placeholder= t('articles.filter.search_tags')
         .scrolling.menu
           - ActsAsTaggableOn::Tag.all.each do |tag|
             .item data-value=tag.name
