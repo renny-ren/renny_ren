@@ -5,8 +5,13 @@
     .ui.padded.raised.segment
       .title
         = @article.title
-      .date
-        = t(:created) + "#{@article.created_at.to_date}　　"
+      .ui.padded.stackable.grid
+        span.tags
+          - @article.tag_list.each do |tag|
+            .ui.tiny.tag.label.article-tag
+              = tag
+        span.date
+          = t(:created) + "#{@article.created_at.to_date}　　"
 
       .content
         = sanitize(@article.content)

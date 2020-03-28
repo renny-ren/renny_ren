@@ -47,6 +47,10 @@
     .article-item {
       padding: 18px 0 !important;
       margin-top: 12px !important;
+
+      .tags {
+        display: none;
+      }
     }
   }
 }
@@ -72,9 +76,18 @@
     }
   }
 
+  .tags {
+    padding-top: 10px;
+    line-height: 2.2;
+
+    .article-tag {
+      margin-left: 20px !important;
+    }
+  }
+
   .date {
     padding-top: 10px;
-    text-align: right;
+    margin-left: auto;
   }
 
   .content {
