@@ -2,6 +2,7 @@
   .articles-page
     .ui.padded.container.articles-container
       .ui.padded.stacked.segment
+        = render partial: 'filters'
         = render partial: 'article', collection: @articles
 
     = will_paginate @articles, class: "flickr_pagination"

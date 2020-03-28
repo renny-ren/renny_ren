@@ -1,0 +1,36 @@
+javascript:
+  $(function() {
+    $('.ui.dropdown').dropdown(
+      'set selected', "#{params[:filters]}".split(',')
+    );
+
+    $('.ui.dropdown').dropdown({
+      onRemove: function() {
+        if($(this).children('a.ui.label').length == 1) {
+          $($('.article-filters .action')[0]).hide()
+        }
+      },
+      onAdd: function() {
+        $($('.article-filters .action')[0]).show()
+      }
+    })
+  });
+
+.article-filters
+  = form_tag articles_path, method: :get do |f|
+    .ui.multiple.dropdown.labeled.icon.button
+      input type='hidden' name='filters'
+      i.filter.icon
+      span.text filter posts
+      .menu
+        .ui.icon.search.input
+          i.search.icon
+          input type="text" placeholder="search tags..."  
+        .scrolling.menu
+          - ActsAsTaggableOn::Tag.all.each do |tag|
+            .item data-value=tag.name
+              i.tags.icon
+              = tag.name
+    .action style="display: #{params[:filters].present? ? 'initial' : 'none'}"
+      = button_tag class: 'ui icon mini button' do
+        i.icon.check

@@ -2,6 +2,7 @@ class ArticlesController < ApplicationController
   load_and_authorize_resource
 
   def index
+    @articles = @articles.tagged_with(params[:filters]) if params[:filters].present?
     @articles = @articles.order('created_at DESC').paginate(page: params[:page], per_page: 10)
   end
 

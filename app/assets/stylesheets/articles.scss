@@ -40,6 +40,17 @@
       }
     }
   }
+
+  .article-filters {
+    .tags.icon {
+      font-size: 12px;
+    }
+    .action {
+      display: inline-block;
+      position: relative;
+      top: 4px;
+    }
+  }
 }
 
 @media only screen and (max-width: $largest-mobile-screen) {
