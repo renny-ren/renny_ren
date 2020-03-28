@@ -1,5 +1,7 @@
 class Article < ApplicationRecord
   include FilterExtends
+
+  acts_as_taggable
   # has_many :comments, dependent: :destroy
   # validates :title, presence: true
   # validates :content, presence: true, length: { minimum: 5 }

@@ -31,6 +31,14 @@
       color: $cadetBlue;
       opacity: 0.9;
     }
+
+    .tags {
+      margin-left: 10px;
+
+      .article-tag {
+        margin-left: 15px;
+      }
+    }
   }
 }
 
