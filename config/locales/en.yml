@@ -38,7 +38,8 @@ en:
       filter_posts: 'Filter Posts'
       search_tags: 'search tags...'
   tag: "Tags"
-  about: "About"
+  about:
+    title: "About"
   site: Sites
 
   created: "created_at: "

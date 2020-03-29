@@ -17,7 +17,8 @@ ch:
       filter_posts: "筛选文章"
       search_tags: "搜索标签..."
   tag: "标签"
-  about: "关于"
+  about:
+    title: "关于"
   site: 酷站
 
   created: "发布时间： "

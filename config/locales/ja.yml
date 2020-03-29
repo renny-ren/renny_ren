@@ -17,7 +17,8 @@ ja:
       filter_posts: "文章をフィルターする"
       search_tags: "タグを検索..."
   tag: "タグ"
-  about: "について"
+  about:
+    title: "について"
   site: サイト
 
   created: "創建： "
