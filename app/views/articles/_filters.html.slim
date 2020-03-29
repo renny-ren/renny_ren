@@ -17,7 +17,7 @@ javascript:
   });
 
 .article-filters
-  = form_tag articles_path, method: :get do |f|
+  = form_tag articles_path, method: :get do
     .ui.multiple.dropdown.labeled.icon.button
       input type='hidden' name='filters'
       i.filter.icon

@@ -1,7 +1,36 @@
 = javascript_include_tag Ckeditor.cdn_url
 
+javascript:
+  $(function() {
+    $('.ui.dropdown')
+      .dropdown(
+        'set value', "#{@article.tag_list}".split(', ')
+      )
+      .dropdown({
+        allowAdditions: true
+      });
+
+    $('form').bind("keypress", function(e) {
+      if (e.keyCode == 13) {
+        e.preventDefault();
+        return false;
+      }
+    });
+  });
+
 .article-form.ui.form
   = form_for @article do |f|
+    .field
+      .ui.multiple.search.selection.dropdown
+        = f.text_field 'tag_list', type: 'hidden', value: ''
+        i.dropdown.icon
+        .default.text = t('articles.filter.search_tags')
+        .scrolling.menu
+          - ActsAsTaggableOn::Tag.all.each do |tag|
+            .item data-value=tag.name
+              i.tags.icon
+              = tag.name
+
     .field
       .title = f.text_field :title, placeholder: "title"
     .field

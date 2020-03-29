@@ -8,7 +8,6 @@ class ArticlesController < ApplicationController
 
   def new
     @article = Article.new
-    @tags = Tag.all
   end
 
   def create
@@ -21,7 +20,6 @@ class ArticlesController < ApplicationController
   end
 
   def edit
-    @tags = Tag.all
   end
 
   def update
