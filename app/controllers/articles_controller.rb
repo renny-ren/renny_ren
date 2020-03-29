@@ -16,7 +16,6 @@ class ArticlesController < ApplicationController
   end
 
   def show
-    # @tag_arr = format_array(@article.tag)
   end
 
   def edit
@@ -33,12 +32,6 @@ class ArticlesController < ApplicationController
   def destroy
     @article.destroy
     redirect_to articles_path
-  end
-
-  def format_array(string)
-    arr = string.split('^^')
-    arr.shift
-    arr
   end
 
   private

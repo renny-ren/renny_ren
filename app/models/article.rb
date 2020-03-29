@@ -6,7 +6,7 @@ class Article < ApplicationRecord
   # validates :title, presence: true
   # validates :content, presence: true, length: { minimum: 5 }
   # has_many :tags, dependent: :destroy
-  has_one :timeline_item, as: :owner
+  has_one :timeline_item, as: :owner, dependent: :destroy
 
   after_create :create_timeline_item
 

@@ -6,7 +6,6 @@ Rails.application.routes.draw do
     resources :articles
 
     resources :about, only: :index
-    resources :tags, only: [:index, :create, :show, :destroy], param: :tag_name
     resources :messages, only: [:create, :destroy]
     post 'feedback', to: 'messages#feedback'
 
