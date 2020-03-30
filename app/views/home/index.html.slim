@@ -15,6 +15,8 @@ javascript:
         .msg-items
           = render partial: 'message', collection: @messages
       .thirteen.wide.computer.sixteen.wide.mobile.column
+        .new-sentence
+          = link_to '+', new_sentence_path if admin?
         .timeline
           .timeline-items.ui.stackable.padded.centered.grid
             = render partial: 'timeline_item', collection: @timeline_items

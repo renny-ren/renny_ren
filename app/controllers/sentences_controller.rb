@@ -1,6 +1,5 @@
 class SentencesController < ApplicationController
-  before_action :get_sentence, only: [:edit, :update, :destroy]
-  before_action :validate_admin, except: [:index]
+  load_and_authorize_resource
 
   def new 
     @sentence = Sentence.new
@@ -29,10 +28,6 @@ class SentencesController < ApplicationController
   end
 
   private
-
-  def get_sentence
-    @sentence = Sentence.last
-  end
 
   def sentence_params
     params.require(:sentence).permit(:content, :source)
