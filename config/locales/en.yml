@@ -41,6 +41,8 @@ en:
   about:
     title: "About"
   site: Sites
+  sentence:
+    title: "Shuoshuo"
 
   created: "created_at: "
   updated: "updated_at: "

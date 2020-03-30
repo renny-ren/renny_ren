@@ -20,6 +20,8 @@ ja:
   about:
     title: "について"
   site: サイト
+  sentence:
+    title: "说说"
 
   created: "創建： "
   updated: "更新： "

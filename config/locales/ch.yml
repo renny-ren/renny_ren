@@ -20,6 +20,8 @@ ch:
   about:
     title: "关于"
   site: 酷站
+  sentence:
+    title: "说说"
 
   created: "发布时间： "
   updated: "最后更新： "
@@ -28,7 +30,7 @@ ch:
     next_label: "下一页"
     previous_label: "上一页"
 
-  format_time: '%Y年 %-m月 %d日'
+  format_time: '%Y 年 %-m 月 %d 日'
   more: 更多..
 
   datetime:

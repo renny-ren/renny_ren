@@ -1,0 +1,15 @@
+- content_for(:title, t('sentence.title'))
+
+.page-container
+  .sentences-page
+    .ui.padded.container.sentences-container
+      .ui.padded.piled.segment
+        .sentence-title 说 说
+        .items
+          - @sentences.each do |s|
+            .sentence-item
+              #sentence-date = s.created_at.strftime t(:format_time)
+              #sentence-content = sanitize s.content
+              #sentence-source = "——#{s.source}" if s.source.present?
+
+      = will_paginate @sentences, class: "flickr_pagination"
