@@ -1,7 +1,9 @@
-<div class="sessions_container">
-	<%= form_tag sessions_path do %>
-	  <%= password_field_tag :admin_token %>
-	  <%= button_to "+", action: "create" %>
-	<% end %>
-	<%= button_to "-", sessions_path, method: :delete %>
+<div class="page-container">
+  <div class="sessions_container">
+    <%= form_tag sessions_path do %>
+      <%= password_field_tag :admin_token %>
+      <%= button_to "+", action: "create" %>
+    <% end %>
+    <%= button_to "-", sessions_path, method: :delete %>
+  </div>
 </div>
