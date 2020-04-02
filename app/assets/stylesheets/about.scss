@@ -78,7 +78,7 @@
       .item {
         position: relative;
         padding-left: 32px;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
         margin-left: 0; /* to override ui grid margin-left */
 
         &:before {
@@ -115,6 +115,11 @@
 
         .description {
           font-size: 18px;
+          margin-top: 10px;
+        }
+
+        .extra {
+          color: #929292d6;
           margin-top: 10px;
         }
 
