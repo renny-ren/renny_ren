@@ -67,6 +67,11 @@
   .about-container {
     padding-top: 30px;
 
+    .jR3DCarouselGallery {
+      right: -100px;
+      top: 200px;
+    }
+
     .experience-segment {
       border-left: 2px solid black;
       border-image: linear-gradient(to bottom, #00182d, $bodyBlue) 1 100%;
@@ -178,11 +183,19 @@
 @media only screen and (min-width: $tablet-breakpoint) {
   .profile-container {
     float: right;
-  }
 
-  #motto {
-    font-size: 26px;
-    color: #00445d;
+    #motto {
+      font-size: 26px;
+      color: #00445d;
+    }
+  }
+}
+
+@media only screen and (max-width: $largest-tablet-screen) {
+  .about-container {
+    .jR3DCarouselGallery {
+      display: none;
+    }
   }
 }
 
@@ -201,12 +214,6 @@
 .photo {
   margin-top: 5%;
   margin-left: -10%;
-}
-
-.jR3DCarouselGallery {
-  position: absolute;
-  padding-top: 8.2em;
-  margin-left: 3em;
 }
 
 .piano_video {  margin-left: 50%; margin-top: -20%; }
@@ -246,11 +253,6 @@
 
 @media only screen and (min-width: 1800px) {
   .about_content { font-size: 1.2em; }
-
-  .jR3DCarouselGallery {
-    padding-top: 6.8em;
-    margin-left: 2.5em;
-  }
 }
 
 @media only screen and (max-device-width: 400px) {
@@ -270,12 +272,6 @@
       width: 80%;
       height: 80%;
     }
-  } 
-
-  .jR3DCarouselGallery {
-    /* position: relative; */
-    padding-top: 9em;
-    margin-left: 1em;
   }
 
   .piano_video {
