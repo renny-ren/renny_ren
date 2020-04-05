@@ -1,12 +1,18 @@
+= javascript_include_tag 'carousel/carousel'
+= javascript_include_tag 'carousel/jR3DCarousel.min'
+- slides = Dir['public/carousel_images/*'].sort.map { |img| {src: "/#{File.basename(img)}"} }
+
 javascript:
   $(function() {
     $("#motto").typed({
       strings: ["#{{ t :motto_one }}", "#{{ t :motto_two }}"],
       typeSpeed: parseInt("#{ t :type_speed }")
     });
+    setUpCarousel(JSON.parse('#{raw(slides.to_json)}'));
   });
 
 - content_for(:title, t('about.title'))
+
 .page-container
   .about-page
     .bg-image
