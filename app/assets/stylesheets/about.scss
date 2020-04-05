@@ -76,6 +76,14 @@
       -moz-box-shadow: 0px 0px 6px #777;
       box-shadow: 0px 0px 6px #777;
       z-index: 1;
+
+      &.active {
+        transform: translate(-50%, -50%) scale(2);
+        z-index: 1001;
+        left: 50%;
+        top: 50%;
+        position: fixed !important;
+      }
     }
 
     .experience-segment {
