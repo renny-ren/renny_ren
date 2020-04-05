@@ -1,0 +1,94 @@
+= javascript_include_tag 'carousel/carousel'
+= javascript_include_tag 'carousel/jR3DCarousel.min'
+
+javascript:
+  $(function() {
+    $("#motto").typed({
+      strings: ["#{{ t :motto_one }}", "#{{ t :motto_two }}"],
+      typeSpeed: parseInt("#{ t :type_speed }"),
+      backSpeed: 10
+    });
+    setUpCarousel(JSON.parse('#{raw(@slides.to_json)}'));
+  });
+
+- content_for(:title, t('about.title'))
+
+.page-container
+  .about-page
+    .bg-image
+      .ui.padded.container.profile-container
+        .ui.items
+          .item.profile-item
+            .image
+              .avatar-img.ui.circular.rotate.reveal.image
+                = image_tag 'avatar-2.jpeg', class: 'visible content'
+                = image_tag 'avatar-3.jpeg', class: 'hidden content'
+            .content
+              .name
+                = t(:renny_ren)
+              .typedjs
+                p#motto
+    .ui.padded.container.about-container
+      .section.ui.grid.about-me-section
+        .sixteen.wide.column
+          .p-title About me
+          p I'm Renny, a programmer.
+          p I believe work is a kind of fun. I have the passion to use my keyboard to create beautiful product.
+
+      .section.ui.padded.grid
+        .sixteen.wide.column
+          .p-title Experience
+
+          .jR3DCarouselGallery
+          .ui.basic.modal.carousel-modal
+
+          .experience-segment
+            .item
+              .ui.stackable.grid
+                .five.wide.column
+                  .title May. 2018 - Now
+                  .description Strikingly
+                  .extra Engineer
+                .logo.eight.wide.middle.aligned.column
+                  = link_to image_tag('https://uploads.strikinglycdn.com/static/email_assets/logo-2x.png'), 'https://www.strikingly.com', target: '_blank'
+
+            .item
+              .ui.stackable.grid
+                .five.wide.column
+                  .title May. 2017 - May. 2018
+                  .description work as freelancer
+                .logo.eight.wide.bottom.aligned.column
+                  = link_to image_tag('https://assets.static-upwork.com/assets/Adquiro/3146594/wp/images/upwork_logo.5fa25d34d762.svg'), 'https://en.wikipedia.org/wiki/Freelancer', target: '_blank'
+
+            .item
+              .ui.stackable.grid
+                .five.wide.column
+                  .title Oct. 2016 - Mar. 2017
+                  .description Sposter
+                  .extra Backend Engineer (internship)
+                .logo.eight.wide.bottom.aligned.column
+                  = link_to image_tag('sposter.png'), 'http://sposter.net/', target: '_blank'
+
+
+      .section.ui.padded.grid
+        .sixteen.wide.column
+          .p-title Contact
+          .ui.form.feedback-container
+            = form_for Message.new, url: feedback_path, remote: :true do |f|
+              .two.fields
+                .four.wide.field
+                  = f.text_field :author, maxlength: 10, placeholder: 'Name (optional)', autocomplete: 'off'
+                .four.wide.field
+                  = f.text_field :contact_info, maxlength: 20, placeholder: 'Email (optional)'
+              .fields
+                .eight.wide.field
+                  = f.text_area :body, size: '60x5', placeholder: "Content"
+              .fields
+                .eight.wide.field
+                  .ui.success.message
+                    .header Thanks for your submission!
+                    p If there's no bug, I've received your email.
+                  .ui.warning.message
+                    p Please fill out the content.
+              .submit-btn
+                = f.button 'Submit', type: 'submit', class: 'ui primary button', data: { disable_with: 'Submitting...' }
