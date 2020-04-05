@@ -67,6 +67,11 @@
   .about-container {
     padding-top: 30px;
 
+    .about-me-section {
+      margin: 0;
+      margin-bottom: 20px;
+    }
+
     .jR3DCarouselGallery {
       right: -120px;
       top: 250px;
@@ -97,7 +102,7 @@
       .item {
         position: relative;
         padding-left: 32px;
-        margin-bottom: 50px;
+        margin-bottom: 60px;
         margin-left: 0; /* to override ui grid margin-left */
 
         &:before {

@@ -1,6 +1,5 @@
 = javascript_include_tag 'carousel/carousel'
 = javascript_include_tag 'carousel/jR3DCarousel.min'
-- slides = Dir['public/carousel_images/*'].sort.map { |img| {src: "/#{File.basename(img)}"} }
 
 javascript:
   $(function() {
@@ -8,7 +7,7 @@ javascript:
       strings: ["#{{ t :motto_one }}", "#{{ t :motto_two }}"],
       typeSpeed: parseInt("#{ t :type_speed }")
     });
-    setUpCarousel(JSON.parse('#{raw(slides.to_json)}'));
+    setUpCarousel(JSON.parse('#{raw(@slides.to_json)}'));
   });
 
 - content_for(:title, t('about.title'))
@@ -29,10 +28,11 @@ javascript:
               .typedjs
                 p#motto
     .ui.padded.container.about-container
-      .section.ui.padded.grid
+      .section.ui.grid.about-me-section
         .sixteen.wide.column
           .p-title 关于我
-          p 我是 Renny，码农一枚。
+          p 我是 Renny，一名热爱编码的工程师，乐于创造，爱折腾。
+          p 世界那么大，探索未知是一种乐趣，我立志成为终身学习者。
 
       .section.ui.padded.grid
         .sixteen.wide.column
