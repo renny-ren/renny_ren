@@ -4,9 +4,9 @@
 javascript:
   $(function() {
     $("#motto").typed({
-      strings: ["#{{ t :motto_one }}", "#{{ t :motto_two }}", "#{{ t :motto_three }}"],
+      strings: ["#{{ t :motto_one }}", "#{{ t :motto_two }}"],
       typeSpeed: parseInt("#{ t :type_speed }"),
-      backSpeed: 1
+      backSpeed: 10
     });
     setUpCarousel(JSON.parse('#{raw(@slides.to_json)}'));
   });
@@ -31,13 +31,13 @@ javascript:
     .ui.padded.container.about-container
       .section.ui.grid.about-me-section
         .sixteen.wide.column
-          .p-title About me
-          p I'm Renny, a programmer.
-          p I believe work is a kind of fun. I have the passion to use my keyboard to create beautiful product.
+          .p-title 私について
+          p 私は Renny です、プログラマーです。
+          p 仕事はちょっと楽しいと思います。私はキーボードを使用して美しい製品を作成することに情熱を持っています。
 
       .section.ui.padded.grid
         .sixteen.wide.column
-          .p-title Experience
+          .p-title 経験
 
           .jR3DCarouselGallery
           .ui.basic.modal.carousel-modal
@@ -46,49 +46,49 @@ javascript:
             .item
               .ui.stackable.grid
                 .five.wide.column
-                  .title May. 2018 - Now
+                  .title 2018.05 - 今
                   .description Strikingly
-                  .extra Engineer
+                  .extra エンジニア
                 .logo.eight.wide.middle.aligned.column
                   = link_to image_tag('https://uploads.strikinglycdn.com/static/email_assets/logo-2x.png'), 'https://www.strikingly.com', target: '_blank'
 
             .item
               .ui.stackable.grid
                 .five.wide.column
-                  .title May. 2017 - May. 2018
-                  .description work as freelancer
+                  .title 2017.05 - 2018.05
+                  .description freelancer
                 .logo.eight.wide.bottom.aligned.column
                   = link_to image_tag('https://assets.static-upwork.com/assets/Adquiro/3146594/wp/images/upwork_logo.5fa25d34d762.svg'), 'https://en.wikipedia.org/wiki/Freelancer', target: '_blank'
 
             .item
               .ui.stackable.grid
                 .five.wide.column
-                  .title Oct. 2016 - Mar. 2017
+                  .title 2016.10 - 2017.03
                   .description Sposter
-                  .extra Backend Engineer (internship)
+                  .extra バックエンド エンジニア (インターンシップ)
                 .logo.eight.wide.bottom.aligned.column
                   = link_to image_tag('sposter.png'), 'http://sposter.net/', target: '_blank'
 
 
       .section.ui.padded.grid
         .sixteen.wide.column
-          .p-title Contact
+          .p-title 私に連絡
           .ui.form.feedback-container
             = form_for Message.new, url: feedback_path, remote: :true do |f|
               .two.fields
                 .four.wide.field
-                  = f.text_field :author, maxlength: 10, placeholder: 'Name (optional)', autocomplete: 'off'
+                  = f.text_field :author, maxlength: 10, placeholder: '名', autocomplete: 'off'
                 .four.wide.field
-                  = f.text_field :contact_info, maxlength: 20, placeholder: 'Email (optional)'
+                  = f.text_field :contact_info, maxlength: 20, placeholder: 'メール'
               .fields
                 .eight.wide.field
-                  = f.text_area :body, size: '60x5', placeholder: "Content"
+                  = f.text_area :body, size: '60x5', placeholder: "内容"
               .fields
                 .eight.wide.field
                   .ui.success.message
-                    .header Thanks for your submission!
-                    p If there's no bug, I've received your email.
+                    .header 送信ありがとうございます！
+                    p バグがない場合は、メールを受け取りました。
                   .ui.warning.message
-                    p Please fill out the content.
+                    p 内容をご入力してください。
               .submit-btn
-                = f.button 'Submit', type: 'submit', class: 'ui primary button', data: { disable_with: 'Submitting...' }
+                = f.button '提出する', type: 'submit', class: 'ui primary button', data: { disable_with: '提出中...' }
