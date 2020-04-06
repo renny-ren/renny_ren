@@ -1,9 +1,5 @@
 .sites-container {
-  min-height: 800px;
-  padding: 5% 3%;
-  margin: 0 15%;
-  border: solid 1px white;
-  box-shadow: 1px 8px 5px #888888;
+  margin-top: 30px;
 }
 
 .site-panel {
@@ -16,7 +12,6 @@
   border-bottom-color: #bce8f1;
   color: #31708f;
   border-radius: 10px 10px 0 0;  
-
 }
 
 .panel-body {
@@ -37,6 +32,7 @@
   display: inline;
   position: relative;
   top: -5px;
+  left: 5px;
 }
 
 .site-angle {
