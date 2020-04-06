@@ -93,9 +93,9 @@ javascript:
             = form_for Message.new, url: feedback_path, remote: :true do |f|
               .two.fields
                 .four.wide.field
-                  = f.text_field :author, maxlength: 10, placeholder: '姓名', autocomplete: 'off'
+                  = f.text_field :author, maxlength: 10, placeholder: '姓名 (选填)', autocomplete: 'off'
                 .four.wide.field
-                  = f.text_field :contact_info, maxlength: 20, placeholder: '联系方式'
+                  = f.text_field :contact_info, maxlength: 20, placeholder: '联系方式 (选填)'
               .fields
                 .eight.wide.field
                   = f.text_area :body, size: '60x5', placeholder: "输入内容"

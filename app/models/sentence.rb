@@ -1,7 +1,7 @@
 class Sentence < ApplicationRecord
   self.per_page = 6
 
-  has_one :timeline_item, as: :owner
+  has_one :timeline_item, as: :owner, dependent: :destroy
 
   after_create :create_timeline_item
 
