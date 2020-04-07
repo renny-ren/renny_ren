@@ -30,6 +30,7 @@ en:
   submit: submit
   confirm_submit: "# You cannot delete the message once you've submitted."
   msg_button: Leave a message
+  scan_qr_code_to_add_me: "Scan the QR Code to add me on WeChat"
 
   title: Renny's blog
   home: "Home"

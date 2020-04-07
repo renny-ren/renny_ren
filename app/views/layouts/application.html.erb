@@ -40,6 +40,8 @@
             <%= link_to fa_icon('github'), "https://github.com/renny-ren", target: '_blank' %>
             <%= link_to fa_icon('twitter'), "https://twitter.com/rennyren66", target: '_blank' %>
             <%= link_to fa_icon('instagram'), "https://www.instagram.com/rennyren1", target: '_blank' %>
+            <%= link_to fa_icon('qq'), "https://wpa.qq.com/msgrd?v=3&uin=267286753&site=qq&menu=yes", target: '_blank' %>
+            <%= link_to fa_icon('wechat'), 'javascript:void(0);', onclick: "$('.wechat-modal').modal('show')" %>
           </div>
           <div class="four wide mobile ten wide computer column link">
             <%= link_to t(:site), sites_path %>
@@ -48,5 +50,12 @@
         </div>
       </div>
     </footer>
+
+    <div class="ui basic modal wechat-modal">
+      <div class="ui center aligned container">
+        <p><%= t('scan_qr_code_to_add_me') %></p>
+        <%= image_tag 'wechat_qr.jpeg' %>
+      </div>
+    </div>
   </body>
 </html>

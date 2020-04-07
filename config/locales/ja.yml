@@ -8,6 +8,7 @@ ja:
   submit: 提出
   confirm_submit: "# 送信したメッセージは削除できません。"
   msg_button: メッセージ
+  scan_qr_code_to_add_me: "QRコードをスキャンしてWeChatを追加します"
 
   title: Renny's blog
   home: "ホーム"
