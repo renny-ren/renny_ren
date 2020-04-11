@@ -16,7 +16,7 @@
           = t(:created) + "#{@article.created_at.to_date}　　"
 
       .content.markdown-body
-        = sanitize(@article.content)
+        = @article.content.html_safe
 
     div style="text-align: center; cursor: pointer; color: #ffbe48;" onclick="javascript:alert('这家伙很懒，点赞功能还没开发。');"
       '0 赞 &nbsp
