@@ -1,4 +1,6 @@
 if (typeof(CKEDITOR) !== 'undefined') {
+  CKEDITOR.addCss('.cke_editable { font-size: 16px; }');
+
   CKEDITOR.editorConfig = function( config ) {
     // Define changes to default configuration here. For example:
     // config.language = 'fr';
@@ -6,8 +8,9 @@ if (typeof(CKEDITOR) !== 'undefined') {
     config.extraPlugins = 'codesnippet';
     // config.codeSnippet_theme = 'pojoaque';
     // config.codeSnippet_theme = 'monokai';
-
+    // config.contentsCss  = ["/ckeditor/contents.scss"];
     config.height = 600;
+
 
     /* Filebrowser routes */
     // The location of an external file browser, that should be launched when "Browse Server" button is pressed.
