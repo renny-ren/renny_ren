@@ -9,5 +9,5 @@
         = tag
 
   - if admin?
-    = link_to 'edit', edit_article_path(article)
-    = link_to 'destroy', article_path(article), method: :delete, data: { confirm: 'are you sure?' }
+    = link_to 'edit', edit_article_path(article), class: 'ui basic mini blue button s-btn'
+    = link_to 'destroy', article_path(article), method: :delete, class: 'ui basic mini red button s-btn', data: { confirm: 'are you sure?' }
