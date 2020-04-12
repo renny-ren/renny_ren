@@ -1,11 +1,27 @@
 if (typeof(CKEDITOR) !== 'undefined') {
   CKEDITOR.addCss('.cke_editable { font-size: 16px; }');
 
+  CKEDITOR.plugins.add( 'codeTag', {
+    init: function( editor ) {
+      editor.addCommand( 'wrapCode', {
+        exec: function( editor ) {
+          editor.insertHtml( '<code>' + editor.getSelection().getSelectedText() + '</code>' );
+        }
+      });
+      editor.ui.addButton( 'Code', {
+        label: 'Wrap code',
+        command: 'wrapCode',
+        toolbar: 'insert',
+        icon: '/code.png'
+      });
+    }
+  });
+
   CKEDITOR.editorConfig = function( config ) {
     // Define changes to default configuration here. For example:
     // config.language = 'fr';
     // config.uiColor = '#AADC6E';
-    config.extraPlugins = 'codesnippet';
+    config.extraPlugins = 'codesnippet, codeTag';
     // config.codeSnippet_theme = 'pojoaque';
     // config.codeSnippet_theme = 'monokai';
     // config.contentsCss  = ["/ckeditor/contents.scss"];
@@ -50,7 +66,7 @@ if (typeof(CKEDITOR) !== 'undefined') {
       { name: 'styles', items: [ 'Styles', 'Format', 'Font', 'FontSize' ] },
       { name: 'colors', items: [ 'TextColor', 'BGColor' ] },
       { name: 'basicstyles', groups: [ 'basicstyles', 'cleanup' ], items: [ 'Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', '-', 'RemoveFormat' ] },
-      { name: 'plugins', items: [ 'CodeSnippet' ] }
+      { name: 'plugins', items: [ 'CodeSnippet', 'Code' ] }
     ];
 
     config.toolbar_mini = [
