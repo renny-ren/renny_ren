@@ -3,7 +3,9 @@ Rails.application.routes.draw do
 
   scope "(:locale)", locale: /en|ch|ja/ do
     root 'home#index', as: 'home'
-    resources :articles
+    resources :articles do
+      resources :comments
+    end
 
     resources :about, only: :index
     resources :messages, only: [:create, :destroy]

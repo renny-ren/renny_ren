@@ -22,5 +22,11 @@
       '0 赞 &nbsp
       i.fa.fa-thumbs-up
 
+    .comments-panel
+      = render 'comments/comment'
+    div
+      = render 'comments/form'
+
+
     = link_to "编辑", edit_article_path(@article), class: 'ui blue button' if admin?
     = link_to "返回", articles_path, class: 'ui basic blue button'
