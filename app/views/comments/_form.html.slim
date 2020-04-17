@@ -9,8 +9,12 @@
           p 请输入内容
 
     .required.field
-      = f.text_area :body, size: '80x5', minlength: 2
-      = f.hidden_field :article_id, value: @article.id
+      = f.text_area :body, placeholder: t('comments.body'), size: '80x5', minlength: 2
+
+    .field
+      = f.text_field :commenter, placeholder: t('comments.commenter'), maxlength: 12
+
+    = f.hidden_field :article_id, value: @article.id
 
     .submit-btn
       = f.submit '提交回复', class: 'ui primary button'

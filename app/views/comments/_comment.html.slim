@@ -1,6 +1,7 @@
-- @article.comments.each do |c|
-  p
-    strong Commenter
-  p
-    strong Body:
-    = c.body
+- @article.comments.each do |comment|
+  .comment-item
+    .item-left
+      .commenter
+        = comment.commenter.present? ? comment.commenter : '匿名'
+    .ui.basic.blue.left.pointing.label
+      = comment.body

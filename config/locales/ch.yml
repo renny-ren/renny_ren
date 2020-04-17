@@ -24,6 +24,10 @@ ch:
   sentence:
     title: "说说"
 
+  comments:
+    body: '说点什么...'
+    commenter: '名字'
+
   created: "发布时间： "
   updated: "最后更新： "
 
