@@ -22,14 +22,15 @@
       '0 赞 &nbsp
       i.fa.fa-thumbs-up
 
-    .comments-panel
-      .ui.segments.comments-box
-        .ui.header
-          = "共有 #{@article.comments.count} 条评论"
-        = render partial: 'shared/comment', collection: @article.comments
-      div
-        = render 'comments/form'
-
-
     = link_to "编辑", edit_article_path(@article), class: 'ui blue button' if admin?
-    = link_to "返回", articles_path, class: 'ui basic blue button'
+    = link_to "返回", articles_path, class: 'ui basic blue button mt'
+
+    .comments-panel
+      .ui.horizontal.divider
+        i.fa.fa-comments
+        = " 共有 #{@article.comments.count} 条评论"
+      - if @article.comments.present?
+        .ui.segments.comments-box
+          = render partial: 'shared/comment', collection: @article.comments
+      .comment-form
+        = render 'comments/form'

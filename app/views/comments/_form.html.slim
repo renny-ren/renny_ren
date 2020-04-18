@@ -1,4 +1,4 @@
-.ui.form.comment-form
+.ui.form
   = form_for(Comment.new, remote: true, url: article_comments_path(@article)) do |f|
     .fields.notice
       .eight.wide.field
@@ -9,10 +9,10 @@
           p 请输入内容
 
     .required.field
-      = f.text_area :body, placeholder: t('comments.body'), size: '80x5', minlength: 2
+      = f.text_area :body, placeholder: t('comments.body'), size: '80x5', maxlength: 400
 
     .field
-      = f.text_field :commenter, placeholder: t('comments.commenter'), maxlength: 12
+      = f.text_field :commenter, placeholder: t('comments.commenter'), maxlength: 11
 
     = f.hidden_field :article_id, value: @article.id
 

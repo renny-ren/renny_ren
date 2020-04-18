@@ -27,6 +27,7 @@ ch:
   comments:
     body: '说点什么...'
     commenter: '名字'
+    anonymous: "匿名"
 
   created: "发布时间： "
   updated: "最后更新： "

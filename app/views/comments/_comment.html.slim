@@ -1,11 +1,15 @@
 .ui.segment
-  .comment-item
-    .commenter
+  .comment-item.ui.two.column.padded.grid
+    .three.wide.computer.six.wide.mobile.column.item-left
       .ui.image.label
         - if @comment.commenter.present?
           img src="//www.gravatar.com/avatar/#{Digest::MD5.hexdigest(@comment.commenter)}?s=60&r=g&d=retro"
           = @comment.commenter
         - else
           img src="//www.gravatar.com/avatar/00000000000000000000000000000000?d=mm&f=y"
-          = t('匿名')
-    .comment-body = @comment.body
+          = t('comments.anonymous')
+      .comment-date
+        = @comment.created_at.getlocal.strftime('%Y-%m-%d %H:%M')
+    .thirteen.wide.computer.ten.wide.mobile.column
+      .comment-body
+        = @comment.body
