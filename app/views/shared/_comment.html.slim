@@ -1,6 +1,6 @@
 .ui.segment
   .comment-item.ui.two.column.padded.grid
-    .three.wide.computer.six.wide.mobile.column.item-left
+    .six.wide.mobile.six.wide.tablet.three.wide.computer.column.item-left
       .ui.image.label
         - if comment.commenter.present?
           img src="//www.gravatar.com/avatar/#{Digest::MD5.hexdigest(comment.commenter)}?s=60&r=g&d=retro"
@@ -10,6 +10,6 @@
           = t('comments.anonymous')
       .comment-date
         = comment.created_at.getlocal.strftime('%Y-%m-%d %H:%M')
-    .thirteen.wide.computer.ten.wide.mobile.column
+    .ten.wide.mobile.ten.wide.tablet.thirteen.wide.computer.column
       .comment-body
         = comment.body

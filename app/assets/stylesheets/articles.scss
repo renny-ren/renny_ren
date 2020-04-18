@@ -168,6 +168,12 @@
     .content {
       padding: 30px 2px 2px;
     }
+
+    .comment-item {
+      .ui.image.label, .comment-body {
+        line-height: 1.8;
+      }
+    }
   }
 }
 
