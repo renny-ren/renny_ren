@@ -23,9 +23,12 @@
       i.fa.fa-thumbs-up
 
     .comments-panel
-      = render 'comments/comment'
-    div
-      = render 'comments/form'
+      .ui.segments.comments-box
+        .ui.header
+          = "共有 #{@article.comments.count} 条评论"
+        = render partial: 'shared/comment', collection: @article.comments
+      div
+        = render 'comments/form'
 
 
     = link_to "编辑", edit_article_path(@article), class: 'ui blue button' if admin?

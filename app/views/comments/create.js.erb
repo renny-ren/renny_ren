@@ -4,5 +4,5 @@
   $('.comment-form .ui.error.message').hide();
   $('.comment-form .ui.success.message').fadeIn().delay(2000).fadeOut();
   $('#comment_body')[0].value = '';
-  $('.comments-panel').html("<%= j(render 'comments/comment') %>");
+  $('.comments-box').append("<%= j(render 'comments/comment', comment: @comment) %>");
 <% end %>

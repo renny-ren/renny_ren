@@ -117,8 +117,15 @@
   }
   .content a:hover { text-decoration: underline; }
 
-  .comment-item {
+  .comments-panel {
+    .comment-item {
+      margin-top: 10px;
 
+      .comment-body {
+        /*font-size: 16px;*/
+        margin-top: 5px;
+      }
+    }
   }
 /*  code {
     display: inline-block;
