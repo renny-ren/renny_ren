@@ -1,0 +1,15 @@
+= javascript_include_tag Ckeditor.cdn_url
+
+.video-form.ui.form
+  = form_for @video do |f|
+    .field
+      .title = f.text_field :title, placeholder: "title", autocomplete: 'off'
+    .field
+      = f.text_field :description, placeholder: "description", autocomplete: 'off'
+    .field
+      = f.text_field :thumb_image_url, placeholder: "thumb_image_url", autocomplete: 'off'
+    .field
+      = f.cktext_area :content, value: @video.content
+
+    .action
+      = f.submit 'submit', class: 'ui primary button'

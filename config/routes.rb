@@ -14,6 +14,7 @@ Rails.application.routes.draw do
     resources :sentences, except: :show
     resources :sites, only: :index
     resources :changelogs
+    resources :videos
   end
 
   resources :sessions, only: [:index, :create]

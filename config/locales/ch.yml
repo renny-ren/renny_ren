@@ -17,6 +17,8 @@ ch:
     filter:
       filter_posts: "筛选文章"
       search_tags: "搜索标签..."
+  videos:
+    title: "视频"
   tag: "标签"
   about:
     title: "关于"

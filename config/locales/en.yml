@@ -39,6 +39,8 @@ en:
     filter:
       filter_posts: 'Filter Posts'
       search_tags: 'search tags...'
+  videos:
+    title: "VLog"
   tag: "Tags"
   about:
     title: "About"

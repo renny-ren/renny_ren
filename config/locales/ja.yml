@@ -17,6 +17,8 @@ ja:
     filter:
       filter_posts: "文章をフィルターする"
       search_tags: "タグを検索..."
+  videos:
+    title: "ビデオ"
   tag: "タグ"
   about:
     title: "について"

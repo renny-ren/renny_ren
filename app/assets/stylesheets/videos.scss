@@ -1,0 +1,32 @@
+@import 'colors';
+@import 'media';
+
+.videos-page {
+  .videos-container {
+    margin-top: 20px;
+
+    .video-item {
+      display: inline-block;
+      opacity: 0.8;
+
+      &:hover {
+        opacity: initial;
+        transform: scale(1.03);
+      };
+    }
+
+    .date {
+      color: $cadetBlue;
+    }
+  }
+}
+
+@media only screen and (min-width: $tablet-breakpoint) and (max-width: $largest-tablet-screen) {
+  .videos-page {
+    .videos-container {
+      .video-item {
+        display: initial;
+      }
+    }
+  }
+}
