@@ -26,4 +26,4 @@
                   = link_to 'edit', edit_video_path(video), class: 'ui basic mini blue button s-btn'
                   = link_to 'destroy', video_path(video), method: :delete, class: 'ui basic mini red button s-btn', data: { confirm: 'are you sure?' }
 
-    = link_to "new video", new_video_path, class: 'ui blue button s-btn mt' if admin?
+    = link_to "new video", new_video_path, method: :get, class: 'ui blue button s-btn mt' if admin?
