@@ -10,7 +10,7 @@
             .content.mt = log.content.html_safe
 
             - if admin?
-              = link_to 'edit', edit_changelog_path(log), class: 'ui basic mini blue button s-btn'
+              = link_to 'edit', edit_changelog_path(log), method: :get, class: 'ui basic mini blue button s-btn'
               = link_to 'destroy', changelog_path(log), method: :delete, class: 'ui basic mini red button s-btn', data: { confirm: 'are you sure?' }
 
     = link_to "new log", new_changelog_path, class: 'ui blue button s-btn mt' if admin?
