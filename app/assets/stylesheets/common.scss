@@ -1,3 +1,5 @@
+@import 'colors';
+
 .remove-padding {
   padding: 0 !important;
 }
@@ -12,4 +14,8 @@
 
 .hide {
   display: none;
+}
+
+.date {
+  color: $cadetBlue;
 }
