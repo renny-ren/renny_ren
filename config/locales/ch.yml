@@ -19,6 +19,12 @@ ch:
       search_tags: "搜索标签..."
   videos:
     title: "视频"
+    menu:
+      all: "全部"
+      piano: "钢琴"
+      english: "英语"
+    filter:
+      select_tags: "选择标签..."
   tag: "标签"
   about:
     title: "关于"

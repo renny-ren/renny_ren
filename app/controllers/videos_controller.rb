@@ -2,6 +2,7 @@ class VideosController < ApplicationController
   load_and_authorize_resource
 
   def index
+    @videos = @videos.tagged_with(params[:type]) if params[:type].present? && params[:type] != 'all'
   end
 
   def show
@@ -34,6 +35,6 @@ class VideosController < ApplicationController
   private
 
   def video_params
-    params.require(:video).permit(:title, :content, :description, :thumb_image_url)
+    params.require(:video).permit(:title, :content, :description, :thumb_image_url, :tag_list)
   end
 end

@@ -1,7 +1,29 @@
 = javascript_include_tag Ckeditor.cdn_url
 
+javascript:
+  $(function() {
+    $('.ui.dropdown')
+      .dropdown(
+        'set value', "#{@video.tag_list}".split(', ')
+      )
+      .dropdown({
+        allowAdditions: true
+      });
+  });
+
 .video-form.ui.form
   = form_for @video do |f|
+    .field
+      .ui.multiple.search.selection.dropdown
+        = f.text_field 'tag_list', type: 'hidden', value: ''
+        i.dropdown.icon
+        .default.text = t('videos.filter.select_tags')
+        .scrolling.menu
+          - Settings.video_tags.each do |tag|
+            .item data-value=tag
+              i.tags.icon
+              = tag
+
     .field
       .title = f.text_field :title, placeholder: "title", autocomplete: 'off'
     .field
