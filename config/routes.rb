@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   scope "(:locale)", locale: /en|ch|ja/ do
     root 'home#index', as: 'home'
     resources :articles do
-      resources :comments
+      resources :comments, only: [:create, :destroy]
     end
 
     resources :about, only: :index
@@ -15,7 +15,7 @@ Rails.application.routes.draw do
     resources :sites, only: :index
     resources :changelogs, except: :show
     resources :videos do
-      resources :comments
+      resources :comments, only: [:create, :destroy]
     end
   end
 

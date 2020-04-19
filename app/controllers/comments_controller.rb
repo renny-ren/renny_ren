@@ -1,4 +1,6 @@
 class CommentsController < ApplicationController
+  load_and_authorize_resource only: :destroy
+
   def create
     if comment_params[:body].blank?
       @has_error = true
@@ -13,6 +15,8 @@ class CommentsController < ApplicationController
   end
 
   def destroy
+    @comment.destroy
+    redirect_to @comment.owner
   end
 
   private

@@ -13,3 +13,6 @@
     .ten.wide.mobile.ten.wide.tablet.thirteen.wide.computer.column
       .comment-body
         = comment.body
+
+      .action
+        = link_to 'destroy', polymorphic_path([comment.owner, comment]), method: :delete, class: 'ui basic mini red button', data: { confirm: "are you sure?" } if admin?

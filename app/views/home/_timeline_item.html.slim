@@ -3,12 +3,12 @@
 .item.six.wide.column data-date="#{item.created_at.strftime('%Y-%m-%d')}" data-short-date="#{item.created_at.strftime('%m.%d')}"
   .item-circle
   .item-segment class=(item.owner_type == 'Article' ? 'ui stacked segment' : 'ui raised segment')
-      - if item.owner_type == 'Article'
-        = link_to article_path(item.owner.id)
-          .item-content
-            .title = item.title
-            .description = sanitize(item.description&.truncate(60) || item.content.truncate(60))
-      - else
-        = link_to sentences_path
-          .item-content
-            = sanitize(item.content.truncate(60))
+    - if item.owner_type == 'Article'
+      = link_to article_path(item.owner.id)
+        .item-content
+          .title = item.title
+          .description = sanitize(item.description&.truncate(60) || item.content.truncate(60))
+    - else
+      = link_to sentences_path
+        .item-content
+          = sanitize(item.content.truncate(60))
