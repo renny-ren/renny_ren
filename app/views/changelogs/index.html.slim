@@ -1,0 +1,16 @@
+- content_for(:title, t('changelogs.title'))
+
+.page-container
+  .changelogs-page
+    .ui.padded.container.changelogs-container
+      .ui.raised.segments
+        - @changelogs.each do |log|
+          .ui.padded.segment
+            .date = log.created_at.strftime('%Y-%m-%d')
+            .content.mt = log.content.html_safe
+
+            - if admin?
+              = link_to 'edit', edit_changelog_path(log), class: 'ui basic mini blue button s-btn'
+              = link_to 'destroy', changelog_path(log), method: :delete, class: 'ui basic mini red button s-btn', data: { confirm: 'are you sure?' }
+
+    = link_to "new log", new_changelog_path, class: 'ui blue button s-btn mt' if admin?

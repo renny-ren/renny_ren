@@ -20,7 +20,9 @@ ch:
   tag: "标签"
   about:
     title: "关于"
-  site: 酷站
+  site: "酷站"
+  changelogs:
+    title: "更新日志"
   sentence:
     title: "说说"
 

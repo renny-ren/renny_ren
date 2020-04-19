@@ -13,6 +13,7 @@ Rails.application.routes.draw do
 
     resources :sentences, except: :show
     resources :sites, only: :index
+    resources :changelogs
   end
 
   resources :sessions, only: [:index, :create]
