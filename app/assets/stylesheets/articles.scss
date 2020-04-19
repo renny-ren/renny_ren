@@ -118,33 +118,6 @@
   }
   .content a:hover { text-decoration: underline; }
 
-  .comments-panel {
-    margin-top: 30px;
-
-    .comment-item {
-      .ui.image.label {
-        left: -5px;
-      }
-
-      .item-left {
-        text-align: center;
-        border-right: 1px solid rgba(34, 36, 38, 0.15);
-
-        .comment-date {
-          color: $cadetBlue;
-          margin-top: 8px;
-          margin-left: -10px;
-          opacity: 0.9;
-        }
-      }
-
-      .comment-body {
-        /*color: #2185D0;*/
-        opacity: 0.9;
-        display: inline-block;
-      }
-    }
-  }
 /*  code {
     display: inline-block;
     font-size: 16px;

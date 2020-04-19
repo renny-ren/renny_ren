@@ -1,21 +1,16 @@
 - content_for(:title, @video.title)
 
 .page-container
-  .ui.padded.container.videos-container
-    .ui.padded.raised.segment
-      .title
-        = @video.title
-      .ui.padded.stackable.grid
-        span.tags
-        span.date
-          = t(:created) + "#{@video.created_at.to_date}　　"
-
-      .content.markdown-body
+  .video-page
+    .ui.container.video-container
+      .content
         = @video.content.html_safe
 
-    div style="text-align: center; cursor: pointer; color: #ffbe48;" onclick="javascript:alert('这家伙很懒，点赞功能还没开发。');"
-      '0 赞 &nbsp
-      i.fa.fa-thumbs-up
+      .date
+        = @video.created_at.to_date
 
-    = link_to "edit", edit_video_path(@video), class: 'ui blue button' if admin?
-    = link_to "back", videos_path, class: 'ui basic blue button mt'
+      .actions
+        = link_to "edit", edit_video_path(@video), class: 'ui blue button' if admin?
+        = link_to "back", videos_path, class: 'ui basic blue button'
+
+      = render 'comments/comments', owner: @video

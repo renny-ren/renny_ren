@@ -30,8 +30,9 @@ ch:
 
   comments:
     body: '说点什么...'
-    commenter: '名字'
+    name: '名字'
     anonymous: "匿名"
+    empty: " 暂无评论"
 
   created: "发布时间： "
   updated: "最后更新： "

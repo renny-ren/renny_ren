@@ -1,24 +1,23 @@
 class CommentsController < ApplicationController
-  http_basic_authenticate_with name: Settings.name, password: Settings.password, only: :destroy
-  load_resource :article
-  
   def create
     if comment_params[:body].blank?
       @has_error = true
     else
-      @comment = @article.comments.create(comment_params)
+      if params[:article_id].present?
+        @owner = Article.find(params[:article_id])
+      elsif params[:video_id].present?
+        @owner = Video.find(params[:video_id])
+      end
+      @comment = @owner.comments.create(comment_params)
     end
   end
 
   def destroy
-    @comment = @article.comments.find(params[:id])
-    @comment.destroy
-    redirect_to article_path(@article)
   end
 
   private
 
   def comment_params
-    params.require(:comment).permit(:commenter, :body)
+    params.require(:comment).permit(:name, :body)
   end
 end

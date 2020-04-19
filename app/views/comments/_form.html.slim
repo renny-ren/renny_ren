@@ -1,5 +1,5 @@
 .ui.form
-  = form_for(Comment.new, remote: true, url: article_comments_path(@article)) do |f|
+  = form_for(Comment.new, remote: true, url: polymorphic_path([owner, Comment])) do |f|
     .fields.notice
       .eight.wide.field
         .ui.success.message
@@ -12,9 +12,7 @@
       = f.text_area :body, placeholder: t('comments.body'), size: '80x5', maxlength: 400
 
     .field
-      = f.text_field :commenter, placeholder: t('comments.commenter'), maxlength: 11
-
-    = f.hidden_field :article_id, value: @article.id
+      = f.text_field :name, placeholder: t('comments.name'), maxlength: 11
 
     .submit-btn
       = f.submit '提交回复', class: 'ui primary button'

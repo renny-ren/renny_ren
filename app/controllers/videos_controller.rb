@@ -20,7 +20,7 @@ class VideosController < ApplicationController
 
   def update
     if @video.update(video_params)
-      redirect_to videos_path
+      redirect_to video_path(@video)
     else
       render 'edit'
     end

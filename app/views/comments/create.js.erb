@@ -4,5 +4,10 @@
   $('.comment-form .ui.error.message').hide();
   $('.comment-form .ui.success.message').fadeIn().delay(2000).fadeOut();
   $('#comment_body')[0].value = '';
-  $('.comments-box').append("<%= j(render 'comments/comment', comment: @comment) %>");
+  $('.comments-box').append("<%= j(render 'comments/comment') %>");
+  $('.comment-header').html(" 共有 <%= @owner.comments.size %> 条评论")
+  <% if @owner.comments.size == 1 %>
+    $($('.ui.horizontal.divider')[0]).removeClass('empty')
+    $($('.comments-box')[0]).removeClass('hide')
+  <% end %>
 <% end %>

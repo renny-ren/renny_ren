@@ -1,6 +1,7 @@
 @import 'colors';
 @import 'media';
 
+/* index */
 .videos-page {
   .videos-container {
     margin-top: 20px;
@@ -16,7 +17,25 @@
     }
 
     .date {
+      display: inline-block;
+      margin-top: 5px;
       color: $cadetBlue;
+    }
+  }
+}
+
+/* show */
+.video-page {
+  .video-container {
+    margin-top: 20px;
+
+    .date {
+      float: right;
+      color: $cadetBlue;
+    }
+
+    .actions {
+      margin-top: 20px;
     }
   }
 }
