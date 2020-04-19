@@ -124,6 +124,10 @@
         border-color: transparent;
         border-left-color: #ffffff;
       }
+
+      &:hover {
+        transform: scale(1.02);
+      };
     }
 
     .item-content {

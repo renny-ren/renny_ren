@@ -9,14 +9,6 @@ $ ->
   $('.msg-button').click () ->
     $('.msg-modal').modal('show')
 
-
-  $('body')
-    .on 'mouseenter', '.item-segment', () ->
-      $(this).css('transform', 'scale(1.02)')
-    .on 'mouseleave', '.item-segment', () ->
-      $(this).css('transform', 'initial')
-
-
 document.addEventListener 'turbolinks:load',  ->
   $('#close').click () ->
     $('.sentence-panel').fadeOut()
