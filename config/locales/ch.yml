@@ -25,6 +25,8 @@ ch:
       english: "英语"
     filter:
       select_tags: "选择标签..."
+    search_videos: "搜索视频..."
+
   tag: "标签"
   about:
     title: "关于"

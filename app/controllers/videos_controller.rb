@@ -3,6 +3,7 @@ class VideosController < ApplicationController
 
   def index
     @videos = @videos.tagged_with(params[:type]) if params[:type].present? && params[:type] != 'all'
+    @videos = @videos.where('title LIKE ?', "%#{params[:query]}%") if params[:query].present?
   end
 
   def show
