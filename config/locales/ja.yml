@@ -9,6 +9,8 @@ ja:
   confirm_submit: "# 送信したメッセージは削除できません。"
   msg_button: メッセージ
   scan_qr_code_to_add_me: "QRコードをスキャンしてWeChatを追加します"
+  page_not_found: "お探しのページは存在しません"
+  server_error: "申し訳ありませんが、問題が発生しました。"
 
   title: Renny's blog
   home: "ホーム"

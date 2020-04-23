@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>The page you were looking for doesn't exist (404)</title>
+  <title><%= t('page_not_found') %></title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <style>
   body {
@@ -14,7 +14,7 @@
 
   div.dialog {
     width: 95%;
-    max-width: 33em;
+    max-width: 50em;
     margin: 4em auto 0;
   }
 
@@ -35,6 +35,15 @@
     font-size: 100%;
     color: #730E15;
     line-height: 1.5em;
+  }
+
+  .title {
+    font-size: 28px;
+    color: #730E15;
+    line-height: 1.5em;
+    font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    margin: 15px;
+    font-weight: bold;
   }
 
   div.dialog > p {
@@ -58,10 +67,11 @@
   <!-- This file lives in public/404.html -->
   <div class="dialog">
     <div>
-      <h1>The page you were looking for doesn't exist.</h1>
-      <p>You may have mistyped the address or the page may have moved.</p>
+      <i class="fa fa-2x fa-plane" style="margin-top: 10px;"></i>
+      <div class="title"><%= t('page_not_found') %></div>
+      <!-- <p>You may have mistyped the address or the page may have moved.</p> -->
     </div>
-    <p>If you are the application owner check the logs for more information.</p>
+    <p>renny.ren</p>
   </div>
 </body>
 </html>

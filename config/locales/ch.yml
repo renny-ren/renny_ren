@@ -9,6 +9,8 @@ ch:
   confirm_submit: "# 本站留言没有删除功能"
   msg_button: 留下我的足迹
   scan_qr_code_to_add_me: "扫描二维码添加微信"
+  page_not_found: "你想看的页面已经飞走了..."
+  server_error: "哦豁，服务器好像开小差了..."
 
   title: 任峻宏的博客-止于至善
   home: "主页"

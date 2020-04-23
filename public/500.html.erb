@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>We're sorry, but something went wrong (500)</title>
+  <title><%= t('server_error') %></title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <style>
   body {
@@ -14,7 +14,7 @@
 
   div.dialog {
     width: 95%;
-    max-width: 33em;
+    max-width: 50em;
     margin: 4em auto 0;
   }
 
@@ -35,6 +35,15 @@
     font-size: 100%;
     color: #730E15;
     line-height: 1.5em;
+  }
+
+  .title {
+    font-size: 28px;
+    color: #730E15;
+    line-height: 1.5em;
+    font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
+    margin: 15px;
+    font-weight: bold;
   }
 
   div.dialog > p {
@@ -58,9 +67,10 @@
   <!-- This file lives in public/500.html -->
   <div class="dialog">
     <div>
-      <h1>We're sorry, but something went wrong.</h1>
+      <i class="fa fa-2x fa-bomb" style="margin-top: 10px;"></i>
+      <div class="title"><%= t('server_error') %></div>
     </div>
-    <p>If you are the application owner check the logs for more information.</p>
+    <p>renny.ren</p>
   </div>
 </body>
 </html>
