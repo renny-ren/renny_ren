@@ -8,7 +8,7 @@
         .right.menu
           = form_tag videos_path, method: :get do
             .ui.transparent.icon.input
-              = text_field_tag :query, nil, placeholder: t('videos.search_videos')
+              = text_field_tag :query, params[:query], placeholder: t('videos.search_videos')
               = button_tag fa_icon('search'), class: 'hide search-video-btn'
               i.search.link.icon.search-icon
 

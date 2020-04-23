@@ -1,4 +1,4 @@
-= link_to videos_path, class: "item #{ params[:type].nil? ? 'active' : '' }" do
+= link_to videos_path, class: "item #{ params[:type].nil? && params[:query].nil? ? 'active' : '' }" do
   = t("videos.menu.all")
 
 - Settings.video_tags.each do |tag|
