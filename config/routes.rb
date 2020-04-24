@@ -21,4 +21,10 @@ Rails.application.routes.draw do
 
   resources :sessions, only: [:index, :create]
   resource :sessions, only: :destroy
+
+  if Rails.env.production?
+    get '404', to: 'application#page_not_found'
+    get '422', to: 'application#server_error'
+    get '500', to: 'application#server_error'
+  end
 end
