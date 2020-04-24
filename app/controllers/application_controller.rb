@@ -1,26 +1,22 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   before_action :set_locale
-  after_action :return_errors, only: [:page_not_found, :server_error]
 
   helper_method :admin?
 
   include PermissionControl
 
   def page_not_found
-    @status = 404
+    respond_to do |format|
+      format.html { render file: "/public/404", status: 404 }
+      format.all { render nothing: true, status: 404 }
+    end
   end
 
   def server_error
-    @status = 500
-  end
-
-  private
-
-  def return_errors
     respond_to do |format|
-      format.html { render file: "/public/#{@status}", status: @status }
-      format.all { render nothing: true, status: @status }
+      format.html { render file: "/public/500", status: 500 }
+      format.all { render nothing: true, status: 500 }
     end
   end
 
