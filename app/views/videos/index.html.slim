@@ -5,14 +5,14 @@
     .ui.container.videos-container
       .ui.secondary.pointing.menu
         = render 'menu'
-        .right.menu
+        .right.menu.column
           = form_tag videos_path, method: :get do
             .ui.transparent.icon.input
               = text_field_tag :query, params[:query], placeholder: t('videos.search_videos')
               = button_tag fa_icon('search'), class: 'hide search-video-btn'
               i.search.link.icon.search-icon
 
-      .ui.three.column.stackable.grid
+      .ui.three.column.stackable.grid.videos-grid
         - @videos.each do |video|
           .column
             = link_to video_path(video) do
@@ -29,7 +29,7 @@
 
               - if admin?
                 .action.mt
-                  = link_to 'edit', edit_video_path(video), class: 'ui basic mini blue button s-btn'
+                  = link_to 'edit', edit_video_path(video), method: :get, class: 'ui basic mini blue button s-btn'
                   = link_to 'destroy', video_path(video), method: :delete, class: 'ui basic mini red button s-btn', data: { confirm: 'are you sure?' }
 
     = link_to "new video", new_video_path, method: :get, class: 'ui blue button s-btn mt' if admin?

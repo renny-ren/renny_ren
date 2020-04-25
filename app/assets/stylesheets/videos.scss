@@ -45,3 +45,16 @@
     }
   }
 }
+
+@media only screen and (max-width: $largest-mobile-screen) {
+  .videos-page {
+    .videos-container {
+      .right.menu {
+        display: none !important;
+      }
+      .videos-grid {
+        text-align: center;
+      }
+    }
+  }
+}
