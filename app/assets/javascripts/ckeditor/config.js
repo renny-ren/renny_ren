@@ -3,17 +3,20 @@ if (typeof(CKEDITOR) !== 'undefined') {
 
   CKEDITOR.plugins.addExternal( 'lineheight', '/assets/ckeditor/plugins/lineheight/plugin.js' );
   CKEDITOR.plugins.addExternal( 'codeTag', '/assets/ckeditor/plugins/codeTag/plugin.js' );
+  CKEDITOR.plugins.addExternal( 'iframe', '/assets/ckeditor/plugins/iframe/plugin.js' );
+  CKEDITOR.plugins.addExternal( 'emoji', '/assets/ckeditor/plugins/emoji/plugin.js' );
 
   CKEDITOR.editorConfig = function( config ) {
     // Define changes to default configuration here. For example:
     // config.language = 'fr';
     // config.uiColor = '#AADC6E';
-    config.extraPlugins = 'codesnippet, codeTag, lineheight';
+    config.extraPlugins = 'codesnippet, codeTag, lineheight, iframe, emoji';
     // config.codeSnippet_theme = 'pojoaque';
     // config.codeSnippet_theme = 'monokai';
     // config.contentsCss  = ["/ckeditor/contents.scss"];
     config.height = 600;
     config.line_height="1.2;1.4;1.6;1.8;2;2.2";
+    config.emoji_emojiListUrl = '/assets/ckeditor/plugins/emoji/emoji.json';
 
     /* Filebrowser routes */
     // The location of an external file browser, that should be launched when "Browse Server" button is pressed.
@@ -53,7 +56,7 @@ if (typeof(CKEDITOR) !== 'undefined') {
       { name: 'styles', items: [ 'Styles', 'Format', 'Font', 'FontSize', 'lineheight' ] },
       { name: 'colors', items: [ 'TextColor', 'BGColor' ] },
       { name: 'basicstyles', groups: [ 'basicstyles', 'cleanup' ], items: [ 'Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', '-', 'RemoveFormat' ] },
-      { name: 'plugins', items: [ 'CodeSnippet', 'Code' ] }
+      { name: 'plugins', items: [ 'CodeSnippet', 'Code', 'Iframe', 'EmojiPanel' ] }
     ];
 
     config.toolbar_mini = [
