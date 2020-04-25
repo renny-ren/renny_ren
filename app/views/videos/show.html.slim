@@ -10,7 +10,7 @@
         = @video.created_at.to_date
 
       .actions
-        = link_to "edit", edit_video_path(@video), class: 'ui blue button' if admin?
+        = link_to "edit", edit_video_path(@video), method: :get, class: 'ui blue button' if admin?
         = link_to "back", videos_path, class: 'ui basic blue button'
 
       = render 'comments/comments', owner: @video
