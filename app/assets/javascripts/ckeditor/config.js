@@ -64,7 +64,15 @@ if (typeof(CKEDITOR) !== 'undefined') {
       { name: 'styles', items: [ 'Font', 'FontSize' ] },
       { name: 'colors', items: [ 'TextColor', 'BGColor' ] },
       { name: 'basicstyles', groups: [ 'basicstyles', 'cleanup' ], items: [ 'Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', '-', 'RemoveFormat' ] },
-      { name: 'insert', items: [ 'Image', 'Table', 'HorizontalRule', 'SpecialChar' ] }
+      { name: 'insert', items: [ 'Image', 'Table', 'HorizontalRule', 'SpecialChar' ] },
+      { name: 'plugins', items: [ 'EmojiPanel' ] }
     ];
+
+    config.toolbar_for_comment = [
+      { name: 'paragraph', groups: [ 'list' ], items: [ 'NumberedList', 'BulletedList' ] },
+      { name: 'basicstyles', groups: [ 'basicstyles' ], items: [ 'Bold', 'Italic' ] },
+      { name: 'insert', items: [ 'HorizontalRule' ] },
+      { name: 'plugins', items: [ 'EmojiPanel' ] }
+    ]
   };
 }

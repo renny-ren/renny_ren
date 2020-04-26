@@ -1,4 +1,6 @@
 class Ckeditor::Picture < Ckeditor::Asset
+  self.inheritance_column = nil
+
   has_attached_file :data,
                     url: "#{Settings.cdn_host}/ckeditor_assets/pictures/:id/:style_:basename.:extension",
                     path: ':rails_root/public/ckeditor_assets/pictures/:id/:style_:basename.:extension',

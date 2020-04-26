@@ -12,4 +12,4 @@
         = @comment.created_at.getlocal.strftime('%Y-%m-%d %H:%M')
     .thirteen.wide.computer.ten.wide.mobile.column
       .comment-body
-        = @comment.body
+        = sanitize @comment.body
