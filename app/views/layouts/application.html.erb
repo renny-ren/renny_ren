@@ -45,7 +45,7 @@
             <%= link_to fa_icon('wechat'), 'javascript:void(0);', onclick: "$('.wechat-modal').modal('show')" %>
           </div>
           <div class="four wide mobile ten wide computer column link">
-            <%= link_to t(:site), sites_path %>
+            <%= link_to t(:site), sites_path, method: :get %>
             <%= link_to t('changelogs.title'), changelogs_path %>
           </div>
           <div class="right aligned eight wide mobile three wide computer column beian">蜀ICP备19024450号</div>
