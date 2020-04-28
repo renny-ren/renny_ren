@@ -9,7 +9,7 @@
           p 请输入内容
 
     .required.field
-      = f.cktext_area :body, ckeditor: { toolbar: 'for_comment', customConfig: asset_path('ckeditor/config_for_comment') }
+      = f.cktext_area :body, ckeditor: { placeholder: t('comments.body'), toolbar: 'for_comment', customConfig: asset_path('ckeditor/config_for_comment') }
 
     .field
       = f.text_field :name, placeholder: t('comments.name'), maxlength: 11

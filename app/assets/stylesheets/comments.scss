@@ -1,6 +1,19 @@
 @import 'colors';
 
 .comments-panel {
+  .comment-form {
+    .cke_chrome {
+      border: 1px solid rgba(34, 36, 38, 0.15);
+    }
+    .cke_top {
+      border-bottom: 1px solid rgba(34, 36, 38, 0.15);
+      background: initial;
+    }
+    #cke_1_bottom {
+      display: none;
+    }
+  }
+
   margin-top: 30px;
 
   .empty {
