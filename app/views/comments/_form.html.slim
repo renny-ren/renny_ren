@@ -1,3 +1,5 @@
+= javascript_include_tag Ckeditor.cdn_url
+
 .ui.form
   = form_for(Comment.new, remote: true, url: polymorphic_path([owner, Comment])) do |f|
     .fields.notice
