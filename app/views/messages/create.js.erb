@@ -1,9 +1,7 @@
 <% if @message.errors.blank? %>
   $('.msg-board').html("<%= j render partial: 'home/message', collection: @messages %>");
   $('.flash-notice').text("留言成功").css('background', '#bcffbc');
-  $('.msg-panel').hide();
   $('.msg-modal').modal('hide');
-  $('.fa-angle-down').css('transform', 'initial')
   $('.draggable').draggable({ containment: '.msg-board', cursor: 'move' });
 <% else %>
   $('.flash-notice').text("请输入留言内容").css('background', '#FFE6DF');
