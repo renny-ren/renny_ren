@@ -28,6 +28,7 @@ en:
   msg_placeholder: Leave your footstep here...
   msg_author: name(optional)
   submit: submit
+  back: back
   confirm_submit: "# You cannot delete the message once you've submitted."
   msg_button: Leave a message
   scan_qr_code_to_add_me: "Scan the QR Code to add me on WeChat"
@@ -41,14 +42,29 @@ en:
     filter:
       filter_posts: 'Filter Posts'
       search_tags: 'search tags...'
+
   videos:
     title: "VLog"
+    menu:
+      all: "All"
+      piano: "Piano"
+      english: "English"
+    filter:
+      select_tags: "select tags..."
+    search_videos: "search videos..."
+
   tag: "Tags"
   about:
     title: "About"
   site: Sites
   sentence:
     title: "Shuoshuo"
+
+  comments:
+    body: say something...
+    name: name
+    anonymous: anonymous
+    empty: " no comment yet"
 
   created: "created_at: "
   updated: "updated_at: "

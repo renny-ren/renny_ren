@@ -6,6 +6,8 @@ ch:
   msg_placeholder: 想说点什么呢...
   msg_author: 尊姓大名(可选)
   submit: 提交
+  back: 返回
+  edit: 编辑
   confirm_submit: "# 本站留言没有删除功能"
   msg_button: 留下我的足迹
   scan_qr_code_to_add_me: "扫描二维码添加微信"
@@ -19,6 +21,7 @@ ch:
     filter:
       filter_posts: "筛选文章"
       search_tags: "搜索标签..."
+
   videos:
     title: "视频"
     menu:

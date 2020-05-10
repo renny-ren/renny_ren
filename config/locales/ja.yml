@@ -6,6 +6,7 @@ ja:
   msg_placeholder: 何が言いたいのか...
   msg_author: 名前（オプション）
   submit: 提出
+  back: 戻る
   confirm_submit: "# 送信したメッセージは削除できません。"
   msg_button: メッセージ
   scan_qr_code_to_add_me: "QRコードをスキャンしてWeChatを追加します"
@@ -19,14 +20,29 @@ ja:
     filter:
       filter_posts: "文章をフィルターする"
       search_tags: "タグを検索..."
+
   videos:
     title: "ビデオ"
+    menu:
+      all: "すべて"
+      piano: "ピアノ"
+      english: "英語"
+    filter:
+      select_tags: "select tags..."
+    search_videos: "ビデオを検索..."
+
   tag: "タグ"
   about:
     title: "について"
   site: サイト
   sentence:
     title: "说说"
+
+  comments:
+    body: 入力してください...
+    name: 名前
+    anonymous: 匿名の
+    empty: " コメントはありません"
 
   created: "創建： "
   updated: "更新： "
