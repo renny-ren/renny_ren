@@ -4,6 +4,10 @@
 /* index */
 .videos-page {
   .videos-container {
+    .search-video-form {
+      display: flex;
+    }
+
     .video-item {
       display: inline-block;
       opacity: 0.8;

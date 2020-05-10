@@ -6,7 +6,7 @@
       .ui.secondary.pointing.menu
         = render 'menu'
         .right.menu.column
-          = form_tag videos_path, method: :get do
+          = form_tag videos_path, method: :get, class: 'search-video-form' do
             .ui.transparent.icon.input
               = text_field_tag :query, params[:query], placeholder: t('videos.search_videos')
               = button_tag fa_icon('search'), class: 'hide search-video-btn'
