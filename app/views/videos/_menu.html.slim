@@ -1,5 +1,7 @@
 = link_to videos_path, class: "item #{ params[:type].nil? && params[:query].nil? ? 'active' : '' }" do
   = t("videos.menu.all")
+  .ui.teal.mini.label
+    = Video.all.size
 
 - Settings.video_tags.each do |tag|
   = link_to videos_path(type: tag), class: "item #{ params[:type] == tag ? 'active' : '' }" do
