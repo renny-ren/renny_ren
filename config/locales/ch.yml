@@ -28,6 +28,7 @@ ch:
       all: "全部"
       piano: "钢琴"
       english: "英语"
+      others: "其他"
     filter:
       select_tags: "选择标签..."
     search_videos: "搜索视频..."

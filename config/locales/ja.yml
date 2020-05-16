@@ -27,6 +27,7 @@ ja:
       all: "すべて"
       piano: "ピアノ"
       english: "英語"
+      others: "その他"
     filter:
       select_tags: "select tags..."
     search_videos: "ビデオを検索..."

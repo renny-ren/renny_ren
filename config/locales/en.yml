@@ -49,6 +49,7 @@ en:
       all: "All"
       piano: "Piano"
       english: "English"
+      others: "Others"
     filter:
       select_tags: "select tags..."
     search_videos: "search videos..."
