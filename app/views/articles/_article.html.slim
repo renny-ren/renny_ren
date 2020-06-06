@@ -1,12 +1,17 @@
 .ui.vertical.segment.article-item
-  span.title
-    = link_to article.title, article_path(article), method: :get
-  span.date
-    = article.created_at.to_date
-  span.tags
+  .tags
     - article.tag_list.each do |tag|
       .ui.tiny.tag.label.article-tag
         = tag
+  .title
+    = link_to article.title, article_path(article), method: :get
+  .ui.relaxed.horizontal.list.info
+    .item.comments
+      .fa.fa-comments
+      = article.comments.size
+    .item.date
+      .fa.fa-calendar
+      = article.created_at.to_date
 
   - if admin?
     = link_to 'edit', edit_article_path(article), method: :get, class: 'ui basic mini blue button s-btn'
