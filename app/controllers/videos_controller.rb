@@ -8,6 +8,7 @@ class VideosController < ApplicationController
   end
 
   def show
+    @video.view_times.incr(1)
   end
 
   def edit

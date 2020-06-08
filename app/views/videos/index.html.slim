@@ -15,17 +15,24 @@
       .ui.three.column.stackable.grid.videos-grid
         - @videos.each do |video|
           .column
-            = link_to video_path(video) do
+            = link_to video_path(video), method: :get do
               .video-item
                 .ui.card
                   .image
                     img src="#{video.thumb_image_url}" style="height: 200px;"
                   .content
                     .header = video.title
-                    .meta
-                      i.fa.fa-calendar
-                      .date = video.created_at.strftime('%Y-%m-%d')
                     .description = video.description
+                    .ui.horizontal.list.info
+                      .item
+                        i.fa.fa-eye
+                        = video.view_times
+                      .item
+                        i.fa.fa-comments
+                        = video.comments.size
+                      .item
+                        i.fa.fa-calendar
+                        = video.created_at.strftime('%Y-%m-%d')
 
               - if admin?
                 .action.mt

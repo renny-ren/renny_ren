@@ -16,12 +16,15 @@
         opacity: initial;
         transform: scale(1.03);
       };
-    }
 
-    .date {
-      display: inline-block;
-      margin-top: 5px;
-      color: $cadetBlue;
+      .info {
+        margin-top: 6px;
+        color: #999;
+      }
+
+      .fa {
+        margin-right: 0.3em;
+      }
     }
   }
 }
