@@ -6,10 +6,13 @@
   .title
     = link_to article.title, article_path(article), method: :get
   .ui.relaxed.horizontal.list.info
-    .item.comments
+    .item.view-times
+      .fa.fa-eye
+      = article.view_times
+    .item
       .fa.fa-comments
       = article.comments.size
-    .item.date
+    .item
       .fa.fa-calendar
       = article.created_at.to_date
 

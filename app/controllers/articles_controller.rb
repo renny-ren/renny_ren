@@ -16,6 +16,7 @@ class ArticlesController < ApplicationController
   end
 
   def show
+    @article.view_times.incr(1)
   end
 
   def edit

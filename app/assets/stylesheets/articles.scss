@@ -34,19 +34,11 @@
 
     .info {
       margin-top: 8px;
-      color: $cadetBlue;
-
-      .date {
-        color: $cadetBlue;
-        opacity: 0.9;
-      }
-
-      .comments {
-        opacity: 0.9;
-      }
+      color: #999;
+      opacity: 0.9;
 
       .fa {
-        margin-right: 0.3em;
+        margin-right: 0.4em;
       }
     }
   }

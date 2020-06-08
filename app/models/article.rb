@@ -1,5 +1,6 @@
 class Article < ApplicationRecord
   include FilterExtends
+  include Redis::Objects
 
   acts_as_taggable
   has_many :comments, as: :owner, dependent: :destroy
@@ -9,6 +10,8 @@ class Article < ApplicationRecord
   has_one :timeline_item, as: :owner, dependent: :destroy
 
   after_create :create_timeline_item
+
+  counter :view_times, default: 0
 
   def self.year_month
     Time.now.strftime('%Y-%m')
