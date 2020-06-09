@@ -7,7 +7,7 @@
       = link_to article_path(item.owner.id)
         .item-content
           .title = item.title
-          .description = sanitize(item.description&.truncate(55) || item.content.truncate(55))
+          .description = sanitize(item.description&.truncate(76) || item.content.truncate(76))
     - else
       = link_to sentences_path
         .item-content

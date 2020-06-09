@@ -61,7 +61,8 @@
     };
 
     &:nth-child(even) {
-      margin-top: 15%;
+      margin-top: 180px;
+      margin-bottom: 30px;
 
       .item-circle {
         left: -4px;
@@ -132,8 +133,7 @@
 
     .item-content {
       overflow: hidden;
-      max-height: 120px;
-      line-height: 1.6;
+      max-height: 80px;
 
       .title {
         font-size: 1.2rem;
@@ -141,7 +141,10 @@
       }
 
       .description {
-        color: gray;
+        color: #999;
+        p {
+          line-height: 1.8;
+        }
       }
     }
   }
