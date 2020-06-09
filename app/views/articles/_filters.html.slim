@@ -8,6 +8,7 @@ javascript:
       onRemove: function() {
         if($(this).children('a.ui.label').length == 1) {
           $($('.article-filters .action')[0]).hide()
+          window.location.href = "/#{I18n.locale}/articles"
         }
       },
       onAdd: function() {
