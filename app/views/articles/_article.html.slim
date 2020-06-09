@@ -1,8 +1,9 @@
 .ui.vertical.segment.article-item
   .tags
     - article.tag_list.each do |tag|
-      .ui.tiny.tag.label.article-tag
-        = tag
+      = link_to articles_path(filters: tag) do
+        .ui.tiny.tag.label.article-tag
+          = tag
   .title
     = link_to article.title, article_path(article), method: :get
   .ui.relaxed.horizontal.list.info
