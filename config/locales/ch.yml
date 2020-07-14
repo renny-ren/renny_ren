@@ -8,7 +8,7 @@ ch:
   submit: 提交
   back: 返回
   edit: 编辑
-  confirm_submit: "# 本站留言没有删除功能"
+  confirm_submit: "# 留言提交后不可修改"
   msg_button: 留下我的足迹
   scan_qr_code_to_add_me: "扫描二维码添加微信"
   page_not_found: "你想看的页面已经飞走了..."
