@@ -61,7 +61,7 @@
     };
 
     &:nth-child(even) {
-      margin-top: 180px;
+      margin-top: 175px;
       margin-bottom: 30px;
 
       .item-circle {
@@ -133,7 +133,8 @@
 
     .item-content {
       overflow: hidden;
-      max-height: 80px;
+      max-height: 97px;
+      line-height: 1.6;
 
       .title {
         font-size: 1.2rem;
