@@ -1,11 +1,11 @@
-- empty_comment = owner.comments.empty?
+- empty_comment = comments.empty?
 
 .comments-panel
   .ui.horizontal.divider class=( empty_comment ? 'empty' : '')
     i.fa.fa-comments
-    span.comment-header = empty_comment ? t('comments.empty') : " 共有 #{owner.comments.count} 条评论"
+    span.comment-header = empty_comment ? t('comments.empty') : " 共有 #{comments.count} 条评论"
 
   .ui.segments.comments-box class=(empty_comment ? 'hide' : '')
-    = render partial: 'shared/comment', collection: owner.comments
+    = render partial: 'shared/comment', collection: comments
   .comment-form
     = render 'comments/form', owner: owner

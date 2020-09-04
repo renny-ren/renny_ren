@@ -23,4 +23,4 @@
     = link_to t('edit'), edit_article_path(@article), method: :get, class: 'ui blue button' if admin?
     = link_to t('back'), articles_path, class: 'ui basic blue button mt'
 
-    = render 'comments/comments', owner: @article
+    = render 'comments/comments', owner: @article, comments: @comments

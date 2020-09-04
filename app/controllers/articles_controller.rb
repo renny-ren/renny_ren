@@ -17,6 +17,7 @@ class ArticlesController < ApplicationController
 
   def show
     @article.view_times.incr(1)
+    @comments = @article.comments.order('created_at DESC')
   end
 
   def edit
