@@ -9,6 +9,7 @@ class VideosController < ApplicationController
 
   def show
     @video.view_times.incr(1)
+    @comments = @video.comments.sorted
   end
 
   def edit

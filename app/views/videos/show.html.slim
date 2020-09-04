@@ -13,4 +13,4 @@
         = link_to t('edit'), edit_video_path(@video), method: :get, class: 'ui blue button' if admin?
         = link_to t('back'), videos_path, class: 'ui basic blue button'
 
-      = render 'comments/comments', owner: @video
+      = render 'comments/comments', owner: @video, comments: @comments
