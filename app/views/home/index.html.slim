@@ -11,7 +11,7 @@
         .new-sentence
           = link_to '+', new_sentence_path if admin?
         .timeline
-          .timeline-items.ui.stackable.padded.centered.grid
+          .timeline-items.ui.stackable.centered.grid
             = render partial: 'timeline_item', collection: @timeline_items
 
         .infinite-scrolling
