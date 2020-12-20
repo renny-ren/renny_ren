@@ -48,7 +48,6 @@
   background-repeat: no-repeat;
   background-position: center center;
   height: 100%;
-  margin-top: 12px;
 
   .item {
     &:before {
@@ -133,8 +132,6 @@
     }
 
     .item-content {
-      overflow: hidden;
-      max-height: 97px;
       line-height: 1.6;
 
       .title {
