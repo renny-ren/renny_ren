@@ -36,6 +36,8 @@ ja:
   about:
     title: "について"
   site: サイト
+  changelogs:
+    title: "変更ログ"
   sentence:
     title: "说说"
 

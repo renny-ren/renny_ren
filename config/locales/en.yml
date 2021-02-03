@@ -58,6 +58,8 @@ en:
   about:
     title: "About"
   site: Sites
+  changelogs:
+    title: "Changelog"
   sentence:
     title: "Shuoshuo"
 
