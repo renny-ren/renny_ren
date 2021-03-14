@@ -10,6 +10,8 @@
     <%= favicon_link_tag 'avatar.ico' %>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= auto_discovery_link_tag :atom, "/feed" %>
+    <%= auto_discovery_link_tag :rss, "/feed.rss" %>
   </head>
 
   <body>

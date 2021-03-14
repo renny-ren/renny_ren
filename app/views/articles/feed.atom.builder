@@ -1,6 +1,8 @@
 atom_feed :language => 'en-US' do |feed|
   feed.title t(:title)
   feed.updated @updated
+  feed.icon asset_url 'avatar.ico'
+  feed.logo asset_url 'avatar-2.jpeg'
 
   @articles.each do |item|
     next if item.updated_at.blank?
