@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-  load_and_authorize_resource
+  load_and_authorize_resource except: :feed
 
   def index
     @articles = @articles.tagged_with(params[:filters]) if params[:filters].present?
@@ -34,6 +34,15 @@ class ArticlesController < ApplicationController
   def destroy
     @article.destroy
     redirect_to articles_path
+  end
+
+  def feed
+    @articles = Article.order('created_at DESC')
+    @updated = @articles.first.updated_at
+    respond_to do |format|
+      format.atom { render layout: false }
+      format.rss { redirect_to feed_path(format: :atom), status: :moved_permanently }
+    end
   end
 
   private

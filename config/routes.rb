@@ -22,6 +22,8 @@ Rails.application.routes.draw do
   resources :sessions, only: [:index, :create]
   resource :sessions, only: :destroy
 
+  get '/feed' => 'articles#feed', as: :feed, defaults: { format: 'atom' }
+
   if Rails.env.production?
     get '404', to: 'application#page_not_found'
     get '422', to: 'application#server_error'
