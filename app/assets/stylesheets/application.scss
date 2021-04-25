@@ -32,7 +32,7 @@ body {
   position: sticky;
   top: 0;
   width: 100%;
-  z-index: 99;
+  z-index: 9999;
 
   .avatar {
     padding: 0.5rem !important;
@@ -98,6 +98,7 @@ footer {
 }
 
 .page-container {
+  overflow: hidden;
   margin-top: 20px;
   min-height: calc(100% - 150px);
 }

@@ -17,7 +17,7 @@
   <body>
     <div class="nav-header">
       <div class="ui padded grid">
-        <div class="right aligned four wide mobile three wide computer column avatar"><%= link_to image_tag('avatar.png'), home_path %></div>
+        <div class="right aligned four wide mobile three wide computer column avatar"><%= link_to image_tag('avatar.png', style: 'width: 88px'), home_path %></div>
         <div class="center aligned twelve wide mobile ten wide computer column nav-link">
           <%= link_to t(:home), home_path, method: :get %>
           <%= link_to t('articles.title'), articles_path %>

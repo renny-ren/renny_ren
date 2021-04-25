@@ -55,6 +55,7 @@
 
 @media only screen and (max-width: $largest-mobile-screen) {
   .videos-page {
+    margin-top: 10px;
     .videos-container {
       .right.menu {
         display: none !important;
@@ -63,5 +64,8 @@
         text-align: center;
       }
     }
+  }
+  .video-page {
+    margin-top: 20px;
   }
 }
