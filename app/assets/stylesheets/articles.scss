@@ -136,14 +136,20 @@
 
 @media only screen and (max-width: $largest-mobile-screen) {
   .article-container {
+    .ui.container {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
     .content {
       padding: 30px 2px 2px;
     }
-
     .comment-item {
       .ui.image.label, .comment-body {
         line-height: 1.8;
       }
+    }
+    .back-btn {
+      margin-left: 1em !important;
     }
   }
 }

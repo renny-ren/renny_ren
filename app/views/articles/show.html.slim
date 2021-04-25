@@ -1,26 +1,28 @@
 - content_for(:title, @article.title)
 
 .page-container
-  .ui.padded.container.article-container
-    .ui.padded.raised.segment
-      .title
-        = @article.title
-      .ui.padded.stackable.grid
-        span.tags
-          - @article.tag_list.each do |tag|
-            .ui.tiny.tag.label.article-tag
-              = tag
-        span.date
-          = t(:created) + "#{@article.created_at.to_date}　　"
+  .article-container
+    .ui.padded.container
+      .ui.segment
+        .title
+          = @article.title
+        .ui.padded.stackable.grid
+          span.tags
+            - @article.tag_list.each do |tag|
+              .ui.tiny.tag.label.article-tag
+                = tag
+          span.date
+            = t(:created) + "#{@article.created_at.to_date}　　"
 
-      .content.markdown-body
-        = @article.content.html_safe
+        .content.markdown-body
+          = @article.content.html_safe
 
-    div style="text-align: center; cursor: pointer; color: #ffbe48;" onclick="javascript:alert('这家伙很懒，点赞功能还没开发。');"
-      '0 赞 &nbsp
-      i.fa.fa-thumbs-up
+      div style="text-align: center; cursor: pointer; color: #ffbe48;" onclick="javascript:alert('这家伙很懒，点赞功能还没开发。');"
+        '0 赞 &nbsp
+        i.fa.fa-thumbs-up
 
-    = link_to t('edit'), edit_article_path(@article), method: :get, class: 'ui blue button' if admin?
-    = link_to t('back'), articles_path, class: 'ui basic blue button mt'
+      = link_to t('edit'), edit_article_path(@article), method: :get, class: 'ui blue button' if admin?
+      = link_to t('back'), articles_path, class: 'ui basic blue button mt back-btn'
 
+  .ui.padded.container
     = render 'comments/comments', owner: @article, comments: @comments

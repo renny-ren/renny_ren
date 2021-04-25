@@ -18,6 +18,7 @@
 
 @import "semantic-ui";
 @import "colors";
+@import "media";
 
 body {
   margin: 0; 
@@ -98,4 +99,10 @@ footer {
 .page-container {
   margin-top: 20px;
   min-height: calc(100% - 150px);
+}
+
+@media only screen and (max-width: $largest-mobile-screen) {
+  .page-container {
+    margin-top: 0;
+  }
 }
