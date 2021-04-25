@@ -37,8 +37,9 @@ class ArticlesController < ApplicationController
   end
 
   def feed
-    @articles = Article.order('created_at DESC')
-    @updated = @articles.first.updated_at
+    @articles = Rails.cache.fetch("article_feeds", expires_in: 1.day) do
+                  Article.order('created_at DESC')
+                end
     respond_to do |format|
       format.atom { render layout: false }
       format.rss { redirect_to feed_path(format: :atom), status: :moved_permanently }
