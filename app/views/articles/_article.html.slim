@@ -1,6 +1,6 @@
 .ui.vertical.segment.article-item
   .tags
-    - article.tag_list.each do |tag|
+    - article.tags.collect { |t| t.name }.each do |tag|
       = link_to articles_path(filters: tag) do
         .ui.tiny.tag.label.article-tag
           = tag

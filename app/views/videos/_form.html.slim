@@ -4,7 +4,7 @@ javascript:
   $(function() {
     $('.ui.dropdown')
       .dropdown(
-        'set value', "#{@video.tag_list}".split(', ')
+        'set value', "#{@video.tags.map { |t| t.name }}".split(', ')
       )
       .dropdown({
         allowAdditions: true

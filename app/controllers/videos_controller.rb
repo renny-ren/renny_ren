@@ -2,6 +2,7 @@ class VideosController < ApplicationController
   load_and_authorize_resource
 
   def index
+    @videos = @videos.includes(:comments, :tags)
     @videos = @videos.tagged_with(params[:type]) if params[:type].present? && params[:type] != 'all'
     @videos = @videos.search_filter(params[:query]) if params[:query].present?
     @videos = @videos.order('created_at DESC')
