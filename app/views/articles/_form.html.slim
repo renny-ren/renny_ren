@@ -4,7 +4,7 @@ javascript:
   $(function() {
     $('.ui.dropdown')
       .dropdown(
-        'set value', "#{@article.tags.collect { |t| t.name }}".split(', ')
+        'set value', "#{@article.tags.collect { |t| t.name }.join(', ')}".split(', ')
       )
       .dropdown({
         allowAdditions: true
