@@ -25,6 +25,12 @@
     .ui.image.label {
       left: -5px;
     }
+    .commenter-info {
+      background: none !important;
+    }
+    .avatar {
+      margin: 0 auto;
+    }
 
     .item-left {
       text-align: center;
@@ -32,7 +38,6 @@
 
       .comment-date {
         color: $cadetBlue;
-        margin-top: 8px;
         margin-left: -10px;
         opacity: 0.9;
       }
