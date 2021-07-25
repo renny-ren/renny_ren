@@ -3,7 +3,6 @@ source 'https://gems.ruby-china.com'
 gem 'redis-objects'
 gem 'acts-as-taggable-on'
 gem 'cancancan'
-gem 'ckeditor'
 gem 'paperclip'
 gem 'redcarpet'  # markdown (not in use)
 gem 'will_paginate'
@@ -11,6 +10,7 @@ gem 'config'
 gem 'font-awesome-rails'
 gem 'slim'
 gem 'semantic-ui-sass'
+gem 'aliyun-sdk'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem "rails", "~> 6.1"

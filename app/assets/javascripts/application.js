@@ -14,6 +14,6 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_directory .
-//= require_directory ./ckeditor
+
 //= require tooltipster.bundle.min
 //= require semantic-ui
