@@ -1,4 +1,15 @@
-= javascript_include_tag Ckeditor.cdn_url
+= javascript_include_tag 'https://renny-assets.oss-cn-chengdu.aliyuncs.com/files/ckeditor.js'
+
+javascript:
+  $(function() {
+    ClassicEditor.create(document.querySelector('#ckeditor'), {
+      toolbar: [ 'numberedList', 'bulletedList', '|', 'bold', 'italic', '|', 'link', 'undo', 'redo' ],
+    }).then(editor => {
+      window.editor = editor;
+    }).catch(error => {
+      console.log(error);
+    });
+  });
 
 .ui.form
   = form_for(Comment.new, remote: true, url: polymorphic_path([owner, Comment])) do |f|
@@ -11,7 +22,7 @@
           p 请输入内容
 
     .required.field
-      = f.cktext_area :body, ckeditor: { placeholder: t('comments.body'), toolbar: 'for_comment', customConfig: asset_path('ckeditor/config_for_comment') }
+      textarea#ckeditor name="comment[body]" placeholder= t('comments.body')
 
     .field
       = f.text_field :name, placeholder: t('comments.name'), maxlength: 11

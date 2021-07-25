@@ -2,15 +2,14 @@
 
 .comments-panel {
   .comment-form {
-    .cke_chrome {
-      border: 1px solid rgba(34, 36, 38, 0.15);
+    .ck-editor__editable_inline {
+      min-height: 100px;
     }
-    .cke_top {
-      border-bottom: 1px solid rgba(34, 36, 38, 0.15);
-      background: initial;
+    .ck-toolbar {
+      background: #fff;
     }
-    .cke_bottom {
-      display: none;
+    .ck-content {
+      padding: 0 15px;
     }
   }
 

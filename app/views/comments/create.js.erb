@@ -3,7 +3,7 @@
 <% else %>
   $('.comment-form .ui.error.message').hide();
   $('.comment-form .ui.success.message').fadeIn().delay(2000).fadeOut();
-  $('.cke_wysiwyg_frame').contents().find('body').html('');
+  window.editor.setData('');
   $('#comment_name')[0].value = '';
   $('.comments-box').append("<%= j(render 'comments/comment') %>");
   $('.comment-header').html(" 共有 <%= @owner.comments.size %> 条评论")

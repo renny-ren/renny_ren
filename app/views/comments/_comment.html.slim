@@ -1,13 +1,15 @@
+= javascript_include_tag "jdenticon.min"
+
 .ui.segment
   .comment-item.ui.two.column.padded.grid
     .three.wide.computer.six.wide.mobile.column.item-left
-      .ui.image.label
+      .ui.image.label.commenter-info
         - if @comment.name.present?
-          img src="//www.gravatar.com/avatar/#{Digest::MD5.hexdigest(@comment.name)}?s=60&r=g&d=retro"
-          = @comment.name
+          svg.avatar data-jdenticon-value="#{Digest::MD5.hexdigest(@comment.name)}" width="25px" height="25px"
+          .mt= @comment.name
         - else
-          img src="//www.gravatar.com/avatar/00000000000000000000000000000000?d=mm&f=y"
-          = t('comments.anonymous')
+          svg data-jdenticon-value="default_avatar" width="25px" height="25px"
+          .mt= t('comments.anonymous')
       .comment-date
         = @comment.created_at.getlocal.strftime('%Y-%m-%d %H:%M')
     .thirteen.wide.computer.ten.wide.mobile.column
