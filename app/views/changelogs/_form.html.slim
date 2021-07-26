@@ -1,10 +1,10 @@
-= javascript_include_tag Ckeditor.cdn_url
+= javascript_include_tag 'ckeditor/editor', type: "module"
 
 .changelog-form.ui.form
   = form_for @changelog do |f|
     .field
       .version = f.text_field :version, placeholder: "version"
     .field
-      = f.cktext_area :content, value: @changelog.content
+      textarea#ckeditor-standard name="changelog[content]" = @changelog.content
     .action
       = f.submit 'submit', class: 'ui primary button'

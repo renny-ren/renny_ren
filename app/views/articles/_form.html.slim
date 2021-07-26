@@ -1,4 +1,4 @@
-= javascript_include_tag Ckeditor.cdn_url
+= javascript_include_tag 'ckeditor/editor', type: "module"
 
 javascript:
   $(function() {
@@ -34,6 +34,7 @@ javascript:
     .field
       .title = f.text_field :title, placeholder: "title"
     .field
-      = f.cktext_area :content, value: @article.content, id: 'article-content'
+      textarea#ckeditor-standard name="article[content]" = @article.content
+
     .action
       = f.submit 'submit', class: 'ui primary button'

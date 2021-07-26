@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  mount Ckeditor::Engine => '/ckeditor'
-
   scope "(:locale)", locale: /en|ch|ja/ do
     root 'home#index', as: 'home'
     resources :articles do
@@ -21,6 +19,7 @@ Rails.application.routes.draw do
 
   resources :sessions, only: [:index, :create]
   resource :sessions, only: :destroy
+  resources :uploads, only: [:create]
 
   get '/feed' => 'articles#feed', as: :feed, defaults: { format: 'atom' }
 

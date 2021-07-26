@@ -1,0 +1,21 @@
+.ck-toolbar {
+  background: #fff !important;
+}
+.ck-content {
+  padding: 0 15px !important;
+}
+.ck-toolbar__items {
+  font-size: 12px !important;
+}
+
+.comment-form, .changelog-form {
+  .ck-editor__editable_inline {
+    min-height: 100px;
+  }
+}
+
+.article-form, .video-form {
+  .ck-editor__editable_inline {
+    min-height: 500px;
+  }
+}
