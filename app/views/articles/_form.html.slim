@@ -35,6 +35,7 @@ javascript:
       .title = f.text_field :title, placeholder: "title"
     .field
       textarea#ckeditor-standard name="article[content]" = @article.content
+      #word-count
 
     .action
       = f.submit 'submit', class: 'ui primary button'

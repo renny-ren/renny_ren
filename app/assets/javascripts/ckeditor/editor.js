@@ -63,6 +63,10 @@ $(() => {
         }).then(editor => {
           window.editor = editor;
 
+          const wordCountPlugin = editor.plugins.get('WordCount');
+          const wordCountWrapper = document.getElementById('word-count');
+          wordCountWrapper.appendChild(wordCountPlugin.wordCountContainer);
+
           editor.plugins.get('FileRepository').createUploadAdapter = (loader) => {
             return new UploadAdapter(loader, {
               uploadUrl: async () => {

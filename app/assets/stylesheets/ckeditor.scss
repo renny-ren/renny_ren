@@ -19,3 +19,11 @@
     min-height: 500px;
   }
 }
+
+#word-count {
+  padding: 10px 20px;
+  margin-bottom: 15px;
+  background: var(--ck-color-toolbar-background);
+  border-left: 10px solid #1ba4ff;
+  box-shadow: 2px 2px 2px #80808024;
+}
