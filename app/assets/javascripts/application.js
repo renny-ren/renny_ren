@@ -14,6 +14,5 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_directory .
-
 //= require tooltipster.bundle.min
 //= require semantic-ui

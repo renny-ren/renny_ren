@@ -68,10 +68,9 @@ $(() => {
               uploadUrl: async () => {
                 const resp = await fetch('/uploads/new').then((res) => res.json())
                 if (resp.err) message.error(resp.message)
-                const { signed_url, url } = resp
+                const { url } = resp
                 return {
                   method: 'PUT',
-                  signed_url,
                   url,
                 }
               },

@@ -29,13 +29,6 @@ export default class UploadAdapter {
   async _initRequest() {
     const xhr = (this.xhr = new XMLHttpRequest())
 
-    // const { method, url, signed_url } = await this.options.uploadUrl()
-
-    // xhr.open(method, signed_url, true)
-    // xhr.responseType = 'json'
-
-    // return { url }
-
     xhr.open( 'POST', '/uploads', true );
     xhr.responseType = 'json';
   }
@@ -86,9 +79,6 @@ export default class UploadAdapter {
     data.append('upload', file);
     data.append('authenticity_token', $('[name="csrf-token"]')[0].content);
 
-    this.xhr.send( data );
-
-    // Send the request.
-    // this.xhr.send(file)
+    this.xhr.send(data);
   }
 }
