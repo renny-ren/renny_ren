@@ -1,14 +1,12 @@
-// import SimpleUploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/simpleuploadadapter';
 import UploadAdapter from './UploadAdapter'
 
-$(function(){
-
-  $.getScript('https://renny-assets.oss-cn-chengdu.aliyuncs.com/files/ckeditor.js', function() {
+$(() => {
+  $.getScript('https://renny-assets.oss-cn-chengdu.aliyuncs.com/files/ckeditor.js', () => {
       const editorEl = document.querySelector('#ckeditor-standard')
+      const simpleEditorEl = document.querySelector('#ckeditor-simple')
 
       if (editorEl) {
         ClassicEditor.create(editorEl, {
-          // plugins: [ SimpleUploadAdapter, ],
           toolbar: {
             items: [
               'bold',
@@ -41,9 +39,9 @@ $(function(){
               '|',
               'codeBlock',
               'code',
-              'imageUpload',
               'imageInsert',
-              'blockQuote'
+              'blockQuote',
+              'htmlEmbed'
             ],
             shouldNotGroupWhenFull: true
           },
@@ -85,7 +83,16 @@ $(function(){
         }).catch(error => {
           console.log(error);
         });
-      }  
-  })
+      }
 
+      if (simpleEditorEl) {
+        ClassicEditor.create(simpleEditorEl, {
+          toolbar: [ 'numberedList', 'bulletedList', '|', 'bold', 'italic', '|', 'link', 'undo', 'redo' ],
+        }).then(editor => {
+          window.editor = editor;
+        }).catch(error => {
+          console.log(error);
+        });
+      }
+  })
 })

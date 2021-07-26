@@ -8,13 +8,13 @@
   font-size: 12px !important;
 }
 
-.comment-form {
+.comment-form, .changelog-form {
   .ck-editor__editable_inline {
     min-height: 100px;
   }
 }
 
-.article-form {
+.article-form, .video-form {
   .ck-editor__editable_inline {
     min-height: 500px;
   }
