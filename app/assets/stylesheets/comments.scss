@@ -1,18 +1,6 @@
 @import 'colors';
 
 .comments-panel {
-  .comment-form {
-    .ck-editor__editable_inline {
-      min-height: 100px;
-    }
-    .ck-toolbar {
-      background: #fff;
-    }
-    .ck-content {
-      padding: 0 15px;
-    }
-  }
-
   margin-top: 30px;
 
   .empty {
