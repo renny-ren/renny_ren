@@ -38,5 +38,6 @@ javascript:
 
     .ui.basic.tiny.buttons.right.floated.filter-btns
       = button_tag '全部', name: 'filters', value: '', class: "ui button #{params[:filters].present? ? '' : 'active'}"
+      = button_tag '技术', name: 'filters', value: '技术', class: "ui button #{params[:filters] == '技术' ? 'active' : ''}"
       = button_tag '生活', name: 'filters', value: '生活', class: "ui button #{params[:filters] == '生活' ? 'active' : ''}"
       = button_tag '读书笔记', name: 'filters', value: '读书笔记', class: "ui button #{params[:filters] == '读书笔记' ? 'active' : ''}"
