@@ -12,8 +12,8 @@
 
     &:before {
       content: "";
-      background: rgba(0, 0, 0, .25);
-      height: 449px;  /* 400px bg-img + 49px header */
+      background: rgba(0, 0, 0, .2);
+      height: 450px;  /* 400px bg-img + 50px header */
       width: 100%;
       position: absolute;
       transform-style: preserve-3d;
