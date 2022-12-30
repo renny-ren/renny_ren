@@ -1,0 +1,15 @@
+fly.toml
+
+.git
+tmp
+!tmp/pids
+log
+public/assets
+public/packs
+.bundle
+
+storage
+config/master.key
+config/credentials/*.key
+
+node_modules
