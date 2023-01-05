@@ -25,9 +25,15 @@
           <%= link_to t('about.title'), about_index_path, method: :get %>
         </div>
         <div class="right aligned three wide column computer only">
-          <%= form_tag(home_path, method: :get) do %>
-            <%= select_tag 'set_locale', options_for_select(LANGUAGES, I18n.locale), onchange: 'this.form.submit()' %>
-          <% end %>
+          <div class="ui simple dropdown item locale-dropdown">
+            <%= I18n.t('language_name') %>
+            <i class="dropdown icon"></i>
+            <div class="menu">
+              <% I18n.available_locales.each do |language| %>
+                <a class="item" href=<%= language %>><%= I18n.t('language_name', locale: language) %></a>
+              <% end %>
+            </div>
+          </div>
         </div>
       </div>
 

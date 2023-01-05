@@ -21,7 +21,7 @@
 @import "media";
 
 body {
-  margin: 0; 
+  margin: 0;
   padding: 0;
   background-color: $bodyBlue;
 }
@@ -42,6 +42,12 @@ body {
     font-family: "黑体", "Lucida Sans", "Lucida Grande", Verdana, Arial, sans-serif;
     word-spacing: 20px;
     font-size: 20px;
+  }
+
+  .locale-dropdown {
+    min-width: 80px;
+    text-align: right;
+    color: white;
   }
 }
 
