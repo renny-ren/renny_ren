@@ -1,0 +1,7 @@
+// Ctrl+Shift+H (or Cmd+Shift+H if you're on a Mac) to prettify code.
+{
+  "all":
+  {
+    "indent_size": 2
+  },
+}
