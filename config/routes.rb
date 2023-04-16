@@ -20,9 +20,6 @@ Rails.application.routes.draw do
   resources :sessions, only: [:index, :create]
   resource :sessions, only: :destroy
   resources :uploads, only: [:create]
-  resources :orders, only: :create do
-    post "notify", on: :collection
-  end
 
   get "/feed" => "articles#feed", as: :feed, defaults: { format: "atom" }
 
