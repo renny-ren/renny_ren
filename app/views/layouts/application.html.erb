@@ -30,7 +30,7 @@
             <i class="dropdown icon"></i>
             <div class="menu">
               <% I18n.available_locales.each do |language| %>
-                <a class="item" href=<%= language %>><%= I18n.t('language_name', locale: language) %></a>
+                <a class="item" href=<%= "/#{language}" %>><%= I18n.t('language_name', locale: language) %></a>
               <% end %>
             </div>
           </div>
