@@ -4,7 +4,7 @@
   .item-circle
   .item-segment.ui.raised.segment
     - if item.owner_type == 'Article'
-      = link_to article_path(item.owner.id)
+      = link_to article_path(item.owner.id), method: :get
         .item-content
           .title = item.title
           .description = sanitize(item.description&.truncate(76) || item.content.truncate(76))
