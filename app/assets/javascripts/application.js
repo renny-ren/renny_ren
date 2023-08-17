@@ -16,3 +16,21 @@
 //= require_directory .
 //= require tooltipster.bundle.min
 //= require semantic-ui
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}
+
+window.addEventListener("scroll", function () {
+  var button = document.getElementById("backToTopButton");
+  if (window.scrollY > 680) {
+    button.style.opacity = "1";
+    button.style.pointerEvents = "auto";
+  } else {
+    button.style.opacity = "0";
+    button.style.pointerEvents = "none";
+  }
+});
